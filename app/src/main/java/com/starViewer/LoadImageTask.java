@@ -3,9 +3,6 @@ package com.starViewer;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.ColorMatrix;
-import android.graphics.Paint;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -14,22 +11,32 @@ import java.io.InputStream;
 import java.lang.ref.WeakReference;
 
 public class LoadImageTask extends AsyncTask<AssetManager, Void, Bitmap> {
-    private String TAG = "LoadImageTask";
+    private static final String TAG = "LoadImageTask";
 
-    private String assetName;
-    StarViewFragment parent;
+    //TODO: expand map caching to hold multiple maps
+    private static WeakReference<Bitmap> lastBitmap = new WeakReference<>(null);
+    private static String lastName;
 
-    public LoadImageTask(StarViewFragment parent, String assetName){
+    private String imageName;
+    BitmapImageReciver parent;
+
+    public LoadImageTask(BitmapImageReciver parent, String imageName){
         this.parent = parent;
-        this.assetName = assetName;
+        this.imageName = imageName;
     }
 
     @Override
     protected Bitmap doInBackground(AssetManager... params) {
         AssetManager assetManager = params[0];
 
-        try(InputStream istr = assetManager.open(assetName)) {
+        if (imageName.equals(lastName) && lastBitmap.get() != null) {
+            return lastBitmap.get();
+        }
+
+        try(InputStream istr = assetManager.open(imageName)) {
             Bitmap b = BitmapFactory.decodeStream(istr);
+            lastBitmap = new WeakReference<>(b);
+            lastName = imageName;
             return b;
         } catch (IOException e) {
             Log.e(TAG, "Could not decode default bitmap: " + e);
@@ -39,6 +46,6 @@ public class LoadImageTask extends AsyncTask<AssetManager, Void, Bitmap> {
 
     @Override
     protected void onPostExecute(Bitmap bitmap){
-        parent.LoadImageFinished(assetName, bitmap);
+        parent.LoadImageFinished(imageName, bitmap);
     }
 }
