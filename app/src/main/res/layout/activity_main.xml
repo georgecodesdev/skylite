@@ -6,12 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.skylite.MainActivity">
 
-    <fragment
-        android:id="@+id/trophyFragment"
-        android:name="com.example.skylite.Fragments.FragmentTrophy"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        custom:TrophyTitle = "This is where the title goes"
-        custom:TrophyDescription="This is where the description goes" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="this will get replaced with home screen" />
 
 </RelativeLayout>

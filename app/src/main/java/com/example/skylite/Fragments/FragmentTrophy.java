@@ -29,13 +29,16 @@ public class FragmentTrophy extends Fragment {
     private TextView description;
     private TextView title;
     private ImageView trophyImage;
+    private String identifier;
 
     public FragmentTrophy() {
         // Required empty public constructor
     }
 
-    public FragmentTrophy(boolean hasCompleted){
-        hasCompletedTrophy = hasCompleted;
+    public void setIdentifiers(String identifier, boolean hasCompletedTrophy){
+        this.hasCompletedTrophy = hasCompletedTrophy;
+        this.identifier = identifier;
+        toggleCompletion(this.hasCompletedTrophy);
     }
 
     @Override
@@ -82,6 +85,14 @@ public class FragmentTrophy extends Fragment {
     public void toggleCompletion(boolean hasCompletedTrophy){
         if (hasCompletedTrophy) trophyImage.setImageDrawable(completedTrophy);
         else trophyImage.setImageDrawable(uncompletedTrophy);
+    }
+
+    public String getIdentifier(){
+        return identifier;
+    }
+
+    public boolean getTroophyCompletion(){
+        return hasCompletedTrophy;
     }
 
     // gets the UI elements and maps them to the private variables

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
     tools:context="com.example.skylite.Fragments.FragmentTrophy">
 
     <RelativeLayout
@@ -14,14 +14,14 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="300dp"
-                android:layout_height="300dp"
+                android:layout_height="fill_parent"
                 android:id="@+id/trophyImage"
                 android:layout_gravity="left"
                 android:layout_weight="0.6" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="fill_parent"
                 android:layout_gravity="right"
                 android:orientation="vertical"
                 android:layout_centerInParent="true"
@@ -32,7 +32,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:gravity="center"
-                    android:layout_marginTop="120dp"/>
+                    android:layout_marginTop="30dp"/>
 
                 <TextView
                     android:id="@+id/description"
