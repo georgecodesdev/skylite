@@ -2,6 +2,7 @@ package com.example.skylite.Fragments;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -53,6 +54,7 @@ public class FragmentTrophy extends Fragment {
         mapUIElementsByID();
 
         description.setText(descriptionStr);
+        title.setTypeface(null, Typeface.BOLD);
         title.setText(titleStr);
         toggleCompletion(hasCompletedTrophy);
     }
