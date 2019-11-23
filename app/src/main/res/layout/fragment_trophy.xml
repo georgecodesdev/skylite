@@ -26,14 +26,16 @@
                 android:layout_gravity="right"
                 android:orientation="vertical"
                 android:layout_centerInParent="true"
-                android:layout_weight="0.5">
+                android:layout_weight="0.5"
+  >
 
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:gravity="center"
-                    android:layout_marginTop="30dp"/>
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorText"/>
 
                 <TextView
                     android:id="@+id/description"
@@ -41,7 +43,8 @@
                     android:layout_height="20dp"
                     android:gravity="center"
                     android:layout_centerInParent="true"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorText"/>
                 />
             </LinearLayout>
         </LinearLayout>
