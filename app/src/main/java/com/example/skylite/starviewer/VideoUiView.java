@@ -52,8 +52,6 @@ import com.example.skylite.starviewer.rendering.CanvasQuad;
  */
 public class VideoUiView extends LinearLayout {
   // These UI elements are only useful when the app is displaying a video.
-  private SeekBar seekBar;
-  private TextView statusText;
   private final UiUpdater uiUpdater = new UiUpdater();
 
   // Since MediaPlayer lacks synchronization for internal events, it should only be accessed on the
@@ -88,9 +86,6 @@ public class VideoUiView extends LinearLayout {
     view.setLayoutParams(CanvasQuad.getLayoutParams());
     view.setVisibility(View.VISIBLE);
     parent.addView(view, 0);
-
-    view.findViewById(R.id.enter_exit_vr).setContentDescription(
-        view.getResources().getString(R.string.exit_vr_label));
 
     return view;
   }
@@ -156,39 +151,6 @@ public class VideoUiView extends LinearLayout {
   @Override
   public void onFinishInflate() {
     super.onFinishInflate();
-
-    final ImageButton playPauseToggle = (ImageButton) findViewById(R.id.play_pause_toggle);
-    playPauseToggle.setOnClickListener(
-        new OnClickListener() {
-          @Override
-          public void onClick(View v) {
-            if (mediaPlayer == null) {
-              return;
-            }
-
-            if (mediaPlayer.isPlaying()) {
-              mediaPlayer.pause();
-              playPauseToggle.setBackgroundResource(R.drawable.play_button);
-              playPauseToggle.setContentDescription(getResources().getString(R.string.play_label));
-            } else {
-              mediaPlayer.start();
-              playPauseToggle.setBackgroundResource(R.drawable.pause_button);
-              playPauseToggle.setContentDescription(getResources().getString(R.string.pause_label));
-            }
-          }
-        });
-
-    seekBar = (SeekBar) findViewById(R.id.seek_bar);
-    seekBar.setOnSeekBarChangeListener(new SeekBarListener());
-
-    statusText = (TextView) findViewById(R.id.status_text);
-  }
-
-  /** Sets the OnClickListener used to switch Activities. */
-  @MainThread
-  public void setVrIconClickListener(OnClickListener listener) {
-    ImageButton vrIcon = (ImageButton) findViewById(R.id.enter_exit_vr);
-    vrIcon.setOnClickListener(listener);
   }
 
   /**
@@ -245,18 +207,12 @@ public class VideoUiView extends LinearLayout {
           return;
         }
 
-        if (videoDurationMs == 0) {
-          videoDurationMs = mediaPlayer.getDuration();
-          seekBar.setMax(videoDurationMs);
-        }
         int positionMs = mediaPlayer.getCurrentPosition();
-        seekBar.setProgress(positionMs);
 
         StringBuilder status = new StringBuilder();
         status.append(String.format("%.2f", positionMs / 1000f));
         status.append(" / ");
         status.append(videoDurationMs / 1000);
-        statusText.setText(status.toString());
 
         if (canvasQuad != null) {
           // When in VR, we will need to manually invalidate this View.

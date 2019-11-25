@@ -241,16 +241,6 @@ public class VrVideoActivity extends GvrActivity {
           = SceneRenderer.createForVR(VrVideoActivity.this, parent);
       scene = pair.first;
       uiView = pair.second;
-      uiView.setVrIconClickListener(
-          new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              if (!exitFromVr()) {
-                // Directly exit Cardboard Activities.
-                onActivityResult(EXIT_FROM_VR_REQUEST_CODE, RESULT_OK, null);
-              }
-            }
-          });
     }
 
     @Override
