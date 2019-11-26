@@ -8,11 +8,17 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 /.idea/*
+<<<<<<< HEAD
+=======
 app/.classpath
 app/.project
 app/.settings/
+>>>>>>> crud-team
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
+app/.classpath
+app/.project
+app/.settings/*
