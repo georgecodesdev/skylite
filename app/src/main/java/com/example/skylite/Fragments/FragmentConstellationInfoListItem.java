@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.R;
 
 public class FragmentConstellationInfoListItem extends Fragment {
@@ -22,12 +23,15 @@ public class FragmentConstellationInfoListItem extends Fragment {
     private ImageView constellationImage;
     private TextView constellationTitle;
     private TextView constellationDescription;
+    private ImageView moreInfoImage;
 
     private String constellationImageName;
     private String constellationTitleStr;
     private String constellationDescriptionStr;
 
-    public FragmentConstellationInfoListItem(String constellationImageName, String constellationTitleStr, String constellationDescriptionShortStr){
+    public FragmentConstellationInfoListItem(String constellationImageName,
+                                             String constellationTitleStr,
+                                             String constellationDescriptionShortStr){
         this.constellationImageName = constellationImageName;
         this.constellationTitleStr = constellationTitleStr;
         this.constellationDescriptionStr = constellationDescriptionShortStr;
@@ -55,12 +59,28 @@ public class FragmentConstellationInfoListItem extends Fragment {
         super.onInflate(context, attrs, savedInstanceState);
     }
 
+    public String getConstellationTitleStr(){
+        return constellationTitleStr;
+    }
+
     private void setAttributes(){
         constellationTitle.setText(constellationTitleStr);
         constellationTitle.setTypeface(null, Typeface.BOLD);
 
         constellationDescription.setText(constellationDescriptionStr);
 
+        getImageFromDrawable();
+
+        moreInfoImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                ((ActivityConstellationInfo)getActivity()).switchToWikiView(constellationTitleStr);
+            }
+        });
+    }
+
+    private void getImageFromDrawable(){
         Resources res = getResources();
         int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
         Drawable image = res.getDrawable(resourceId, getActivity().getTheme());
@@ -71,5 +91,6 @@ public class FragmentConstellationInfoListItem extends Fragment {
         constellationDescription = getView().findViewById(R.id.constellationDescription);
         constellationTitle = getView().findViewById(R.id.constellationTitle);
         constellationImage = getView().findViewById(R.id.constellationImage);
+        moreInfoImage = getView().findViewById(R.id.moreInfoButton);
     }
 }

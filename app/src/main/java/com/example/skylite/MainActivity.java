@@ -5,12 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.skylite.Activities.ActivityConstellationInfoList;
+import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.Activities.ActivityTrophy;
 import com.example.skylite.Model.ModelConstellationInfo;
 import com.example.skylite.Model.ModelConstellationList;
-
-import com.example.skylite.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         modelConstellationList.addConstellationInfo(temp);
         modelConstellationList.addConstellationInfo(temp1);
 
-        Intent intent = new Intent(this, ActivityConstellationInfoList.class);
+        Intent intent = new Intent(this, ActivityConstellationInfo.class);
         intent.putExtra("ModelList", modelConstellationList);
         startActivity(intent);
     }

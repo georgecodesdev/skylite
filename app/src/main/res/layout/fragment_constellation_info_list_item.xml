@@ -48,17 +48,17 @@
                     android:text="Description Text goes here"/>
             </LinearLayout>
 
-            <Button
-                android:drawableLeft="@drawable/telescope"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/moreInfoButton"
+                android:background="@drawable/round_circle"
+                android:src="@drawable/info_white"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:gravity="center"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="30dp"
                 android:layout_marginRight="5dp"
-                android:text="Info"
                 />
-            />
 
         </LinearLayout>
     </RelativeLayout>
