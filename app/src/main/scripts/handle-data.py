@@ -14,7 +14,10 @@ new_names = df1['Observation Season'].apply(lambda x: x.split(' / ')[0])
 new_col1_names = dict(zip(df1['Observation Season'], new_names))
 df1['Observation Season'].replace(new_col1_names, inplace=True)
 df1.rename(columns={'Dec (Declinaison)': 'Declination',
-                    'Latin name': 'Name', 'IAU code': 'Id'}, inplace=True)
+                    'Latin name': 'Name', 'IAU code': 'Id',
+                    'RA (Right Ascension': 'Right ascension',
+                    'Quad': 'Quadrant',
+                    'Observation Season': 'Observation season'}, inplace=True)
 df1['Id'] = df1['Id'].apply(str.lower)
 df1.drop(['French name', 'English name', 'Image'], axis=1, inplace=True)
 
@@ -44,7 +47,8 @@ df2.loc[df2['Name'] == 'Serpens Caput', 'Story'] = '{} {}'.format(
 df2.drop(df2[df2['Name'] == 'Serpens Cauda'].index[0],
          axis=0, inplace=True)
 df2.loc[df2['Name'] == 'Serpens Caput', 'Name'] = 'Serpens'
-df2.drop(['Genitive Form', 'Brightest Star'], axis=1, inplace=True)
+df2.drop(columns=['Genitive Form', 'Brightest Star'], inplace=True)
+df2.rename(columns={'First Appeared': 'First appeared'}, inplace=True)
 
 # Get image and meaning data
 ROOT = "https://www.iau.org"
@@ -88,6 +92,15 @@ headers = df.columns
 ids = df['Id']
 df = df.drop(columns=['Id'])
 df.insert(loc=0, column='Id', value=ids)
+
+# Drop columns we don't need or want:
+to_drop = [
+    "Constellation area in % of the celestial sphere",
+    "Constellation zone (Milky Way)"
+]
+
+df.drop(columns=to_drop, inplace=True)
+
 df.to_csv('app/src/main/assets/data.csv', encoding='utf-8-sig',
           float_format='%g', index=False)
 
