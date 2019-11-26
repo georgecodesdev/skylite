@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //TODO: will be changed with backend integration -- this is simply to show how the UI flow is expected to work
         ModelConstellationInfo temp = new ModelConstellationInfo("trophy",
                 "Example Title", "Description Short", "Description Long");
-        ModelConstellationInfo temp1 = new ModelConstellationInfo("trophy",
+        ModelConstellationInfo temp1 = new ModelConstellationInfo("uncompleted_trophy",
                 "Example Title1", "Description Short1", "Description Long1");
 
         ModelConstellationList modelConstellationList = new ModelConstellationList();
