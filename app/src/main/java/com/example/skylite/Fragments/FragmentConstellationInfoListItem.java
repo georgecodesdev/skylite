@@ -1,6 +1,9 @@
 package com.example.skylite.Fragments;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,16 +17,21 @@ import android.widget.TextView;
 
 import com.example.skylite.R;
 
-
 public class FragmentConstellationInfoListItem extends Fragment {
 
     private ImageView constellationImage;
     private TextView constellationTitle;
     private TextView constellationDescription;
 
-    private String constellationImagePath;
+    private String constellationImageName;
     private String constellationTitleStr;
     private String constellationDescriptionStr;
+
+    public FragmentConstellationInfoListItem(String constellationImageName, String constellationTitleStr, String constellationDescriptionShortStr){
+        this.constellationImageName = constellationImageName;
+        this.constellationTitleStr = constellationTitleStr;
+        this.constellationDescriptionStr = constellationDescriptionShortStr;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,11 +47,24 @@ public class FragmentConstellationInfoListItem extends Fragment {
     public void onStart() {
         super.onStart();
         mapUIElementsByID();
+        setAttributes();
     }
 
     @Override
     public void onInflate(Context context, AttributeSet attrs, Bundle savedInstanceState) {
         super.onInflate(context, attrs, savedInstanceState);
+    }
+
+    private void setAttributes(){
+        constellationTitle.setText(constellationTitleStr);
+        constellationTitle.setTypeface(null, Typeface.BOLD);
+
+        constellationDescription.setText(constellationDescriptionStr);
+
+        Resources res = getResources();
+        int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
+        Drawable image = res.getDrawable(resourceId, getActivity().getTheme());
+        constellationImage.setImageDrawable(image);
     }
 
     private void mapUIElementsByID() {

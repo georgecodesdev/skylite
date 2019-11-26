@@ -6,8 +6,8 @@
     tools:context="com.example.skylite.Fragments.FragmentConstellationInfoListItem">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
         android:background="@drawable/border">
         <LinearLayout
             android:orientation="horizontal"
