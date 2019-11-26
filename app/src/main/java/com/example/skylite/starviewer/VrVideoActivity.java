@@ -171,7 +171,7 @@ public class VrVideoActivity extends GvrActivity {
   private void checkPermissionAndInitialize() {
     if (ContextCompat.checkSelfPermission(this, permission.READ_EXTERNAL_STORAGE)
         == PackageManager.PERMISSION_GRANTED) {
-      mediaLoader.handleIntent(getIntent(), uiView);
+      mediaLoader.LoadMedia();
     } else {
       exitFromVr();
       // This method will return false on Cardboard devices. This case isn't handled in this sample

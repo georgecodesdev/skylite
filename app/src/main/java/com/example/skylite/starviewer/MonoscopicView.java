@@ -17,7 +17,6 @@
 package com.example.skylite.starviewer;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.PointF;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -120,8 +119,8 @@ public final class MonoscopicView extends GLSurfaceView {
   }
 
   /** Parses the Intent and loads the appropriate media. */
-  public void loadMedia(Intent intent) {
-    mediaLoader.handleIntent(intent, uiView);
+  public void loadMedia() {
+    mediaLoader.LoadMedia();
   }
 
   /** Detects sensor events and saves them as a matrix. */

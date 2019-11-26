@@ -20,8 +20,8 @@ import android.Manifest;
 import android.Manifest.permission;
 import android.app.Activity;
 import android.content.ComponentName;
-import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -32,6 +32,8 @@ import android.view.ViewGroup;
 import com.example.skylite.R;
 import com.example.skylite.starviewer.rendering.Mesh;
 import com.google.vr.ndk.base.DaydreamApi;
+
+import java.net.URI;
 
 /**
  * Basic Activity to hold {@link MonoscopicView} and render a 360 video in 2D.
@@ -96,19 +98,6 @@ public class VideoActivity extends Activity {
     }
   }
 
-  /**
-   * Normal apps don't need this. However, since we use adb to interact with this sample, we
-   * want any new adb Intents to be routed to the existing Activity rather than launching a new
-   * Activity.
-   */
-  @Override
-  protected void onNewIntent(Intent intent) {
-    // Save the new Intent which may contain a new Uri. Then tear down & recreate this Activity to
-    // load that Uri.
-    setIntent(intent);
-    recreate();
-  }
-
   /** Initializes the Activity only if the permission has been granted. */
   private void initializeActivity() {
     ViewGroup root = (ViewGroup) findViewById(R.id.activity_root);
@@ -116,7 +105,7 @@ public class VideoActivity extends Activity {
       root.getChildAt(i).setVisibility(View.VISIBLE);
     }
     findViewById(R.id.permission_button).setVisibility(View.GONE);
-    videoView.loadMedia(getIntent());
+    videoView.loadMedia();
   }
 
   @Override
