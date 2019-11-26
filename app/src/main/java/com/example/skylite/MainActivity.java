@@ -13,11 +13,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        switchToTrophyActivity();
+        // switchToTrophyActivity();
     }
 
     private void switchToTrophyActivity(){
         Intent intent = new Intent(this, ActivityTrophy.class);
         startActivity(intent);
     }
+
+
 }

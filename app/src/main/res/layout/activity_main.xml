@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.skylite.MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="this will get replaced with home screen" />
+     <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/test"
+        android:name="com.example.skylite.Fragments.FragmentConstellationInfo" />
 
 </RelativeLayout>
