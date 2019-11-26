@@ -65,8 +65,29 @@ public final class Mesh {
         // Standard texture rendering shader.
         "uniform samplerExternalOES uTexture;",
         "varying vec2 vTexCoords;",
+        "uniform float brightnessMod;",
+        "uniform float contrastMod;",
+
+        "void brightnessCorrect(vec4 colour){",
+            "for(int i=0; i<3; i++){",
+              "colour[i] *= brightnessMod;",
+              "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
+            "}",
+        "}",
+
+        "void contrastCorrect(vec4 colour){",
+              "for(int i=0; i<3; i++){",
+            "float dist = (colour[i] - 128.0f) * contrastMod;",
+              "colour[i] = dist + 128.0f;",
+              "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
+              "}",
+        "}",
+
         "void main() {",
-        "  gl_FragColor = texture2D(uTexture, vTexCoords);",
+            "vec4 t = texture2D(uTexture, vTexCoords);",
+              "brightnessCorrect(t);",
+              "contrastCorrect(t);",
+            "gl_FragColor = t;",
         "}"
       };
 
@@ -94,6 +115,9 @@ public final class Mesh {
   private int texCoordsHandle;
   private int textureHandle;
   private int textureId;
+
+  private int brightnessModHandle;
+  private int contrastModHandle;
 
   /**
    * Generates a 3D UV sphere for rendering monoscopic or stereoscopic video.
@@ -216,6 +240,9 @@ public final class Mesh {
     positionHandle = GLES20.glGetAttribLocation(program, "aPosition");
     texCoordsHandle = GLES20.glGetAttribLocation(program, "aTexCoords");
     textureHandle = GLES20.glGetUniformLocation(program, "uTexture");
+    brightnessModHandle = GLES20.glGetUniformLocation(program, "brightnessMod");
+    contrastModHandle = GLES20.glGetUniformLocation(program, "contrastMod");
+
   }
 
   /**
@@ -233,6 +260,8 @@ public final class Mesh {
     GLES20.glEnableVertexAttribArray(texCoordsHandle);
     checkGlError();
 
+    GLES20.glUniform1f(brightnessModHandle, 1f);
+    GLES20.glUniform1f(contrastModHandle, 1f);
     GLES20.glUniformMatrix4fv(mvpMatrixHandle, 1, false, mvpMatrix, 0);
     GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
     GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, textureId);
