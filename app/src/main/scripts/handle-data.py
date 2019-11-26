@@ -109,24 +109,24 @@ to_drop = [
 
 df.drop(columns=to_drop, inplace=True)
 
-
-columns = [
-    # 'Id',
-    # 'Observation season',
-    # 'Name',
-    'Constellation area in square degrees',
-    'Declination',
-    'Right ascension',
-    'Principal star',
-    'Constellation zone (celestial equator)',
-    'Constellation zone (ecliptic)',
-    'Quadrant',
-    'Name origin',
-    'Meaning',
-    'Image',
-    'Story',
-    'First appeared'
-]
+# To drop columns for testing
+# columns = [
+#     'Id',
+#     'Observation season',
+#     'Name',
+#     'Constellation area in square degrees',
+#     'Declination',
+#     'Right ascension',
+#     'Principal star',
+#     'Constellation zone (celestial equator)',
+#     'Constellation zone (ecliptic)',
+#     'Quadrant',
+#     'Name origin',
+#     'Meaning',
+#     'Image',
+#     'Story',
+#     'First appeared'
+# ]
 
 # df.drop(columns=columns, inplace=True)
 
