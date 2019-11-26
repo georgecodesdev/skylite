@@ -275,7 +275,7 @@ public final class MonoscopicView extends GLSurfaceView {
 
     // viewMatrix = touchPitch * deviceOrientation * touchYaw.
     private final float[] viewMatrix = new float[16];
-    private final float[] tempMatrix = new float[16];
+    private final float[] offsetMatrix = new float[16];
 
     private final VideoUiView uiView;
     private final MediaLoader mediaLoader;
@@ -284,8 +284,25 @@ public final class MonoscopicView extends GLSurfaceView {
       Matrix.setIdentityM(deviceOrientationMatrix, 0);
       Matrix.setIdentityM(touchPitchMatrix, 0);
       Matrix.setIdentityM(touchYawMatrix, 0);
+      Matrix.setIdentityM(offsetMatrix,0);
       this.uiView = uiView;
       this.mediaLoader = mediaLoader;
+    }
+
+    /** rotates the camera to give the impression of rotating the sphere
+     *
+     * @param x component of vector
+     * @param y component of vector
+     * @param z component of vector
+     * @param degrees amout to rotate
+     */
+    private void rotateViewAroundBy(float x, float y, float z, float degrees){
+      Matrix.rotateM(offsetMatrix,0, degrees, x,y,z);
+    }
+
+    public void setAngleOfSky(float latatude, float longnatuded, float timeOfDay, float degreesFromNorth){
+      //rotate to put stars in correct for if we were on north pole
+      //incline view to put north star in correct place
     }
 
     @Override
@@ -310,8 +327,7 @@ public final class MonoscopicView extends GLSurfaceView {
       // Orientation = pitch * sensor * yaw since that is closest to what most users expect the
       // behavior to be.
       synchronized (this) {
-        Matrix.multiplyMM(tempMatrix, 0, deviceOrientationMatrix, 0, touchYawMatrix, 0);
-        Matrix.multiplyMM(viewMatrix, 0, touchPitchMatrix, 0, tempMatrix, 0);
+        Matrix.multiplyMM(viewMatrix, 0, deviceOrientationMatrix, 0, offsetMatrix, 0);
       }
 
       Matrix.multiplyMM(viewProjectionMatrix, 0, projectionMatrix, 0, viewMatrix, 0);
