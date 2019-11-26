@@ -40,6 +40,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:background="@drawable/trapaziod"
+                        android:id="@+id/constellationTitle"
                         android:text="Title Text goes here"
                         android:textColor="@color/colorText"
                         android:gravity="center_horizontal" />

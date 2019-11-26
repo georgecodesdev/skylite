@@ -8,8 +8,8 @@
 
      <fragment
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="100dp"
         android:id="@+id/test"
-        android:name="com.example.skylite.Fragments.FragmentConstellationInfo" />
+        android:name="com.example.skylite.Fragments.FragmentConstellationInfoListItem" />
 
 </RelativeLayout>

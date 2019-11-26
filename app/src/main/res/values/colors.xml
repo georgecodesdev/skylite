@@ -6,4 +6,5 @@
     <color name="colorBackground">#B3B1B1</color>
     <color name="colorBorder">#7E7D7D</color>
     <color name="colorText">#eeeeee</color>
+    <color name="transparent">#80000000</color>
 </resources>

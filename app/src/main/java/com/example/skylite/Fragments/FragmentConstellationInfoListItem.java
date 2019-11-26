@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.example.skylite.R;
 
 
-public class FragmentConstellationInfo extends Fragment {
+public class FragmentConstellationInfoListItem extends Fragment {
 
     private ImageView constellationImage;
     private TextView constellationTitle;
@@ -32,7 +32,7 @@ public class FragmentConstellationInfo extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_constellation_info, container, false);
+        return inflater.inflate(R.layout.fragment_constellation_info_list_item, container, false);
     }
 
     @Override
@@ -42,15 +42,13 @@ public class FragmentConstellationInfo extends Fragment {
     }
 
     @Override
-    public void onInflate(Context context, AttributeSet attrs, Bundle savedInstanceState){
+    public void onInflate(Context context, AttributeSet attrs, Bundle savedInstanceState) {
         super.onInflate(context, attrs, savedInstanceState);
     }
 
-    private void mapUIElementsByID(){
+    private void mapUIElementsByID() {
         constellationDescription = getView().findViewById(R.id.constellationDescription);
         constellationTitle = getView().findViewById(R.id.constellationTitle);
         constellationImage = getView().findViewById(R.id.constellationImage);
     }
-
-
 }
