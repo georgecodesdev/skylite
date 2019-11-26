@@ -44,4 +44,7 @@ dependencies {
 
 // Testing
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
 }

@@ -6,4 +6,7 @@
     <color name="colorBackground">#a4a4a4</color>
     <color name="colorBorder">#757575</color>
     <color name="colorText">#eeeeee</color>
+
+    <!-- TODO: Sandbox -->
+    <color name="buttonLabel">#d3d3d3</color>
 </resources>

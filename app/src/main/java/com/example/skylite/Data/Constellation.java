@@ -1,5 +1,6 @@
 package com.example.skylite.Data;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -7,134 +8,114 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "constellation_table")
 public class Constellation {
     @PrimaryKey
-    @ColumnInfo(name = "Index")
-    private int index;
+    @NonNull
     @ColumnInfo(name = "Id")
-    private String id;
-    @ColumnInfo(name = "Observation")
-    private String observation;
+    private String Id;
+    @ColumnInfo(name = "ObservationSeason")
+    private String ObservationSeason;
     @ColumnInfo(name = "Name")
-    private String name;
-    @ColumnInfo(name = "Constellation area in square degrees")
-    private float constellationAreaSquareDegrees;
+    private String Name;
+    @ColumnInfo(name = "Area")
+    private float Area;
     @ColumnInfo(name = "Declination")
-    private String declination;
-    @ColumnInfo(name = "Right Ascension")
-    private String rightAscension;
-    @ColumnInfo(name = "Principal star")
-    private String principalStar;
-    @ColumnInfo(name = "Constellation zone (celestial equator)")
-    private String constellationZoneCelestialEquator;
-    @ColumnInfo(name = "Constellation zone (ecliptic)")
-    private String constellationZoneEcliptic;
+    private String Declination;
+    @ColumnInfo(name = "RightAscension")
+    private String RightAscension;
+    @ColumnInfo(name = "PrincipalStar")
+    private String PrincipalStar;
+    @ColumnInfo(name = "CelestialEquatorZone")
+    private String CelestialEquatorZone;
+    @ColumnInfo(name = "EclipticZone")
+    private String EclipticZone;
     @ColumnInfo(name = "Quadrant")
-    private String quadrant;
-    @ColumnInfo(name = "Name origin")
-    private String nameOrigin;
+    private String Quadrant;
+    @ColumnInfo(name = "NameOrigin")
+    private String NameOrigin;
     @ColumnInfo(name = "Meaning")
-    private String meaning;
+    private String Meaning;
     @ColumnInfo(name = "Image")
-    private String image;
+    private String Image;
     @ColumnInfo(name = "Story")
-    private String story;
-    @ColumnInfo(name = "First appeared")
-    private String firstAppeared;
+    private String Story;
+    @ColumnInfo(name = "FirstAppeared")
+    private String FirstAppeared;
 
-    public Constellation(int index,
-                         String id,
-                         String observation,
-                         String name,
-                         float constellationAreaSquareDegrees,
-                         String declination,
-                         String rightAscension,
-                         String principalStar,
-                         String constellationZoneCelestialEquator,
-                         String constellationZoneEcliptic,
-                         String quadrant,
-                         String nameOrigin,
-                         String meaning,
-                         String image,
-                         String story,
-                         String firstAppeared) {
-        this.index = index;
-        this.id = id;
-        this.observation = observation;
-        this.name = name;
-        this.constellationAreaSquareDegrees = constellationAreaSquareDegrees;
-        this.declination = declination;
-        this.rightAscension = rightAscension;
-        this.principalStar = principalStar;
-        this.constellationZoneCelestialEquator = constellationZoneCelestialEquator;
-        this.constellationZoneEcliptic = constellationZoneEcliptic;
-        this.quadrant = quadrant;
-        this.nameOrigin = nameOrigin;
-        this.meaning = meaning;
-        this.image = image;
-        this.story = story;
-        this.firstAppeared = firstAppeared;
+    public Constellation(@NonNull String Id, String ObservationSeason, String Name, float Area, String Declination, String RightAscension, String PrincipalStar, String CelestialEquatorZone, String EclipticZone, String Quadrant, String NameOrigin, String Meaning, String Image, String Story, String FirstAppeared) {
+        this.Id = Id;
+        this.ObservationSeason = ObservationSeason;
+        this.Name = Name;
+        this.Area = Area;
+        this.Declination = Declination;
+        this.RightAscension = RightAscension;
+        this.PrincipalStar = PrincipalStar;
+        this.CelestialEquatorZone = CelestialEquatorZone;
+        this.EclipticZone = EclipticZone;
+        this.Quadrant = Quadrant;
+        this.NameOrigin = NameOrigin;
+        this.Meaning = Meaning;
+        this.Image = Image;
+        this.Story = Story;
+        this.FirstAppeared = FirstAppeared;
     }
 
-    public int getIndex() {
-        return index;
-    }
-
+    @NonNull
     public String getId() {
-        return id;
+        return Id;
     }
 
-    public String getObservation() {
-        return observation;
+    public String getObservationSeason() {
+        return ObservationSeason;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
-    public float getConstellationAreaSquareDegrees() {
-        return constellationAreaSquareDegrees;
+    public float getArea() {
+        return Area;
     }
 
     public String getDeclination() {
-        return declination;
+        return Declination;
     }
 
     public String getRightAscension() {
-        return rightAscension;
+        return RightAscension;
     }
 
     public String getPrincipalStar() {
-        return principalStar;
+        return PrincipalStar;
     }
 
-    public String getConstellationZoneCelestialEquator() {
-        return constellationZoneCelestialEquator;
+    public String getCelestialEquatorZone() {
+        return CelestialEquatorZone;
     }
 
-    public String getConstellationZoneEcliptic() {
-        return constellationZoneEcliptic;
+    public String getEclipticZone() {
+        return EclipticZone;
     }
 
     public String getQuadrant() {
-        return quadrant;
+        return Quadrant;
     }
 
     public String getNameOrigin() {
-        return nameOrigin;
+        return NameOrigin;
     }
 
     public String getMeaning() {
-        return meaning;
+        return Meaning;
     }
 
     public String getImage() {
-        return image;
+        return Image;
     }
 
     public String getStory() {
-        return story;
+        return Story;
     }
 
     public String getFirstAppeared() {
-        return firstAppeared;
+        return FirstAppeared;
     }
 }

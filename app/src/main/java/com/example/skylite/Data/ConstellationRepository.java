@@ -21,4 +21,10 @@ public class ConstellationRepository {
     LiveData<List<Constellation>> getConstellations() {
         return constellations;
     }
+
+    void insert(Constellation constellation) {
+        ConstellationRoomDatabase.databaseWriteExecutor.execute(() -> {
+            constellationDao.insert(constellation);
+        });
+    }
 }

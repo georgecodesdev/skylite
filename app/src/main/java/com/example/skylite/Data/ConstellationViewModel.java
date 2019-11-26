@@ -18,5 +18,8 @@ public class ConstellationViewModel extends AndroidViewModel {
         constellations = repository.getConstellations();
     }
 
-    LiveData<List<Constellation>> getAllWords() { return constellations; }
+    public LiveData<List<Constellation>> getAllConstellations() { return constellations; }
+
+    public void insert(Constellation constellation) { repository.insert(constellation); }
+
 }
