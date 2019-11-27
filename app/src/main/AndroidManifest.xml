@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activities.ActivityTrophy"></activity>
+        <activity android:name=".Activities.ActivityConstellation"></activity>
         <activity android:name=".Activities.ActivityConstellationInfo"></activity>
-        <activity android:name=".Activities.ActivityTrophy" />
         <activity android:name=".Activities.ActivityCalendar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

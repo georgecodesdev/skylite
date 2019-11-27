@@ -7,18 +7,32 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.skylite.Activities.ActivityCalendar;
+import com.example.skylite.Activities.ActivityConstellation;
 import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.Activities.ActivityTrophy;
+import com.example.skylite.Data.Constellation;
+import com.example.skylite.Services.ServiceBase;
 import com.example.skylite.Model.ModelConstellationInfo;
 import com.example.skylite.Model.ModelConstellationList;
+import com.sothree.slidinguppanel.SlidingUpPanelLayout;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private SlidingUpPanelLayout slidingLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    //    setContentView(R.layout.activity_main);
-        switchToCalendarActivity();
+        setContentView(R.layout.activity_main);
+
+        slidingLayout = findViewById(R.id.sliding_layout);
+        slidingLayout.setAnchorPoint(0.3f);
+
+        ServiceBase.init(new ServiceBase(this.getApplicationContext()));
+
+        switchToConstellationListActivity();
+//                switchToTrophyActivity();
     }
 
     public void goToActivity(View v){
@@ -39,17 +53,15 @@ public class MainActivity extends AppCompatActivity {
     private void switchToScrollingActivity(){
         //TODO
     }
+
     private void switchToConstellationListActivity(){
-        //TODO: will be changed with backend integration -- this is simply to show how the UI flow is expected to work
-        ModelConstellationInfo temp = new ModelConstellationInfo("trophy",
-                "Example Title", "Description Short", "Description Long");
-        ModelConstellationInfo temp1 = new ModelConstellationInfo("uncompleted_trophy",
-                "Example Title1", "Description Short1", "Description Long1");
+        List<Constellation> constellations = ServiceBase.constellationService().get();
+        // TODO: Only loading the first 25 because the full set breaks it
+        constellations = constellations.subList(0, 25);
 
         ModelConstellationList modelConstellationList = new ModelConstellationList();
+        modelConstellationList.addConstellationInfo(ServiceBase.wikiService().getInfo(constellations));
 
-        modelConstellationList.addConstellationInfo(temp);
-        modelConstellationList.addConstellationInfo(temp1);
 
         Intent intent = new Intent(this, ActivityConstellationInfo.class);
         intent.putExtra("ModelList", modelConstellationList);

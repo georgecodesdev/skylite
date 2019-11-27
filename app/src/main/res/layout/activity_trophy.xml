@@ -4,12 +4,15 @@
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/screenBackground"
     tools:context="com.example.skylite.Activities.ActivityTrophy">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp">
         <fragment
             android:layout_width="fill_parent"
             android:layout_height="100dp"

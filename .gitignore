@@ -16,3 +16,12 @@ app/.settings/
 /captures
 .externalNativeBuild
 .cxx
+app/.classpath
+app/.project
+app/.settings/*
+.vscode/
+bin
+obj
+.project
+.settings/
+bin
