@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.skylite.Activities.ActivityCalendar;
 import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.Activities.ActivityTrophy;
 import com.example.skylite.Model.ModelConstellationInfo;
@@ -16,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    //    setContentView(R.layout.activity_main);
+        switchToCalendarActivity();
     }
 
     public void goToActivity(View v){
@@ -51,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, ActivityConstellationInfo.class);
         intent.putExtra("ModelList", modelConstellationList);
+        startActivity(intent);
+    }
+
+    private void switchToCalendarActivity(){
+        Intent intent = new Intent(this, ActivityCalendar.class);
         startActivity(intent);
     }
 }
