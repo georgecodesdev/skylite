@@ -1,9 +1,12 @@
 package com.example.skylite.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.skylite.Fragments.FragmentTrophy;
+import com.example.skylite.MainActivity;
 import com.example.skylite.R;
 
 public class ActivityTrophy extends AppCompatActivity {
@@ -23,6 +26,12 @@ public class ActivityTrophy extends AppCompatActivity {
         super.onStart();
         getFragments();
         setFragmentAttributes();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     // gets the UI elements and maps them to the private variables
