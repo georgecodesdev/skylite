@@ -163,7 +163,7 @@ public final class MonoscopicView extends GLSurfaceView {
     public void onAccuracyChanged(Sensor sensor, int accuracy) {}
   }
 
-  /**
+  /*
    * Basic touch input system.
    *
    * <p>Mixing touch input and gyro input results in a complicated UI so this should be used
@@ -234,8 +234,8 @@ public final class MonoscopicView extends GLSurfaceView {
           // Handle pitch and limit it to 45 degrees.
           accumulatedTouchOffsetDegrees.y += sr * touchX + cr * touchY;
           accumulatedTouchOffsetDegrees.y =
-              Math.max(-MAX_PITCH_DEGREES,
-                  Math.min(MAX_PITCH_DEGREES, accumulatedTouchOffsetDegrees.y));
+                  Math.max(-MAX_PITCH_DEGREES,
+                          Math.min(MAX_PITCH_DEGREES, accumulatedTouchOffsetDegrees.y));
 
           renderer.setPitchOffset(accumulatedTouchOffsetDegrees.y);
           renderer.setYawOffset(accumulatedTouchOffsetDegrees.x);
@@ -290,7 +290,7 @@ public final class MonoscopicView extends GLSurfaceView {
       Matrix.setIdentityM(deviceOrientationMatrix, 0);
       Matrix.setIdentityM(touchPitchMatrix, 0);
       Matrix.setIdentityM(touchYawMatrix, 0);
-      Matrix.setIdentityM(offsetMatrix,0);
+      //Matrix.setIdentityM(offsetMatrix,0);
       this.uiView = uiView;
       this.mediaLoader = mediaLoader;
     }
@@ -333,7 +333,9 @@ public final class MonoscopicView extends GLSurfaceView {
       // Orientation = pitch * sensor * yaw since that is closest to what most users expect the
       // behavior to be.
       synchronized (this) {
-        Matrix.multiplyMM(viewMatrix, 0, deviceOrientationMatrix, 0, offsetMatrix, 0);
+        //Matrix.multiplyMM(viewMatrix, 0, deviceOrientationMatrix, 0, offsetMatrix, 0);
+        Matrix.multiplyMM(offsetMatrix, 0, deviceOrientationMatrix, 0, touchYawMatrix, 0);
+        Matrix.multiplyMM(viewMatrix, 0, touchPitchMatrix, 0, offsetMatrix, 0);
       }
 
       Matrix.multiplyMM(viewProjectionMatrix, 0, projectionMatrix, 0, viewMatrix, 0);
