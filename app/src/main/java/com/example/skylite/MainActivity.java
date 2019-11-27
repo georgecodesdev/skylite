@@ -13,15 +13,20 @@ import com.example.skylite.Data.Constellation;
 import com.example.skylite.Services.ServiceBase;
 import com.example.skylite.Model.ModelConstellationInfo;
 import com.example.skylite.Model.ModelConstellationList;
+import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private SlidingUpPanelLayout slidingLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        slidingLayout = findViewById(R.id.sliding_layout);
+        slidingLayout.setAnchorPoint(0.3f);
 
         ServiceBase.init(new ServiceBase(this.getApplicationContext()));
 
@@ -47,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private void switchToScrollingActivity(){
         //TODO
     }
+
     private void switchToConstellationListActivity(){
         List<Constellation> constellations = ServiceBase.constellationService().get();
         // TODO: Only loading the first 25 because the full set breaks it
