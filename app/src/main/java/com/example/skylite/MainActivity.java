@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         ServiceBase.init(new ServiceBase(this.getApplicationContext()));
 
-        switchToConstellationListActivity();
+        //switchToConstellationListActivity();
 //                switchToTrophyActivity();
     }
 

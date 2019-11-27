@@ -23,7 +23,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:id="@+id/constellationImage"
-                android:src="@drawable/trophy"/>
+                android:src="@drawable/constellation_icon"/>
 
             <LinearLayout
                 android:orientation="vertical"
