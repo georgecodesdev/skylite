@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#25262C</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#25262C</color>
+    <color name="whiteTesting">#FFFFFF</color>
     <color name="colorBackground">#a4a4a4</color>
-    <color name="colorBorder">#757575</color>
+    <color name="colorBorder">#7E7D7D</color>
     <color name="colorText">#eeeeee</color>
+    <color name="black">#000000</color>
+    <color name="screenBackground">#2E313B</color>2E313B
 
     <!-- TODO: Sandbox -->
     <color name="buttonLabel">#d3d3d3</color>

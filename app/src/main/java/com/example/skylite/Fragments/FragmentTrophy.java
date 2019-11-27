@@ -68,8 +68,8 @@ public class FragmentTrophy extends Fragment {
 
         if (context != null && attrs != null) {
             TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.FragmentTrophy);
-            completedTrophy = context.getDrawable(R.drawable.trophy);
-            uncompletedTrophy = context.getDrawable(R.drawable.uncompleted_trophy);
+            completedTrophy = context.getDrawable(R.drawable.unlocked_trophy_icon);
+            uncompletedTrophy = context.getDrawable(R.drawable.blocked_trophy_icon);
 
             if (ta.hasValue(R.styleable.FragmentTrophy_TrophyDescription)) {
                 descriptionStr = ta.getString(R.styleable.FragmentTrophy_TrophyDescription);

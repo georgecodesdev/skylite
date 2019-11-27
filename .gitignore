@@ -8,12 +8,9 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 /.idea/*
-<<<<<<< HEAD
-=======
 app/.classpath
 app/.project
 app/.settings/
->>>>>>> crud-team
 .DS_Store
 /build
 /captures
@@ -22,3 +19,9 @@ app/.settings/
 app/.classpath
 app/.project
 app/.settings/*
+.vscode/
+bin
+obj
+.project
+.settings/
+bin

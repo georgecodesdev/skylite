@@ -1,4 +1,5 @@
 import requests
+import shutil
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -109,24 +110,24 @@ to_drop = [
 
 df.drop(columns=to_drop, inplace=True)
 
-
-columns = [
-    # 'Id',
-    # 'Observation season',
-    # 'Name',
-    'Constellation area in square degrees',
-    'Declination',
-    'Right ascension',
-    'Principal star',
-    'Constellation zone (celestial equator)',
-    'Constellation zone (ecliptic)',
-    'Quadrant',
-    'Name origin',
-    'Meaning',
-    'Image',
-    'Story',
-    'First appeared'
-]
+# To drop columns for testing
+# columns = [
+#     'Id',
+#     'Observation season',
+#     'Name',
+#     'Constellation area in square degrees',
+#     'Declination',
+#     'Right ascension',
+#     'Principal star',
+#     'Constellation zone (celestial equator)',
+#     'Constellation zone (ecliptic)',
+#     'Quadrant',
+#     'Name origin',
+#     'Meaning',
+#     'Image',
+#     'Story',
+#     'First appeared'
+# ]
 
 # df.drop(columns=columns, inplace=True)
 
@@ -134,3 +135,23 @@ df.to_csv('app/src/main/assets/data.csv', encoding='utf-8-sig',
           float_format='%g', index=False)
 
 df.to_json('app/src/main/assets/constellation_data.json', orient='records')
+
+# Download images
+# for index, row in df.iterrows():
+#     # This is the image url.
+#     image_url = row['Image']
+
+#     # Open the url image, set stream to True, this will return the stream content.
+#     resp = requests.get(image_url, stream=True)
+
+#     # Open a local file with wb ( write binary ) permission.
+#     local_file = open('{}_image.png'.format(row['Id']), 'wb')
+
+#     # Set decode_content value to True, otherwise the downloaded image file's size will be zero.
+#     resp.raw.decode_content = True
+
+#     # Copy the response stream raw data to local image file.
+#     shutil.copyfileobj(resp.raw, local_file)
+
+#     # Remove the image url response object.
+#     del resp
