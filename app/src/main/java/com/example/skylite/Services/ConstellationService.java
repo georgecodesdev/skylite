@@ -12,29 +12,41 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConstellationService implements IConstellationService {
     private Context _context;
+    private List<Constellation> constellations;
 
     public ConstellationService(Context context) {
         this._context = context;
+        constellations = new ArrayList<>();
+    }
+
+    public void populateList() {
+        Gson gson = new GsonBuilder().create();
+
+        Type listType = new TypeToken<List<Constellation>>() {}.getType();
+        constellations = gson.fromJson(readJSONFromAsset(), listType);
     }
 
     @Override
     public void populateTable(ConstellationDao dao) {
-        Gson gson = new GsonBuilder().create();
-
-        Type listType = new TypeToken<List<Constellation>>() {}.getType();
-        List<Constellation> fromJson = gson.fromJson(readJSONFromAsset(), listType);
-        if (fromJson != null) {
-            fromJson.forEach(dao::insert);
+        if (constellations.isEmpty()) {
+            populateList();
         }
+//        Gson gson = new GsonBuilder().create();
+//
+//        Type listType = new TypeToken<List<Constellation>>() {}.getType();
+//        List<Constellation> fromJson = gson.fromJson(readJSONFromAsset(), listType);
+//        if (fromJson != null) {
+        this.constellations.forEach(dao::insert);
     }
 
     @Override
-    public void get() {
-
+    public List<Constellation> get() {
+        return this.constellations;
     }
 
     @Override
@@ -45,6 +57,11 @@ public class ConstellationService implements IConstellationService {
     @Override
     public void getByName(String name) {
 
+    }
+
+    @Override
+    public String getImageName(Constellation constellation) {
+        return constellation.getId() + "_image";
     }
 
     private String readJSONFromAsset() {
