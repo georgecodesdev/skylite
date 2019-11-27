@@ -6,6 +6,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.AttributeSet;
@@ -81,9 +82,24 @@ public class FragmentConstellationInfoListItem extends Fragment {
     }
 
     private void getImageFromDrawable(){
-        Resources res = getResources();
-        int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
-        Drawable image = res.getDrawable(resourceId, getActivity().getTheme());
+        //Resources res = getResources();
+        //int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
+        int min = 1;
+        int max = 4;
+        int randomImage = min + (int)(Math.random() * ((max - min) + 1));
+
+        Drawable image = null;
+
+        switch (randomImage) {
+            case 1:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon, null);
+                break;
+            case 2:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon2, null);
+                break;
+            case 3:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon3, null);
+                break;
+            case 4:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon4, null);
+                break;
+        }
         constellationImage.setImageDrawable(image);
     }
 

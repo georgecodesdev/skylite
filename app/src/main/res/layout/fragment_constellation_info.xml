@@ -42,7 +42,7 @@
                         android:background="@drawable/trapaziod"
                         android:id="@+id/constellationTitle"
                         android:text="Title Text goes here"
-                        android:textColor="@color/colorText"
+                        android:textColor="@color/colorTextWhitish"
                         android:gravity="center_horizontal" />
                 </LinearLayout>
 

@@ -6,9 +6,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="colorPrimary"></item> @color/colorPrimaryBlue-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryLightPurple</item>-->
+<!--        <item name="colorAccent">@color/colorAccentButtonBlue</item>-->
+        <item name="colorPrimary">#960007</item>
+        <item name="colorPrimaryDark">#000093</item>
+        <item name="colorAccent">#139100</item>
         <item name="android:windowActionBarOverlay">true</item>
     </style>
 

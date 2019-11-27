@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#25262C</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#25262C</color>
-    <color name="whiteTesting">#FFFFFF</color>
-    <color name="colorBackground">#a4a4a4</color>
-    <color name="colorBorder">#7E7D7D</color>
-    <color name="colorText">#eeeeee</color>
+    <color name="colorPrimaryBlue">#2E313B</color>
+    <color name="colorPrimaryLightPurple">#6A7097</color>
+    <color name="colorAccentButtonBlue">#25262C</color>
+    <color name="whiteText">#FFFFFF</color>
+    <color name="colorBackgroundLightGrey">#a4a4a4</color>
+    <color name="colorBorderDarkerGrey">#7E7D7D</color>
+    <color name="colorTextWhitish">#eeeeee</color>
     <color name="black">#000000</color>
     <color name="screenBackground">#2E313B</color>2E313B
 

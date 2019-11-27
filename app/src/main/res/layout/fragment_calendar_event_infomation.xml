@@ -22,7 +22,7 @@
                 android:background="@drawable/trapaziod"
                 android:id="@+id/constellationEventTitle"
                 android:text="Title Text goes here"
-                android:textColor="@color/colorText"
+                android:textColor="@color/whiteText"
                 android:gravity="center_horizontal" />
 
             <ScrollView
