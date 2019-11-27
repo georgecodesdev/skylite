@@ -20,7 +20,7 @@
             android:padding="24dp"
             android:paddingTop="16dp"
             android:gravity="center">
-
+          
             <TableRow
                 android:gravity="center">
                 <Button
