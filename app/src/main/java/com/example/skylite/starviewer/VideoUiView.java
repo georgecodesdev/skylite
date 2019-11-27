@@ -247,5 +247,5 @@ public class VideoUiView extends LinearLayout {
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {}
-  }
+  } 
 }
