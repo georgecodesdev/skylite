@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.Activities.ActivityTrophy;
@@ -15,7 +16,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void goToActivity(View v){
+        if(v.getId() == R.id.trophiesButton){
+            switchToTrophyActivity();
+        }
+        else if(v.getId() == R.id.wikiButton){
+            switchToScrollingActivity();
+            //TODO
+        }
         switchToConstallationListActivity();
     }
 
@@ -24,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void switchToScrollingActivity(){
+        //TODO
+    }
     private void switchToConstallationListActivity(){
         //TODO: will be changed with backend integration -- this is simply to show how the UI flow is expected to work
         ModelConstellationInfo temp = new ModelConstellationInfo("trophy",
@@ -40,6 +54,4 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("ModelList", modelConstellationList);
         startActivity(intent);
     }
-
-
 }
