@@ -89,9 +89,15 @@ public final class MonoscopicView extends GLSurfaceView {
     // device and amount of metal in the environment.
     orientationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_GAME_ROTATION_VECTOR);
     phoneOrientationListener = new PhoneOrientationListener();
-
+    
     touchTracker = new TouchTracker(renderer);
     setOnTouchListener(touchTracker);
+  }
+
+  public void setBortleValue(float value){
+    //TODO: come up with equation for converting Bortle Value to brightness/contrast
+    renderer.scene.setBrightnessMod(value);
+    renderer.scene.setContrastMod(1 + ((value-1)/100));
   }
 
   /** Starts the sensor & video only when this View is active. */

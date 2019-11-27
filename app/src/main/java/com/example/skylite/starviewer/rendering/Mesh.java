@@ -251,7 +251,7 @@ public final class Mesh {
    * @param mvpMatrix The Model View Projection matrix.
    * @param eyeType An {@link Eye.Type} value.
    */
-  /* package */ void glDraw(float[] mvpMatrix, int eyeType) {
+  /* package */ void glDraw(float[] mvpMatrix, int eyeType, float brightnessMod, float contrastMod) {
     // Configure shader.
     GLES20.glUseProgram(program);
     checkGlError();
@@ -260,8 +260,8 @@ public final class Mesh {
     GLES20.glEnableVertexAttribArray(texCoordsHandle);
     checkGlError();
 
-    GLES20.glUniform1f(brightnessModHandle, 1.0f);
-    GLES20.glUniform1f(contrastModHandle, 1.00f);//range = [0.990-1.001] otherwise too much
+    GLES20.glUniform1f(brightnessModHandle, brightnessMod);
+    GLES20.glUniform1f(contrastModHandle, contrastMod);//range = [0.990-1.001] otherwise too much
     GLES20.glUniformMatrix4fv(mvpMatrixHandle, 1, false, mvpMatrix, 0);
     GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
     GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, textureId);

@@ -82,6 +82,9 @@ public final class SceneRenderer {
   // This is accessed on the binder & GL Threads.
   private final float[] controllerOrientationMatrix = new float[16];
 
+  private float brightnessMod = 1;
+  private float contrastMod = 1;
+
   /**
    * Constructs the SceneRenderer with the given values.
    */
@@ -244,7 +247,7 @@ public final class SceneRenderer {
       Utils.checkGlError();
     }
 
-    displayMesh.glDraw(viewProjectionMatrix, eyeType);
+    displayMesh.glDraw(viewProjectionMatrix, eyeType, brightnessMod, contrastMod);
     if (videoUiView != null) {
       canvasQuad.glDraw(viewProjectionMatrix, videoUiView.getAlpha());
     }
@@ -345,5 +348,21 @@ public final class SceneRenderer {
   @AnyThread
   public synchronized void setVideoFrameListener(OnFrameAvailableListener videoFrameListener) {
     externalFrameListener = videoFrameListener;
+  }
+
+  /**
+   *
+   * @param mod range [0.8 - 1.2]
+   */
+  public void setBrightnessMod(float mod){
+    brightnessMod = mod;
+  }
+
+  /**
+   *
+   * @param mod range [0.008 - 1.002]
+   */
+  public void setContrastMod(float mod){
+    contrastMod = mod;
   }
 }
