@@ -57,39 +57,29 @@ public final class Mesh {
                   "}"
           };
   private static final String[] FRAGMENT_SHADER_CODE =
-          new String[] {
-                  //This is required since the texture data is GL_TEXTURE_EXTERNAL_OES.
-                  "#extension GL_OES_EGL_image_external : require",
-                  "precision mediump float;",
 
-                  // Standard texture rendering shader.
-                  "uniform samplerExternalOES uTexture;",
-                  "varying vec2 vTexCoords;",
-                  "uniform float brightnessMod;",
-                  "uniform float contrastMod;",
+      new String[] {
+        // This is required since the texture data is GL_TEXTURE_EXTERNAL_OES.
+        "#extension GL_OES_EGL_image_external : require",
+        "precision mediump float;",
 
-                  //"void brightnessCorrect(inout vec4 colour){",
-                  //"for(int i=0; i<3; i++){",
-                  //"colour[i] *= brightnessMod;",
-                  //"colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
-                  //"}",
-                  //"}",
+        // Standard texture rendering shader.
+        "uniform samplerExternalOES uTexture;",
+        "varying vec2 vTexCoords;",
+        "uniform float brightnessMod;",
+        "uniform float contrastMod;",
 
-                  //"void contrastCorrect(inout vec4 colour){",
-                  //"for(int i=0; i<3; i++){",
-                  //"float dist = colour[i] - 128.0f;",
-                  //"colour[i] = (dist * contrastMod) + 128.0f;",
-                  //"colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
-                  //"}",
-                  //"}",
-
-                  "void main() {",
-                  "vec4 t = texture2D(uTexture, vTexCoords);",
-                  //"brightnessCorrect(t);",
-                  //"contrastCorrect(t);",
-                  "gl_FragColor = t;",
-                  "}"
-          };
+        "void main() {",
+            "vec4 t = texture2D(uTexture, vTexCoords);",
+              "for(int i=0; i<3; i++){",
+              "float a = contrastMod;",
+              "float b = (0.5f - (a*0.5f)) + (brightnessMod - 1.0f);",
+              "t[i] = (a*t[i]) + b;",
+              //"t[i] = (t[i] < 0.0f) ? 0.0f : (1.0 < t[i]) ? 1f : t[i];",
+              "}",
+            "gl_FragColor = t;",
+        "}"
+      };
 
   // Constants related to vertex data.
   private static final int POSITION_COORDS_PER_VERTEX = 3; // X, Y, Z.

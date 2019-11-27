@@ -80,7 +80,7 @@ public final class MonoscopicView extends GLSurfaceView {
     setEGLContextClientVersion(2);
     setRenderer(renderer);
     setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
-
+setBortleValue(1.0f);
     // Configure sensors and touch.
     sensorManager = (SensorManager) getContext().getSystemService(Context.SENSOR_SERVICE);
     // TYPE_GAME_ROTATION_VECTOR is the easiest sensor since it handles all the complex math for
@@ -94,10 +94,11 @@ public final class MonoscopicView extends GLSurfaceView {
     setOnTouchListener(touchTracker);
   }
 
-  public void setBortleValue(float value){
+  public void setBortleValue(int progress){
     //TODO: come up with equation for converting Bortle Value to brightness/contrast
-    renderer.scene.setBrightnessMod(value);
-    renderer.scene.setContrastMod(1 + ((value-1)/100));
+    //progress is an int from 0-100, so we can use it as a percentage??
+    renderer.scene.setBrightnessMod(progress);
+    renderer.scene.setContrastMod(1 + ((progress-1)/100));
   }
 
   /** Starts the sensor & video only when this View is active. */
@@ -163,7 +164,7 @@ public final class MonoscopicView extends GLSurfaceView {
     public void onAccuracyChanged(Sensor sensor, int accuracy) {}
   }
 
-  /**
+  /*
    * Basic touch input system.
    *
    * <p>Mixing touch input and gyro input results in a complicated UI so this should be used
@@ -234,8 +235,8 @@ public final class MonoscopicView extends GLSurfaceView {
           // Handle pitch and limit it to 45 degrees.
           accumulatedTouchOffsetDegrees.y += sr * touchX + cr * touchY;
           accumulatedTouchOffsetDegrees.y =
-              Math.max(-MAX_PITCH_DEGREES,
-                  Math.min(MAX_PITCH_DEGREES, accumulatedTouchOffsetDegrees.y));
+                  Math.max(-MAX_PITCH_DEGREES,
+                          Math.min(MAX_PITCH_DEGREES, accumulatedTouchOffsetDegrees.y));
 
           renderer.setPitchOffset(accumulatedTouchOffsetDegrees.y);
           renderer.setYawOffset(accumulatedTouchOffsetDegrees.x);
@@ -290,7 +291,7 @@ public final class MonoscopicView extends GLSurfaceView {
       Matrix.setIdentityM(deviceOrientationMatrix, 0);
       Matrix.setIdentityM(touchPitchMatrix, 0);
       Matrix.setIdentityM(touchYawMatrix, 0);
-      Matrix.setIdentityM(offsetMatrix,0);
+      //Matrix.setIdentityM(offsetMatrix,0);
       this.uiView = uiView;
       this.mediaLoader = mediaLoader;
     }
@@ -333,7 +334,9 @@ public final class MonoscopicView extends GLSurfaceView {
       // Orientation = pitch * sensor * yaw since that is closest to what most users expect the
       // behavior to be.
       synchronized (this) {
-        Matrix.multiplyMM(viewMatrix, 0, deviceOrientationMatrix, 0, offsetMatrix, 0);
+        //Matrix.multiplyMM(viewMatrix, 0, deviceOrientationMatrix, 0, offsetMatrix, 0);
+        Matrix.multiplyMM(offsetMatrix, 0, deviceOrientationMatrix, 0, touchYawMatrix, 0);
+        Matrix.multiplyMM(viewMatrix, 0, touchPitchMatrix, 0, offsetMatrix, 0);
       }
 
       Matrix.multiplyMM(viewProjectionMatrix, 0, projectionMatrix, 0, viewMatrix, 0);
