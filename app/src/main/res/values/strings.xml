@@ -5,4 +5,10 @@
   <string name="pause_label">Pause video</string>
   <string name="permission_warning">This app will not run without permission to read from storage. Click to enable permission.</string>
   <string name="play_label">Play video</string>
+    <string name="app_name">skylite</string>
+    <string name="Hello">test</string>
+    <string name="skl_trophy_label">TROPHIES</string>
+    <string name="skl_wiki_label">WIKI</string>
+    <string name="skl_calendar_label">CALENDAR</string>
+    <string name="skl_settings_label">SETTINGS</string>
 </resources>
