@@ -22,3 +22,5 @@ app/.settings/*
 .vscode/
 bin
 obj
+.project
+.settings/
