@@ -19,7 +19,9 @@ app/.settings/
 app/.classpath
 app/.project
 app/.settings/*
-app/*
+.vscode/
+bin
+obj
 .project
 .settings/
 bin

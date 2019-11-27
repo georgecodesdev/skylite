@@ -9,4 +9,7 @@
     <color name="colorText">#eeeeee</color>
     <color name="black">#000000</color>
     <color name="screenBackground">#2E313B</color>2E313B
+
+    <!-- TODO: Sandbox -->
+    <color name="buttonLabel">#d3d3d3</color>
 </resources>

@@ -10,4 +10,9 @@
     <string name="skl_wiki_label">WIKI</string>
     <string name="skl_calendar_label">CALENDAR</string>
     <string name="skl_settings_label">SETTINGS</string>
+
+    <!-- TODO: Sandbox -->
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
 </resources>
