@@ -24,10 +24,9 @@ public class MainActivity extends AppCompatActivity {
             switchToTrophyActivity();
         }
         else if(v.getId() == R.id.wikiButton){
-            switchToScrollingActivity();
+            switchToConstellationListActivity();
             //TODO
         }
-        switchToConstallationListActivity();
     }
 
     private void switchToTrophyActivity(){
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private void switchToScrollingActivity(){
         //TODO
     }
-    private void switchToConstallationListActivity(){
+    private void switchToConstellationListActivity(){
         //TODO: will be changed with backend integration -- this is simply to show how the UI flow is expected to work
         ModelConstellationInfo temp = new ModelConstellationInfo("trophy",
                 "Example Title", "Description Short", "Description Long");
