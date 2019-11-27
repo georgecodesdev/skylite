@@ -33,6 +33,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.AnyThread;
 import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
@@ -66,6 +68,10 @@ public class VideoUiView extends LinearLayout {
   /** Creates this View using standard XML inflation. */
   public VideoUiView(Context context, AttributeSet attrs) {
     super(context, attrs);
+  }
+
+  public void init(MonoscopicView bortle){
+    this.bortle = bortle;
   }
 
   /**
@@ -155,7 +161,7 @@ public class VideoUiView extends LinearLayout {
   @Override
   public void onFinishInflate() {
     super.onFinishInflate();
-
+    ((SeekBar)findViewById(R.id.seek_bar)).setOnSeekBarChangeListener(new SeekBarListener());
   }
 
   /**
@@ -233,18 +239,16 @@ public class VideoUiView extends LinearLayout {
   private final class SeekBarListener implements SeekBar.OnSeekBarChangeListener {
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-      if (fromUser && mediaPlayer != null) {
 
         // ToDo send progress int to bortle scale
-        progress=seekBarValue;
+        //progress=seekBarValue;
         bortle.setBortleValue(progress);
 
 
-      //} // else this was from the ActivityEventHandler.onNewFrame()'s seekBar.setProgress update.
-    }
+      }
 
 
-  }
+
 
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
@@ -253,7 +257,6 @@ public class VideoUiView extends LinearLayout {
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
-
     }
 
 

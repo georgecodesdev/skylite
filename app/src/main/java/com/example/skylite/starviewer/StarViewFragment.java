@@ -25,6 +25,7 @@ public class StarViewFragment extends Fragment {
         videoView = (MonoscopicView) inflatedView.findViewById(R.id.video_view);
         VideoUiView videoUi = (VideoUiView) inflatedView.findViewById(R.id.video_ui_view);
         videoView.initialize(videoUi);
+        videoUi.init(videoView);
 
         ViewGroup root = (ViewGroup) inflatedView.findViewById(R.id.activity_root);
         for (int i = 0; i < root.getChildCount(); ++i) {

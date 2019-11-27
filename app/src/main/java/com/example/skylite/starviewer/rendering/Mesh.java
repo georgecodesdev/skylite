@@ -20,6 +20,8 @@ import static com.example.skylite.starviewer.rendering.Utils.checkGlError;
 
 import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
+import android.util.Log;
+
 import com.google.vr.sdk.base.Eye;
 import java.nio.FloatBuffer;
 
@@ -73,7 +75,7 @@ public final class Mesh {
             "vec4 t = texture2D(uTexture, vTexCoords);",
               "for(int i=0; i<3; i++){",
               "float a = contrastMod;",
-              "float b = (0.5f - (a*0.5f)) + (brightnessMod - 1.0f);",
+              "float b = (0.5f - (a*0.5f)) + ((brightnessMod) - 1.0f);",
               "t[i] = (a*t[i]) + b;",
               //"t[i] = (t[i] < 0.0f) ? 0.0f : (1.0 < t[i]) ? 1f : t[i];",
               "}",
@@ -249,9 +251,9 @@ public final class Mesh {
     GLES20.glEnableVertexAttribArray(positionHandle);
     GLES20.glEnableVertexAttribArray(texCoordsHandle);
     checkGlError();
-
+    
     GLES20.glUniform1f(brightnessModHandle, brightnessMod);
-    GLES20.glUniform1f(contrastModHandle, contrastMod);//range = [0.990-1.001] otherwise too much
+    GLES20.glUniform1f(contrastModHandle, contrastMod);
     GLES20.glUniformMatrix4fv(mvpMatrixHandle, 1, false, mvpMatrix, 0);
     GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
     GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, textureId);

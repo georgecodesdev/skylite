@@ -26,8 +26,10 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.AnyThread;
 import androidx.annotation.BinderThread;
@@ -50,6 +52,8 @@ import javax.microedition.khronos.opengles.GL10;
  * match what they expect.
  */
 public final class MonoscopicView extends GLSurfaceView {
+  private final String TAG = "MonoscopicView";
+
   // We handle all the sensor orientation detection ourselves.
   private SensorManager sensorManager;
   private Sensor orientationSensor;
@@ -80,7 +84,7 @@ public final class MonoscopicView extends GLSurfaceView {
     setEGLContextClientVersion(2);
     setRenderer(renderer);
     setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
-setBortleValue(1.0f);
+
     // Configure sensors and touch.
     sensorManager = (SensorManager) getContext().getSystemService(Context.SENSOR_SERVICE);
     // TYPE_GAME_ROTATION_VECTOR is the easiest sensor since it handles all the complex math for
@@ -97,8 +101,10 @@ setBortleValue(1.0f);
   public void setBortleValue(int progress){
     //TODO: come up with equation for converting Bortle Value to brightness/contrast
     //progress is an int from 0-100, so we can use it as a percentage??
-    renderer.scene.setBrightnessMod(progress);
-    renderer.scene.setContrastMod(1 + ((progress-1)/100));
+
+    Log.d(TAG, Integer.toString(progress));
+    renderer.scene.setBrightnessMod(1.f - (((float)progress)/200));
+    renderer.scene.setContrastMod(1.0f - (((float)progress)/220));
   }
 
   /** Starts the sensor & video only when this View is active. */
