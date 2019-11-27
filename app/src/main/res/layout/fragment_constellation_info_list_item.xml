@@ -8,18 +8,23 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:background="@drawable/border">
+        android:background="@drawable/border"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
             <ImageView
+                android:paddingTop="10dp"
                 android:layout_width="300dp"
                 android:layout_height="fill_parent"
                 android:id="@+id/constellationImage"
                 android:layout_gravity="left"
                 android:layout_weight="0.6"
-                android:src="@drawable/trophy"/>
+                android:src="@drawable/constellation_icon"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
@@ -34,7 +39,7 @@
                     android:layout_height="20dp"
                     android:gravity="center"
                     android:layout_marginTop="30dp"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/whiteTesting"
                     android:text="Title Text goes here"/>
 
                 <TextView
@@ -44,7 +49,7 @@
                     android:gravity="center"
                     android:layout_centerInParent="true"
                     android:layout_marginTop="5dp"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/whiteTesting"
                     android:text="Description Text goes here"/>
             </LinearLayout>
 

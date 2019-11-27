@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sothree.slidinguppanel.SlidingUpPanelLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activityMain"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/whiteTesting"
+    android:background="@color/screenBackground"
     android:gravity="bottom"
     tools:context="com.example.skylite.MainActivity">
 
@@ -20,58 +19,72 @@
             android:padding="24dp"
             android:paddingTop="16dp"
             android:gravity="center">
-          
+
+            <TableRow
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/trophiesButton"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/main_menu_buttons"
+                    android:drawableTop="@drawable/trophy_description"
+                    android:onClick="goToActivity"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/skl_trophy_label"
+                    android:textColor="@color/whiteTesting"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/wikiButton"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/main_menu_buttons"
+                    android:drawableTop="@drawable/wiki_description"
+                    android:onClick="goToActivity"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/skl_wiki_label"
+                    android:textColor="@color/whiteTesting"
+                    android:textSize="16sp" />
+            </TableRow>
+
             <TableRow
                 android:gravity="center">
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/trophy_menu_icon"
-                    android:textColor="#916205"
-                    android:id="@+id/trophiesButton"
-                    android:paddingTop="10dp"
-                    android:drawablePadding="5dp"
-                    android:text="@string/skl_trophy_label"
-                    android:onClick="goToActivity"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/wiki_icon"
-                    android:textColor="#5D4037"
-                    android:id="@+id/wikiButton"
-                    android:paddingTop="10dp"
-                    android:drawablePadding="5dp"
-                    android:text="@string/skl_wiki_label"
-                    android:onClick="goToActivity"></Button>
-            </TableRow>
-
-            <TableRow
-                android:gravity="center">>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/trophy_menu_icon"
-                    android:textColor="#916205"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:drawableTop="@drawable/calendar_description"
+                    android:textColor="@color/whiteTesting"
+                    android:textSize="16sp"
                     android:id="@+id/calendarButton"
                     android:paddingTop="10dp"
-                    android:drawablePadding="5dp"
-                    android:text="@string/skl_trophy_label"
-                    android:onClick="goToActivity"></Button>
+                    android:paddingBottom="10dp"
+                    android:text="@string/skl_calendar_label"
+                    android:onClick="goToActivity"
+                    android:background="@drawable/main_menu_buttons"
+                    android:layout_margin="10dp"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/wiki_icon"
-                    android:textColor="#5D4037"
-                    android:id="@+id/infoButton"
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:drawableTop="@drawable/settings_description"
+                    android:textColor="@color/whiteTesting"
+                    android:textSize="16sp"
+                    android:id="@+id/settingsButton"
                     android:paddingTop="10dp"
-                    android:drawablePadding="5dp"
-                    android:text="@string/skl_wiki_label"
-                    android:onClick="goToActivity"></Button>
+                    android:paddingBottom="10dp"
+                    android:text="@string/skl_settings_label"
+                    android:onClick="goToActivity"
+                    android:background="@drawable/main_menu_buttons"
+                    android:layout_margin="10dp"/>
             </TableRow>
 
         </TableLayout>
+
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
