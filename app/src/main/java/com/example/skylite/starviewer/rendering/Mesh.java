@@ -68,17 +68,17 @@ public final class Mesh {
         "uniform float brightnessMod;",
         "uniform float contrastMod;",
 
-        "void brightnessCorrect(vec4 colour){",
+        "void brightnessCorrect(inout vec4 colour){",
             "for(int i=0; i<3; i++){",
               "colour[i] *= brightnessMod;",
               "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
             "}",
         "}",
 
-        "void contrastCorrect(vec4 colour){",
+        "void contrastCorrect(inout vec4 colour){",
               "for(int i=0; i<3; i++){",
-            "float dist = (colour[i] - 128.0f) * contrastMod;",
-              "colour[i] = dist + 128.0f;",
+            "float dist = colour[i] - 128.0f;",
+              "colour[i] = (dist * contrastMod) + 128.0f;",
               "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
               "}",
         "}",
@@ -260,8 +260,8 @@ public final class Mesh {
     GLES20.glEnableVertexAttribArray(texCoordsHandle);
     checkGlError();
 
-    GLES20.glUniform1f(brightnessModHandle, 1f);
-    GLES20.glUniform1f(contrastModHandle, 1f);
+    GLES20.glUniform1f(brightnessModHandle, 1.0f);
+    GLES20.glUniform1f(contrastModHandle, 1.00f);//range = [0.990-1.001] otherwise too much
     GLES20.glUniformMatrix4fv(mvpMatrixHandle, 1, false, mvpMatrix, 0);
     GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
     GLES20.glBindTexture(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, textureId);
