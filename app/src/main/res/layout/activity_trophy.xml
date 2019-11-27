@@ -16,7 +16,8 @@
             android:id="@+id/starTrophy"
             android:name="com.example.skylite.Fragments.FragmentTrophy"
             custom:TrophyTitle = "Stargazer"
-            custom:TrophyDescription="Take a picture of the night sky" />
+            custom:TrophyDescription="Take a picture of the night sky"
+            tools:layout="@layout/fragment_trophy" />
 
         <fragment
             android:layout_width="fill_parent"
@@ -24,7 +25,8 @@
             android:id="@+id/astronomerTrophy"
             android:name="com.example.skylite.Fragments.FragmentTrophy"
             custom:TrophyTitle = "Astronomer"
-            custom:TrophyDescription="Visit a location with little light pollution" />
+            custom:TrophyDescription="Visit a location with little light pollution"
+            tools:layout="@layout/fragment_trophy" />
     </LinearLayout>
 
 </RelativeLayout>
