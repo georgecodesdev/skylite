@@ -17,7 +17,7 @@ public class ActivityConstellation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sandbox);
+//        setContentView(R.layout.activity_sandbox);
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         final ConstellationListAdapter adapter = new ConstellationListAdapter(this);
         recyclerView.setAdapter(adapter);

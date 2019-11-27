@@ -18,6 +18,7 @@ import java.util.List;
 public class ConstellationService implements IConstellationService {
     private Context _context;
     private List<Constellation> constellations;
+    private ConstellationDao dao;
 
     public ConstellationService(Context context) {
         this._context = context;
@@ -31,6 +32,10 @@ public class ConstellationService implements IConstellationService {
         constellations = gson.fromJson(readJSONFromAsset(), listType);
     }
 
+    public void populateList(List<Constellation> constellations) {
+        this.constellations = constellations;
+    }
+
     @Override
     public void populateTable(ConstellationDao dao) {
         if (constellations.isEmpty()) {
@@ -42,21 +47,12 @@ public class ConstellationService implements IConstellationService {
 //        List<Constellation> fromJson = gson.fromJson(readJSONFromAsset(), listType);
 //        if (fromJson != null) {
         this.constellations.forEach(dao::insert);
+        this.dao = dao;
     }
 
     @Override
     public List<Constellation> get() {
         return this.constellations;
-    }
-
-    @Override
-    public void get(String id) {
-
-    }
-
-    @Override
-    public void getByName(String name) {
-
     }
 
     @Override
