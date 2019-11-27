@@ -3,11 +3,13 @@ package com.example.skylite.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.example.skylite.Fragments.FragmentConstellationInfo;
 import com.example.skylite.Fragments.FragmentConstellationInfoListItem;
+import com.example.skylite.MainActivity;
 import com.example.skylite.Model.ModelConstellationInfo;
 import com.example.skylite.Model.ModelConstellationList;
 import com.example.skylite.R;
@@ -19,7 +21,7 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
     private ModelConstellationList info;
     private LinearLayout linearLayout;
-    private String cachedFragmentTitle;
+    private String cachedFragmentTitle = "";
 
     private ArrayList<FragmentConstellationInfoListItem> fragmentListItems;
     private HashMap<String, FragmentConstellationInfo> fragmentConstellationInfoHashMap;
@@ -45,8 +47,14 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        removeFragmentWikiItem();
-        setFragmentAttributes();
+        if (cachedFragmentTitle.isEmpty()) {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        else{
+            removeFragmentWikiItem();
+            setFragmentAttributes();
+        }
     }
 
     public void switchToWikiView(String title){
@@ -67,6 +75,7 @@ public class ActivityConstellationInfo extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.remove(fragmentConstellationInfoHashMap.get(cachedFragmentTitle));
         fragmentTransaction.commit();
+        cachedFragmentTitle = "";
     }
 
     private void setWikiFragment(FragmentConstellationInfo wikiFragment){
