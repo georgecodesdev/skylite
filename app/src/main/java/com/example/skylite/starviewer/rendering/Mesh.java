@@ -68,25 +68,14 @@ public final class Mesh {
         "uniform float brightnessMod;",
         "uniform float contrastMod;",
 
-        "void brightnessCorrect(inout vec4 colour){",
-            "for(int i=0; i<3; i++){",
-              "colour[i] *= brightnessMod;",
-              "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
-            "}",
-        "}",
-
-        "void contrastCorrect(inout vec4 colour){",
-              "for(int i=0; i<3; i++){",
-            "float dist = colour[i] - 128.0f;",
-              "colour[i] = (dist * contrastMod) + 128.0f;",
-              "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
-              "}",
-        "}",
-
         "void main() {",
             "vec4 t = texture2D(uTexture, vTexCoords);",
-              "brightnessCorrect(t);",
-              "contrastCorrect(t);",
+              "for(int i=0; i<3; i++){",
+              "float a = contrastMod;",
+              "float b = (0.5f - (a*0.5f)) + (brightnessMod - 1.0f);",
+              "t[i] = (a*t[i]) + b;",
+              //"t[i] = (t[i] < 0.0f) ? 0.0f : (1.0 < t[i]) ? 1f : t[i];",
+              "}",
             "gl_FragColor = t;",
         "}"
       };
