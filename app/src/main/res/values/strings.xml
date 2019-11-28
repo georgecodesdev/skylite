@@ -10,6 +10,7 @@
     <string name="skl_wiki_label">WIKI</string>
     <string name="skl_calendar_label">CALENDAR</string>
     <string name="skl_settings_label">SETTINGS</string>
+    <string name="constellation_asset_path">constellation_data.json</string>
 
     <!-- TODO: Sandbox -->
     <string name="hint_word">Word...</string>
