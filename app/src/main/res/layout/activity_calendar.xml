@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.skylite.Activities.ActivityCalendar"
+    android:background="@color/screenBackground">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_height="wrap_content"
+            android:text="@string/skl_calendar_activity_title"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="23sp"
+            android:background="@drawable/border"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <CalendarView
+                android:layout_gravity="center"
+                android:id="@+id/calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="320dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/constellationEventLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+</RelativeLayout>

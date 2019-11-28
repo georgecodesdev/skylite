@@ -5,36 +5,30 @@ import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-
-import androidx.core.content.res.ResourcesCompat;
-import androidx.fragment.app.Fragment;
-
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.example.skylite.R;
 
-
-public class FragmentConstellationInfo extends Fragment {
-
-    private ImageView constellationImage;
+public class FragmentCalendarEventInformation extends Fragment {
     private TextView constellationTitle;
     private TextView constellationDescription;
 
-    private String constellationImageName;
     private String constellationTitleStr;
     private String constellationDescriptionStr;
+    private String eventDateStr;
 
-    public FragmentConstellationInfo(String constellationImageName,
-                                     String constellationTitleStr,
-                                     String constellationDescriptionStr){
-        this.constellationImageName = constellationImageName;
+    public FragmentCalendarEventInformation(String constellationTitleStr,
+                                            String constellationDescriptionStr,
+                                            String eventDate){
         this.constellationTitleStr = constellationTitleStr;
         this.constellationDescriptionStr = constellationDescriptionStr;
+        this.eventDateStr = eventDate;
     }
 
     @Override
@@ -44,7 +38,7 @@ public class FragmentConstellationInfo extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_constellation_info, container, false);
+        return inflater.inflate(R.layout.fragment_calendar_event_infomation, container, false);
     }
 
     @Override
@@ -59,26 +53,16 @@ public class FragmentConstellationInfo extends Fragment {
         super.onInflate(context, attrs, savedInstanceState);
     }
 
-
-    public String getConstellationTitleStr(){
-        return constellationTitleStr;
-    }
+    public String getEventDateStr(){ return eventDateStr; }
 
     private void mapUIElementsByID(){
-        constellationDescription = getView().findViewById(R.id.constellationDescription);
-        constellationTitle = getView().findViewById(R.id.constellationTitle);
-        constellationImage = getView().findViewById(R.id.constellationImage);
+        constellationTitle = getView().findViewById(R.id.constellationEventTitle);
+        constellationDescription = getView().findViewById(R.id.constellationEventDescription);
     }
 
     private void setAttributes(){
         constellationTitle.setText(constellationTitleStr);
         constellationTitle.setTypeface(null, Typeface.BOLD);
-
         constellationDescription.setText(constellationDescriptionStr);
-
-        Resources res = getResources();
-        int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
-        Drawable image = res.getDrawable(resourceId, getActivity().getTheme());
-        constellationImage.setImageDrawable(image);
     }
 }

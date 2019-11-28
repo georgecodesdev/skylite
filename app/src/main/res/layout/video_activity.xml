@@ -11,7 +11,7 @@
     android:id="@+id/permission_button"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/permission_warning"/>
+    android:text="@string/skl_permission_warning"/>
 
   <!-- These views are hidden unless the permission is granted. -->
   <com.example.skylite.starviewer.MonoscopicView
