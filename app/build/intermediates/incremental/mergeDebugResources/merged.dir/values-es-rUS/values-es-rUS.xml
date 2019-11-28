@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Navegar a la página principal"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Navegar hacia arriba"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Más opciones"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Listo"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Ver todas"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Elegir una app"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"DESACTIVAR"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ACTIVAR"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"borrar"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"intro"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Función+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Mayúscula+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"espacio"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menú+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Buscar…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Borrar consulta"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Búsqueda"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Buscar"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Búsqueda por voz"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Compartir con"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Compartir con <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Contraer"</string>
+    <string name="back_button_content_description">atrás</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="dialog_button_got_it">ENTENDIDO</string>
+    <string name="dialog_button_open_help_center">ABRIR EL CENTRO DE AYUDA</string>
+    <string name="dialog_message_incompatible_phone">Se requiere un teléfono compatible con Daydream. Visita el Centro de ayuda de Daydream para obtener más información.</string>
+    <string name="dialog_message_no_cardboard">Obtén la app de Cardboard para configurar el visor.</string>
+    <string name="dialog_title">Configurar</string>
+    <string name="dialog_title_incompatible_phone">Teléfono incompatible</string>
+    <string name="dialog_title_vr_core_not_enabled">Se requiere la configuración</string>
+    <string name="dialog_title_vr_core_not_installed">Se requiere la instalación</string>
+    <string name="dialog_title_warning">Advertencia</string>
+    <string name="dialog_vr_core_not_enabled">Es posible que esta aplicación no funcione correctamente si no se habilitan los Servicios de RV de Google. Habilítalos en la configuración del teléfono antes de continuar.</string>
+    <string name="dialog_vr_core_not_installed">Es posible que esta aplicación no funcione correctamente sin los Servicios de RV de Google. Instálalos desde Play Store antes de continuar.</string>
+    <string name="go_to_playstore_button">Ir a Play Store</string>
+    <string name="go_to_vr_listeners_settings_button">Ir a Configuración</string>
+    <string name="no_browser_text">No hay ningún navegador para abrir el sitio web</string>
+    <string name="place_your_phone_into_cardboard">Coloca el teléfono en el visor Cardboard</string>
+    <string name="place_your_viewer_into_viewer_format">Coloca el teléfono en el visor %s</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Buscar"</string>
+    <string name="settings_button_content_description">configuración</string>
+    <string name="setup_button">Configuración</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="switch_viewer_action">Cambiar</string>
+    <string name="switch_viewer_prompt">¿Deseas usar otro visor?</string>
+</resources>

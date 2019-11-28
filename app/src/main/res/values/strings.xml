@@ -1,0 +1,22 @@
+<resources>
+    <string name="enter_vr_label">Enter VR mode</string>
+    <string name="exit_vr_label">Exit VR mode</string>
+    <string name="pause_label">Pause video</string>
+    <string name="permission_warning">This app will not run without permission to read from storage. Click to enable permission.</string>
+    <string name="play_label">Play video</string>
+    <string name="app_name">skylite</string>
+    <string name="Hello">test</string>
+    <string name="skl_trophy_label">TROPHIES</string>
+    <string name="skl_wiki_label">WIKI</string>
+    <string name="skl_calendar_label">CALENDAR</string>
+    <string name="skl_settings_label">SETTINGS</string>
+
+    <!-- Data paths -->
+    <string name="constellation_asset_path">constellation_data.json</string>
+    <string name="events_asset_path">events_data.json</string>
+
+    <!-- TODO: Sandbox -->
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+</resources>
