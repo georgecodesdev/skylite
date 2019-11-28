@@ -1,3 +1,10 @@
+/*
+
+    Kelsey Osos
+This data access object joins the Constellation model with the SQLite database.
+It is, in effect, an abstraction of the SQL queries.
+
+ */
 package com.example.skylite.Data;
 
 import androidx.lifecycle.LiveData;

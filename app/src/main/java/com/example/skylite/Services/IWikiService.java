@@ -1,3 +1,9 @@
+/*
+
+    Kelsey Osos
+This is the interface contract for the wiki page's services.
+
+ */
 package com.example.skylite.Services;
 
 import com.example.skylite.Data.Constellation;

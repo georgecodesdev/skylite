@@ -1,3 +1,10 @@
+/*
+
+    Kelsey Osos
+This repository manages database access with SQLite using the DAO.
+It maintains a local DAO singleton which handles all DB accesses.
+
+*/
 package com.example.skylite.Data;
 
 import android.app.Application;
@@ -16,8 +23,6 @@ public class ConstellationRepository {
         constellations = constellationDao.getAll();
     }
 
-    // Room executes all queries on a separate thread.
-    // Observed LiveData will notify the observer when the data has changed.
     LiveData<List<Constellation>> getConstellations() {
         return constellations;
     }

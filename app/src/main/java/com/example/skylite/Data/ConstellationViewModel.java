@@ -1,3 +1,11 @@
+/*
+
+    Kelsey Osos
+ConstellaionViewModel sits atop the repository and acts as a middle man between
+it and the UI (the UI shouldn't access the repository directly).
+This class is part of the service layer.
+
+ */
 package com.example.skylite.Data;
 
 import android.app.Application;

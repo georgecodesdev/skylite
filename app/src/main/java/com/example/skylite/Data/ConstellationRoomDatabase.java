@@ -1,3 +1,10 @@
+/*
+
+    Kelsey Osos
+This class is the abstraction of the SQLite database.
+It manages the instance constellation DAO and versioning/maintenance of the database.
+
+ */
 package com.example.skylite.Data;
 
 import android.content.Context;
@@ -39,16 +46,16 @@ public abstract class ConstellationRoomDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
+    /*
+    Refresh constellation info on app start
+     */
     private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
         @Override
         public void onOpen(@NonNull SupportSQLiteDatabase db) {
             super.onOpen(db);
 
-            // If you want to keep data through app restarts,
-            // comment out the following block
             databaseWriteExecutor.execute(() -> {
                 // Populate the database in the background.
-                // If you want to start with more words, just add them.
                 ConstellationDao dao = INSTANCE.constellationDao();
                 dao.deleteAll();
                 try {

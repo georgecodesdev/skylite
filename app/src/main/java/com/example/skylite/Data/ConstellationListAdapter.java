@@ -1,3 +1,10 @@
+/*
+
+    Kelsey Osos
+This adapter is to be used with the RecyclerView for Constellation information.
+It helps ensure that the constellation list is populated.
+
+*/
 package com.example.skylite.Data;
 
 import android.content.Context;
@@ -46,6 +53,9 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
         }
     }
 
+    /*
+    Ensure alignment of local constellation cache (constellation service list) with the adapter
+     */
     public void setConstellations(List<Constellation> constellations){
         this.constellations = constellations;
         ServiceBase.constellationService().populateList(constellations);

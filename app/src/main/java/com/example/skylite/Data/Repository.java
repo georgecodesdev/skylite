@@ -1,3 +1,10 @@
+/*
+
+    Kelsey Osos
+This Repository manages all ModelConstellationInfo data in the app,
+ensuring that we don't have multiple sources.
+
+ */
 package com.example.skylite.Data;
 
 import com.example.skylite.Model.ModelConstellationInfo;

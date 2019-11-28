@@ -1,3 +1,11 @@
+/*
+
+    Kelsey Osos
+This service handles access and data transformations of all event data.
+It is used by activities to do the dirty work of handling event data.
+
+ */
+
 package com.example.skylite.Services;
 
 import android.content.Context;

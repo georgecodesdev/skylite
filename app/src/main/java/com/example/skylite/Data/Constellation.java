@@ -1,3 +1,11 @@
+/*
+
+    Kelsey Osos
+This is the basic Model class for Constellation information.
+It represents the constellation_table in SQLite.
+Information is pulled from three sources, detailed in the report.
+
+ */
 package com.example.skylite.Data;
 
 import androidx.annotation.NonNull;
