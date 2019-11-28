@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- UI to control video playback. See the class's javadoc for more info. -->
+<com.example.skylite.starviewer.VideoUiView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/video_ui_view"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="0dp">
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:layout_width="wrap_content"
+        android:max="100"
+        android:progress="0"/>
+
+
+
+</com.example.skylite.starviewer.VideoUiView>
