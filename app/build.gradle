@@ -35,6 +35,7 @@ dependencies {
     implementation 'com.google.apis:google-api-services-tasks:v1-rev48-1.23.0' exclude module: 'httpclient'
     implementation 'com.google.api-client:google-api-client-android:1.23.0' exclude module: 'httpclient'
     implementation 'com.google.http-client:google-http-client-gson:1.23.0' exclude module: 'httpclient'
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.0'
     implementation 'com.google.android.gms:play-services-identity:7.3.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
