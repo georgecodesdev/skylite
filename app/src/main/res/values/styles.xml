@@ -1,13 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android Views rendered in VR should use a theme that matches the rest of the VR UI.-->
 <resources>
-<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
-<!--    <style name="Theme.Shrine" parent="Theme.MaterialComponents.Light.NoActionBar">-->
-<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
-<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
-<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-<!--        <item name="colorAccent">@color/colorAccent</item>-->
-<!--    </style>-->
+  <style name="VrTheme" parent="android:Theme.Material">
+  </style>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -18,6 +15,15 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Sandbox -->
+    <style name="constellation_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
     </style>
 
     <style name="TitleBar">
