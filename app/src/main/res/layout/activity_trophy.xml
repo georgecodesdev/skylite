@@ -9,8 +9,26 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_height="wrap_content"
+        android:text="@string/skl_trophies_activity_title"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:background="@drawable/border"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp">
         <fragment
@@ -31,5 +49,6 @@
             custom:TrophyDescription="Visit a location with little light pollution"
             tools:layout="@layout/fragment_trophy" />
     </LinearLayout>
+</LinearLayout>
 
 </RelativeLayout>

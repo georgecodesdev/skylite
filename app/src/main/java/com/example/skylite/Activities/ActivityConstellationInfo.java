@@ -95,7 +95,7 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
     private void populateFragments(){
         if (fragmentListItems.size() == 0){
-            for (ModelConstellationInfo currentData : info.constellationInfo) {
+            for (ModelConstellationInfo currentData : info.getConstellationInfo()) {
                 FragmentConstellationInfo wikiInfo = new FragmentConstellationInfo(
                         currentData.imageName,
                         currentData.title,
