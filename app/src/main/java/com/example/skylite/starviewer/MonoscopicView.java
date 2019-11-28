@@ -80,7 +80,7 @@ public final class MonoscopicView extends GLSurfaceView {
     setEGLContextClientVersion(2);
     setRenderer(renderer);
     setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
-setBortleValue(1.0f);
+
     // Configure sensors and touch.
     sensorManager = (SensorManager) getContext().getSystemService(Context.SENSOR_SERVICE);
     // TYPE_GAME_ROTATION_VECTOR is the easiest sensor since it handles all the complex math for
