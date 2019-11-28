@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ModelConstellationList implements Serializable {
 
-    public ArrayList<ModelConstellationInfo> constellationInfo;
+    private ArrayList<ModelConstellationInfo> constellationInfo;
 
     public ModelConstellationList(){
         constellationInfo = new ArrayList<>();
@@ -18,5 +18,9 @@ public class ModelConstellationList implements Serializable {
 
     public void addConstellationInfo(List<ModelConstellationInfo> info) {
         info.forEach(this::addConstellationInfo);
+    }
+
+    public List<ModelConstellationInfo> getConstellationInfo() {
+        return this.constellationInfo;
     }
 }

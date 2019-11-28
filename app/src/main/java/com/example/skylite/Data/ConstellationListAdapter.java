@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.skylite.R;
+import com.example.skylite.Services.ServiceBase;
 
 import java.util.List;
 
@@ -45,13 +46,12 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
         }
     }
 
-    public void setConstellations(List<Constellation> words){
-        constellations = words;
+    public void setConstellations(List<Constellation> constellations){
+        this.constellations = constellations;
+        ServiceBase.constellationService().populateList(constellations);
         notifyDataSetChanged();
     }
 
-    // getItemCount() is called many times, and when it is first called,
-    // mWords has not been updated (means initially, it's null, and we can't return null).
     @Override
     public int getItemCount() {
         if (constellations != null)

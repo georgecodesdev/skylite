@@ -15,6 +15,10 @@
     <string name="skl_wiki_activity_title">CONSTELLATIONS WIKI</string>
     <string name="skl_calendar_activity_title">UPCOMING EVENTS</string>
     <string name="skl_trophies_activity_title">YOUR ACHIEVEMENTS</string>
+    
+    <!-- Data paths -->
+    <string name="constellation_asset_path">constellation_data.json</string>
+
     <!-- TODO: Sandbox -->
     <string name="skl_hint_word">Word...</string>
     <string name="skl_button_save">Save</string>
