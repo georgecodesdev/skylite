@@ -44,8 +44,9 @@ public class MainActivity extends AppCompatActivity {
         constellationViewModel = new ViewModelProvider(this).get(ConstellationViewModel.class);
         constellationViewModel.getAllConstellations().observe(this, this.constellationsData::addAll);
 
-        switchToConstellationListActivity();
+//        switchToConstellationListActivity();
 //                switchToTrophyActivity();
+        switchToCalendarActivity();
     }
 
     public void goToActivity(View v){
@@ -77,22 +78,6 @@ public class MainActivity extends AppCompatActivity {
         ModelConstellationList modelConstellationList = new ModelConstellationList();
         modelConstellationList.addConstellationInfo(ServiceBase.wikiService().getInfo(constellations));
         Repository.setModelConstellationList(modelConstellationList);
-
-        List<Event> events = ServiceBase.eventsService().getEvents();
-        
-        // Example of how to get event data:
-        Event event = events.get(100);
-        Date date = ServiceBase.eventsService().getDateData(event.getDate());
-        Date date1 = ServiceBase.eventsService().getDateData(event);
-        int year = ServiceBase.eventsService().getYear(event.getDate());
-        int year1 = ServiceBase.eventsService().getYear(event);
-        int month = ServiceBase.eventsService().getMonth(event.getDate());
-        int month1 = ServiceBase.eventsService().getMonth(event);
-        int day = ServiceBase.eventsService().getDayOfMonth(event.getDate());
-        int day1 = ServiceBase.eventsService().getDayOfMonth(event);
-        List<Event> mayEvents = ServiceBase.eventsService().getEventsByMonth(5);
-        List<Event> events2019 = ServiceBase.eventsService().getEventsByYear(2019);
-        List<Event> may2020Events = ServiceBase.eventsService().getEventsByYearAndMonth(2020, 5);
 
 
         Intent intent = new Intent(this, ActivityConstellationInfo.class);

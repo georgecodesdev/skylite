@@ -130,5 +130,17 @@ public class EventsService implements IEventsService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public List<Event> getEventsByDate(String date){
+        return this._events.stream()
+                .filter(d -> d.getDate() ==  date)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public SimpleDateFormat getDateFormat(){
+        return this.format;
+    }
+
 
 }

@@ -59,7 +59,6 @@ public class FragmentConstellationInfo extends Fragment {
         super.onInflate(context, attrs, savedInstanceState);
     }
 
-
     public String getConstellationTitleStr(){
         return constellationTitleStr;
     }
