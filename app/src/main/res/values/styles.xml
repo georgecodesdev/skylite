@@ -33,7 +33,7 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">10dp</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:background">@color/colorBackground</item>
+        <item name="android:background">@color/colorBorderDarkerGrey</item>
     </style>
 
     <style name="TitleBarProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
