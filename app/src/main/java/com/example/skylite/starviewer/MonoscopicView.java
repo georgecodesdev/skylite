@@ -94,9 +94,11 @@ public final class MonoscopicView extends GLSurfaceView {
     setOnTouchListener(touchTracker);
   }
 
-  public void setBortleValue(int progress){
+  public void setBortleValue(int progress_temp){
     //TODO: come up with equation for converting Bortle Value to brightness/contrast
     //progress is an int from 0-100, so we can use it as a percentage??
+    
+    float progress = (float) progress_temp;
     renderer.scene.setBrightnessMod(progress);
     renderer.scene.setContrastMod(1 + ((progress-1)/100));
   }
