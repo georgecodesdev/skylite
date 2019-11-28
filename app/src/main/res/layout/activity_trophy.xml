@@ -11,6 +11,7 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
     <TextView
         android:layout_gravity="center"
         android:layout_width="match_parent"
@@ -28,12 +29,14 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp">
         <fragment
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:id="@+id/starTrophy"
             android:name="com.example.skylite.Fragments.FragmentTrophy"
             custom:TrophyTitle = "Stargazer"
@@ -41,8 +44,9 @@
             tools:layout="@layout/fragment_trophy" />
 
         <fragment
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:id="@+id/astronomerTrophy"
             android:name="com.example.skylite.Fragments.FragmentTrophy"
             custom:TrophyTitle = "Astronomer"

@@ -85,7 +85,7 @@ public class FragmentConstellationInfoListItem extends Fragment {
         //Resources res = getResources();
         //int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
         int min = 1;
-        int max = 4;
+        int max = 5;
         int randomImage = min + (int)(Math.random() * ((max - min) + 1));
 
         Drawable image = null;
@@ -98,6 +98,8 @@ public class FragmentConstellationInfoListItem extends Fragment {
             case 3:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon3, null);
                 break;
             case 4:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon4, null);
+                break;
+            case 5:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon5, null);
                 break;
         }
         constellationImage.setImageDrawable(image);
