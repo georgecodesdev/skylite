@@ -13,9 +13,8 @@ import java.util.List;
 
 public interface IConstellationService {
     void populateList();
+    void populateList(List<Constellation> constellations);
     void populateTable(ConstellationDao dao) throws JSONException;
     List<Constellation> get();
-    void get(String id);
-    void getByName(String name);
     String getImageName(Constellation constellation);
 }

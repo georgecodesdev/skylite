@@ -1,0 +1,1500 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//in-the-sky.org//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:20190101_19_100@in-the-sky.org
+DTSTAMP:20190101T214836Z
+DTSTART:20190101T214836Z
+SUMMARY:Conjunction of the Moon and Venus
+DESCRIPTION:The Moon and Venus share the same right ascension, at a separation of 1&deg;16&#39;. https://in-the-sky.org/news.php?id=20190101_19_100
+URL:https://in-the-sky.org/news.php?id=20190101_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190101_15_100@in-the-sky.org
+DTSTAMP:20190101T223336Z
+DTSTART:20190101T223336Z
+SUMMARY:Close approach of the Moon and Venus
+DESCRIPTION:The Moon and Venus pass within 1&deg;13&#39; of each other. https://in-the-sky.org/news.php?id=20190101_15_100
+URL:https://in-the-sky.org/news.php?id=20190101_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190103_07_100@in-the-sky.org
+DTSTAMP:20190103T051958Z
+DTSTART:20190103T051958Z
+SUMMARY:The Earth at perihelion
+DESCRIPTION:The Earth reaches its closest point to the Sun. https://in-the-sky.org/news.php?id=20190103_07_100
+URL:https://in-the-sky.org/news.php?id=20190103_07_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190104_10_100@in-the-sky.org
+DTSTAMP:20190104T031906Z
+DTSTART:20190104T031906Z
+SUMMARY:Quadrantid meteor shower
+DESCRIPTION:The Quadrantid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190104_10_100
+URL:https://in-the-sky.org/news.php?id=20190104_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190105_11_100@in-the-sky.org
+DTSTAMP:20190105T191543Z
+DTSTART:20190105T191543Z
+SUMMARY:Venus at dichotomy
+DESCRIPTION:Venus reaches half phase in the dawn sky. https://in-the-sky.org/news.php?id=20190105_11_100
+URL:https://in-the-sky.org/news.php?id=20190105_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190106_11_101@in-the-sky.org
+DTSTAMP:20190106T060121Z
+DTSTART:20190106T060121Z
+SUMMARY:Venus at greatest elongation west
+DESCRIPTION:Venus is bright and well placed in the dawn sky. https://in-the-sky.org/news.php?id=20190106_11_101
+URL:https://in-the-sky.org/news.php?id=20190106_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190112_19_100@in-the-sky.org
+DTSTAMP:20190112T194742Z
+DTSTART:20190112T194742Z
+SUMMARY:Conjunction of the Moon and Mars
+DESCRIPTION:The Moon and Mars share the same right ascension, at a separation of 5&deg;20&#39;. https://in-the-sky.org/news.php?id=20190112_19_100
+URL:https://in-the-sky.org/news.php?id=20190112_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190112_15_100@in-the-sky.org
+DTSTAMP:20190112T235133Z
+DTSTART:20190112T235133Z
+SUMMARY:Close approach of the Moon and Mars
+DESCRIPTION:The Moon and Mars pass within 4&deg;58&#39; of each other. https://in-the-sky.org/news.php?id=20190112_15_100
+URL:https://in-the-sky.org/news.php?id=20190112_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190114_08_100@in-the-sky.org
+DTSTAMP:20190114T064611Z
+DTSTART:20190114T064611Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190114_08_100
+URL:https://in-the-sky.org/news.php?id=20190114_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190115_16_100@in-the-sky.org
+DTSTAMP:20190115T235711Z
+DTSTART:20190115T235711Z
+SUMMARY:M47 is well placed
+DESCRIPTION:The open star cluster M47 (NGC 2422) in Puppis is well placed for observation. https://in-the-sky.org/news.php?id=20190115_16_100
+URL:https://in-the-sky.org/news.php?id=20190115_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190115_16_101@in-the-sky.org
+DTSTAMP:20190115T235727Z
+DTSTART:20190115T235727Z
+SUMMARY:NGC 2403 is well placed
+DESCRIPTION:NGC 2403, a spiral galaxy in Camelopardalis is well placed for observation. https://in-the-sky.org/news.php?id=20190115_16_101
+URL:https://in-the-sky.org/news.php?id=20190115_16_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190119_10_100@in-the-sky.org
+DTSTAMP:20190119T152818Z
+DTSTART:20190119T152818Z
+SUMMARY:γ-Ursae Minorid meteor shower
+DESCRIPTION:The γ-Ursae Minorid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190119_10_100
+URL:https://in-the-sky.org/news.php?id=20190119_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190121_09_100@in-the-sky.org
+DTSTAMP:20190121T051300Z
+DTSTART:20190121T051300Z
+SUMMARY:Total lunar eclipse
+DESCRIPTION:There will be an eclipse of the Moon, visible from Africa, Oceania, the Americas, Europe and Turkey. https://in-the-sky.org/news.php?id=20190121_09_100
+URL:https://in-the-sky.org/news.php?id=20190121_09_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190121_08_100@in-the-sky.org
+DTSTAMP:20190121T051637Z
+DTSTART:20190121T051637Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190121_08_100
+URL:https://in-the-sky.org/news.php?id=20190121_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190121_15_100@in-the-sky.org
+DTSTAMP:20190121T155805Z
+DTSTART:20190121T155805Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;16&#39; of each other. https://in-the-sky.org/news.php?id=20190121_15_100
+URL:https://in-the-sky.org/news.php?id=20190121_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190127_08_100@in-the-sky.org
+DTSTAMP:20190127T211056Z
+DTSTART:20190127T211056Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190127_08_100
+URL:https://in-the-sky.org/news.php?id=20190127_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190131_16_100@in-the-sky.org
+DTSTAMP:20190131T235753Z
+DTSTART:20190131T235753Z
+SUMMARY:M44 is well placed
+DESCRIPTION:The Beehive open star cluster (M44, NGC 2632, also known as Praesepe) is well placed for observation. https://in-the-sky.org/news.php?id=20190131_16_100
+URL:https://in-the-sky.org/news.php?id=20190131_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190205_14_100@in-the-sky.org
+DTSTAMP:20190205T142248Z
+DTSTART:20190205T142248Z
+SUMMARY:Asteroid 532 Herculina at opposition
+DESCRIPTION:Asteroid 532 Herculina is well placed for observation. https://in-the-sky.org/news.php?id=20190205_14_100
+URL:https://in-the-sky.org/news.php?id=20190205_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190207_18_100@in-the-sky.org
+DTSTAMP:20190207T120000Z
+DTSTART:20190207T120000Z
+SUMMARY:C/2018 Y1 (Iwamoto) at perihelion
+DESCRIPTION:C/2018 Y1 (Iwamoto) makes its closest approach to the Sun. https://in-the-sky.org/news.php?id=20190207_18_100
+URL:https://in-the-sky.org/news.php?id=20190207_18_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190210_19_100@in-the-sky.org
+DTSTAMP:20190210T161924Z
+DTSTART:20190210T161924Z
+SUMMARY:Conjunction of the Moon and Mars
+DESCRIPTION:The Moon and Mars share the same right ascension, at a separation of 6&deg;04&#39;. https://in-the-sky.org/news.php?id=20190210_19_100
+URL:https://in-the-sky.org/news.php?id=20190210_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190212_18_100@in-the-sky.org
+DTSTAMP:20190212T120000Z
+DTSTART:20190212T120000Z
+SUMMARY:C/2018 Y1 (Iwamoto) reaches its brightest
+DESCRIPTION:C/2018 Y1 (Iwamoto) is well placed for observation. https://in-the-sky.org/news.php?id=20190212_18_100
+URL:https://in-the-sky.org/news.php?id=20190212_18_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190212_08_100@in-the-sky.org
+DTSTAMP:20190212T222650Z
+DTSTART:20190212T222650Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190212_08_100
+URL:https://in-the-sky.org/news.php?id=20190212_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190213_15_100@in-the-sky.org
+DTSTAMP:20190213T053128Z
+DTSTART:20190213T053128Z
+SUMMARY:Close approach of Mars and Uranus
+DESCRIPTION:Mars and Uranus pass within 0&deg;58&#39; of each other. https://in-the-sky.org/news.php?id=20190213_15_100
+URL:https://in-the-sky.org/news.php?id=20190213_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190213_19_100@in-the-sky.org
+DTSTAMP:20190213T200639Z
+DTSTART:20190213T200639Z
+SUMMARY:Conjunction of Mars and Uranus
+DESCRIPTION:Mars and Uranus share the same right ascension, at a separation of 1&deg;03&#39;. https://in-the-sky.org/news.php?id=20190213_19_100
+URL:https://in-the-sky.org/news.php?id=20190213_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190218_15_100@in-the-sky.org
+DTSTAMP:20190218T033114Z
+DTSTART:20190218T033114Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;16&#39; of each other. https://in-the-sky.org/news.php?id=20190218_15_100
+URL:https://in-the-sky.org/news.php?id=20190218_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190219_08_101@in-the-sky.org
+DTSTAMP:20190219T155405Z
+DTSTART:20190219T155405Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190219_08_101
+URL:https://in-the-sky.org/news.php?id=20190219_08_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190219_16_100@in-the-sky.org
+DTSTAMP:20190219T235809Z
+DTSTART:20190219T235809Z
+SUMMARY:M81 is well placed
+DESCRIPTION:Bode's galaxy (M81, NGC 3031) in Ursa Major is well placed for observation. https://in-the-sky.org/news.php?id=20190219_16_100
+URL:https://in-the-sky.org/news.php?id=20190219_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190226_08_100@in-the-sky.org
+DTSTAMP:20190226T112821Z
+DTSTART:20190226T112821Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190226_08_100
+URL:https://in-the-sky.org/news.php?id=20190226_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190226_11_100@in-the-sky.org
+DTSTAMP:20190226T154759Z
+DTSTART:20190226T154759Z
+SUMMARY:Mercury at dichotomy
+DESCRIPTION:Mercury reaches half phase in the evening sky. https://in-the-sky.org/news.php?id=20190226_11_100
+URL:https://in-the-sky.org/news.php?id=20190226_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190226_11_102@in-the-sky.org
+DTSTAMP:20190226T212807Z
+DTSTART:20190226T212807Z
+SUMMARY:Mercury at greatest elongation east
+DESCRIPTION:Mercury is bright and well placed in the evening sky. https://in-the-sky.org/news.php?id=20190226_11_102
+URL:https://in-the-sky.org/news.php?id=20190226_11_102
+END:VEVENT
+BEGIN:VEVENT
+UID:20190226_11_101@in-the-sky.org
+DTSTAMP:20190301T212807Z
+DTSTART:20190301T212807Z
+SUMMARY:Mercury reaches highest point in evening sky
+DESCRIPTION:Mercury is bright and well placed in the evening sky. https://in-the-sky.org/news.php?id=20190226_11_101
+URL:https://in-the-sky.org/news.php?id=20190226_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190302_19_100@in-the-sky.org
+DTSTAMP:20190302T212756Z
+DTSTART:20190302T212756Z
+SUMMARY:Conjunction of the Moon and Venus
+DESCRIPTION:The Moon and Venus share the same right ascension, at a separation of 1&deg;12&#39;. https://in-the-sky.org/news.php?id=20190302_19_100
+URL:https://in-the-sky.org/news.php?id=20190302_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190302_15_101@in-the-sky.org
+DTSTAMP:20190302T214825Z
+DTSTART:20190302T214825Z
+SUMMARY:Close approach of the Moon and Venus
+DESCRIPTION:The Moon and Venus pass within 1&deg;11&#39; of each other. https://in-the-sky.org/news.php?id=20190302_15_101
+URL:https://in-the-sky.org/news.php?id=20190302_15_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190311_19_100@in-the-sky.org
+DTSTAMP:20190311T120850Z
+DTSTART:20190311T120850Z
+SUMMARY:Conjunction of the Moon and Mars
+DESCRIPTION:The Moon and Mars share the same right ascension, at a separation of 5&deg;47&#39;. https://in-the-sky.org/news.php?id=20190311_19_100
+URL:https://in-the-sky.org/news.php?id=20190311_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190314_08_100@in-the-sky.org
+DTSTAMP:20190314T102740Z
+DTSTART:20190314T102740Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190314_08_100
+URL:https://in-the-sky.org/news.php?id=20190314_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190317_15_100@in-the-sky.org
+DTSTAMP:20190317T133031Z
+DTSTART:20190317T133031Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;09&#39; of each other. https://in-the-sky.org/news.php?id=20190317_15_100
+URL:https://in-the-sky.org/news.php?id=20190317_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190320_07_100@in-the-sky.org
+DTSTAMP:20190320T214343Z
+DTSTART:20190320T214343Z
+SUMMARY:March equinox
+DESCRIPTION:Day and night have equal length, marking the beginning of spring in the northern hemisphere and autumn in the southern hemisphere. https://in-the-sky.org/news.php?id=20190320_07_100
+URL:https://in-the-sky.org/news.php?id=20190320_07_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190321_08_100@in-the-sky.org
+DTSTAMP:20190321T014324Z
+DTSTART:20190321T014324Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190321_08_100
+URL:https://in-the-sky.org/news.php?id=20190321_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190326_13_100@in-the-sky.org
+DTSTAMP:20190326T022832Z
+DTSTART:20190326T022832Z
+SUMMARY:136472 Makemake at opposition
+DESCRIPTION:136472 Makemake is well placed for observation. https://in-the-sky.org/news.php?id=20190326_13_100
+URL:https://in-the-sky.org/news.php?id=20190326_13_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190328_08_100@in-the-sky.org
+DTSTAMP:20190328T041021Z
+DTSTART:20190328T041021Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190328_08_100
+URL:https://in-the-sky.org/news.php?id=20190328_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190402_19_100@in-the-sky.org
+DTSTAMP:20190402T041754Z
+DTSTART:20190402T041754Z
+SUMMARY:Conjunction of the Moon and Venus
+DESCRIPTION:The Moon and Venus share the same right ascension, at a separation of 2&deg;40&#39;. https://in-the-sky.org/news.php?id=20190402_19_100
+URL:https://in-the-sky.org/news.php?id=20190402_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190402_15_100@in-the-sky.org
+DTSTAMP:20190402T060955Z
+DTSTART:20190402T060955Z
+SUMMARY:Close approach of the Moon and Venus
+DESCRIPTION:The Moon and Venus pass within 2&deg;32&#39; of each other. https://in-the-sky.org/news.php?id=20190402_15_100
+URL:https://in-the-sky.org/news.php?id=20190402_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190402_16_100@in-the-sky.org
+DTSTAMP:20190402T235700Z
+DTSTART:20190402T235700Z
+SUMMARY:M104 is well placed
+DESCRIPTION:The sombrero galaxy (M104, NGC 4594) is well placed for observation. https://in-the-sky.org/news.php?id=20190402_16_100
+URL:https://in-the-sky.org/news.php?id=20190402_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190405_16_100@in-the-sky.org
+DTSTAMP:20190405T235605Z
+DTSTART:20190405T235605Z
+SUMMARY:M94 is well placed
+DESCRIPTION:M94, a spiral galaxy in Canes Venatici is well placed for observation. https://in-the-sky.org/news.php?id=20190405_16_100
+URL:https://in-the-sky.org/news.php?id=20190405_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190405_14_100@in-the-sky.org
+DTSTAMP:20190405T235848Z
+DTSTART:20190405T235848Z
+SUMMARY:Asteroid 7 Iris at opposition
+DESCRIPTION:Asteroid 7 Iris is well placed for observation. https://in-the-sky.org/news.php?id=20190405_14_100
+URL:https://in-the-sky.org/news.php?id=20190405_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190407_14_100@in-the-sky.org
+DTSTAMP:20190406T235848Z
+DTSTART:20190406T235848Z
+SUMMARY:Asteroid 2 Pallas at opposition
+DESCRIPTION:Asteroid 2 Pallas is well placed for observation. https://in-the-sky.org/news.php?id=20190407_14_100
+URL:https://in-the-sky.org/news.php?id=20190407_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190409_19_100@in-the-sky.org
+DTSTAMP:20190409T063946Z
+DTSTART:20190409T063946Z
+SUMMARY:Conjunction of the Moon and Mars
+DESCRIPTION:The Moon and Mars share the same right ascension, at a separation of 4&deg;43&#39;. https://in-the-sky.org/news.php?id=20190409_19_100
+URL:https://in-the-sky.org/news.php?id=20190409_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190409_15_100@in-the-sky.org
+DTSTAMP:20190409T085001Z
+DTSTART:20190409T085001Z
+SUMMARY:Close approach of the Moon and Mars
+DESCRIPTION:The Moon and Mars pass within 4&deg;35&#39; of each other. https://in-the-sky.org/news.php?id=20190409_15_100
+URL:https://in-the-sky.org/news.php?id=20190409_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190411_11_100@in-the-sky.org
+DTSTAMP:20190324T153610Z
+DTSTART:20190324T153610Z
+SUMMARY:Mercury reaches highest point in morning sky
+DESCRIPTION:Mercury is bright and well placed in the dawn sky. https://in-the-sky.org/news.php?id=20190411_11_100
+URL:https://in-the-sky.org/news.php?id=20190411_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190411_11_101@in-the-sky.org
+DTSTAMP:20190411T153610Z
+DTSTART:20190411T153610Z
+SUMMARY:Mercury at greatest elongation west
+DESCRIPTION:Mercury is bright and well placed in the dawn sky. https://in-the-sky.org/news.php?id=20190411_11_101
+URL:https://in-the-sky.org/news.php?id=20190411_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190412_08_100@in-the-sky.org
+DTSTAMP:20190412T190626Z
+DTSTART:20190412T190626Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190412_08_100
+URL:https://in-the-sky.org/news.php?id=20190412_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190413_11_100@in-the-sky.org
+DTSTAMP:20190413T011500Z
+DTSTART:20190413T011500Z
+SUMMARY:Mercury at dichotomy
+DESCRIPTION:Mercury reaches half phase in the dawn sky. https://in-the-sky.org/news.php?id=20190413_11_100
+URL:https://in-the-sky.org/news.php?id=20190413_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190413_15_100@in-the-sky.org
+DTSTAMP:20190413T204625Z
+DTSTART:20190413T204625Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;04&#39; of each other. https://in-the-sky.org/news.php?id=20190413_15_100
+URL:https://in-the-sky.org/news.php?id=20190413_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190414_16_101@in-the-sky.org
+DTSTAMP:20190414T235936Z
+DTSTART:20190414T235936Z
+SUMMARY:M51 is well placed
+DESCRIPTION:The whirlpool galaxy (M51, NGC 5194) is well placed for observation. https://in-the-sky.org/news.php?id=20190414_16_101
+URL:https://in-the-sky.org/news.php?id=20190414_16_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190416_13_100@in-the-sky.org
+DTSTAMP:20190416T075722Z
+DTSTART:20190416T075722Z
+SUMMARY:136108 Haumea at opposition
+DESCRIPTION:136108 Haumea is well placed for observation. https://in-the-sky.org/news.php?id=20190416_13_100
+URL:https://in-the-sky.org/news.php?id=20190416_13_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190418_16_100@in-the-sky.org
+DTSTAMP:20190418T235607Z
+DTSTART:20190418T235607Z
+SUMMARY:M3 is well placed
+DESCRIPTION:The globular cluster M3 (NGC 5272) in Canes Venatici is well placed for observation. https://in-the-sky.org/news.php?id=20190418_16_100
+URL:https://in-the-sky.org/news.php?id=20190418_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190419_08_100@in-the-sky.org
+DTSTAMP:20190419T111245Z
+DTSTART:20190419T111245Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190419_08_100
+URL:https://in-the-sky.org/news.php?id=20190419_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190422_10_100@in-the-sky.org
+DTSTAMP:20190422T235401Z
+DTSTART:20190422T235401Z
+SUMMARY:Lyrid meteor shower
+DESCRIPTION:The Lyrid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190422_10_100
+URL:https://in-the-sky.org/news.php?id=20190422_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190423_16_100@in-the-sky.org
+DTSTAMP:20190423T235727Z
+DTSTART:20190423T235727Z
+SUMMARY:M101 is well placed
+DESCRIPTION:The pinwheel galaxy (M101, NGC 5457) is well placed for observation. https://in-the-sky.org/news.php?id=20190423_16_100
+URL:https://in-the-sky.org/news.php?id=20190423_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190426_08_100@in-the-sky.org
+DTSTAMP:20190426T221858Z
+DTSTART:20190426T221858Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190426_08_100
+URL:https://in-the-sky.org/news.php?id=20190426_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190506_10_100@in-the-sky.org
+DTSTAMP:20190506T135245Z
+DTSTART:20190506T135245Z
+SUMMARY:η-Aquariid meteor shower
+DESCRIPTION:The η-Aquariid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190506_10_100
+URL:https://in-the-sky.org/news.php?id=20190506_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190507_19_100@in-the-sky.org
+DTSTAMP:20190507T233520Z
+DTSTART:20190507T233520Z
+SUMMARY:Conjunction of the Moon and Mars
+DESCRIPTION:The Moon and Mars share the same right ascension, at a separation of 3&deg;14&#39;. https://in-the-sky.org/news.php?id=20190507_19_100
+URL:https://in-the-sky.org/news.php?id=20190507_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190508_15_100@in-the-sky.org
+DTSTAMP:20190508T002036Z
+DTSTART:20190508T002036Z
+SUMMARY:Close approach of the Moon and Mars
+DESCRIPTION:The Moon and Mars pass within 3&deg;12&#39; of each other. https://in-the-sky.org/news.php?id=20190508_15_100
+URL:https://in-the-sky.org/news.php?id=20190508_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190509_10_100@in-the-sky.org
+DTSTAMP:20190509T035124Z
+DTSTART:20190509T035124Z
+SUMMARY:η-Lyrid meteor shower
+DESCRIPTION:The η-Lyrid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190509_10_100
+URL:https://in-the-sky.org/news.php?id=20190509_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190511_15_100@in-the-sky.org
+DTSTAMP:20190511T021407Z
+DTSTART:20190511T021407Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;19&#39; of each other. https://in-the-sky.org/news.php?id=20190511_15_100
+URL:https://in-the-sky.org/news.php?id=20190511_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190512_08_100@in-the-sky.org
+DTSTAMP:20190512T011246Z
+DTSTART:20190512T011246Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190512_08_100
+URL:https://in-the-sky.org/news.php?id=20190512_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190512_14_100@in-the-sky.org
+DTSTAMP:20190512T142248Z
+DTSTART:20190512T142248Z
+SUMMARY:Asteroid 8 Flora at opposition
+DESCRIPTION:Asteroid 8 Flora is well placed for observation. https://in-the-sky.org/news.php?id=20190512_14_100
+URL:https://in-the-sky.org/news.php?id=20190512_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190512_16_100@in-the-sky.org
+DTSTAMP:20190512T235753Z
+DTSTART:20190512T235753Z
+SUMMARY:M5 is well placed
+DESCRIPTION:The globular cluster M5 (NGC 5904) in Serpens is well placed for observation. https://in-the-sky.org/news.php?id=20190512_16_100
+URL:https://in-the-sky.org/news.php?id=20190512_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190515_14_100@in-the-sky.org
+DTSTAMP:20190515T022248Z
+DTSTART:20190515T022248Z
+SUMMARY:Asteroid 11 Parthenope at opposition
+DESCRIPTION:Asteroid 11 Parthenope is well placed for observation. https://in-the-sky.org/news.php?id=20190515_14_100
+URL:https://in-the-sky.org/news.php?id=20190515_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190518_08_100@in-the-sky.org
+DTSTAMP:20190518T211157Z
+DTSTART:20190518T211157Z
+SUMMARY:Blue Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190518_08_100
+URL:https://in-the-sky.org/news.php?id=20190518_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190521_14_100@in-the-sky.org
+DTSTAMP:20190521T022248Z
+DTSTART:20190521T022248Z
+SUMMARY:Asteroid 20 Massalia at opposition
+DESCRIPTION:Asteroid 20 Massalia is well placed for observation. https://in-the-sky.org/news.php?id=20190521_14_100
+URL:https://in-the-sky.org/news.php?id=20190521_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190526_08_101@in-the-sky.org
+DTSTAMP:20190526T163415Z
+DTSTART:20190526T163415Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190526_08_101
+URL:https://in-the-sky.org/news.php?id=20190526_08_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190529_13_100@in-the-sky.org
+DTSTAMP:20190529T100820Z
+DTSTART:20190529T100820Z
+SUMMARY:1 Ceres at opposition
+DESCRIPTION:1 Ceres is well placed for observation. https://in-the-sky.org/news.php?id=20190529_13_100
+URL:https://in-the-sky.org/news.php?id=20190529_13_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190602_16_100@in-the-sky.org
+DTSTAMP:20190602T235814Z
+DTSTART:20190602T235814Z
+SUMMARY:M13 is well placed
+DESCRIPTION:The Hercules globular cluster (M13, NGC 6205) is well placed for observation. https://in-the-sky.org/news.php?id=20190602_16_100
+URL:https://in-the-sky.org/news.php?id=20190602_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190603_16_100@in-the-sky.org
+DTSTAMP:20190603T235949Z
+DTSTART:20190603T235949Z
+SUMMARY:M12 is well placed
+DESCRIPTION:The globular cluster M12 (NGC 6218) in Ophiuchus is well placed for observation. https://in-the-sky.org/news.php?id=20190603_16_100
+URL:https://in-the-sky.org/news.php?id=20190603_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190606_16_100@in-the-sky.org
+DTSTAMP:20190606T235756Z
+DTSTART:20190606T235756Z
+SUMMARY:M10 is well placed
+DESCRIPTION:The globular cluster M10 (NGC 6254) in Ophiuchus is well placed for observation. https://in-the-sky.org/news.php?id=20190606_16_100
+URL:https://in-the-sky.org/news.php?id=20190606_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190607_15_100@in-the-sky.org
+DTSTAMP:20190607T080040Z
+DTSTART:20190607T080040Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;28&#39; of each other. https://in-the-sky.org/news.php?id=20190607_15_100
+URL:https://in-the-sky.org/news.php?id=20190607_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190610_08_100@in-the-sky.org
+DTSTAMP:20190610T055951Z
+DTSTART:20190610T055951Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190610_08_100
+URL:https://in-the-sky.org/news.php?id=20190610_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190610_12_100@in-the-sky.org
+DTSTAMP:20190610T151602Z
+DTSTART:20190610T151602Z
+SUMMARY:Jupiter at opposition
+DESCRIPTION:Jupiter is well placed for observation. https://in-the-sky.org/news.php?id=20190610_12_100
+URL:https://in-the-sky.org/news.php?id=20190610_12_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190611_10_100@in-the-sky.org
+DTSTAMP:20190611T010404Z
+DTSTART:20190611T010404Z
+SUMMARY:Daytime Arietid meteor shower
+DESCRIPTION:The Daytime Arietid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190611_10_100
+URL:https://in-the-sky.org/news.php?id=20190611_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190611_16_100@in-the-sky.org
+DTSTAMP:20190611T235809Z
+DTSTART:20190611T235809Z
+SUMMARY:M92 is well placed
+DESCRIPTION:The globular cluster M92 (NGC 6341) in Hercules is well placed for observation. https://in-the-sky.org/news.php?id=20190611_16_100
+URL:https://in-the-sky.org/news.php?id=20190611_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190617_08_100@in-the-sky.org
+DTSTAMP:20190617T083118Z
+DTSTART:20190617T083118Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190617_08_100
+URL:https://in-the-sky.org/news.php?id=20190617_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190618_11_100@in-the-sky.org
+DTSTAMP:20190618T025006Z
+DTSTART:20190618T025006Z
+SUMMARY:Mercury at dichotomy
+DESCRIPTION:Mercury reaches half phase in the evening sky. https://in-the-sky.org/news.php?id=20190618_11_100
+URL:https://in-the-sky.org/news.php?id=20190618_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190618_16_100@in-the-sky.org
+DTSTAMP:20190618T235954Z
+DTSTART:20190618T235954Z
+SUMMARY:IC4665 is well placed
+DESCRIPTION:The open star cluster IC 4665 in Ophiuchus is well placed for observation. https://in-the-sky.org/news.php?id=20190618_16_100
+URL:https://in-the-sky.org/news.php?id=20190618_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190621_07_100@in-the-sky.org
+DTSTAMP:20190621T153856Z
+DTSTART:20190621T153856Z
+SUMMARY:June solstice
+DESCRIPTION:21 June will be the longest day of 2019 in the northern hemisphere. https://in-the-sky.org/news.php?id=20190621_07_100
+URL:https://in-the-sky.org/news.php?id=20190621_07_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190624_11_100@in-the-sky.org
+DTSTAMP:20190615T004719Z
+DTSTART:20190615T004719Z
+SUMMARY:Mercury reaches highest point in evening sky
+DESCRIPTION:Mercury is bright and well placed in the evening sky. https://in-the-sky.org/news.php?id=20190624_11_100
+URL:https://in-the-sky.org/news.php?id=20190624_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190624_11_101@in-the-sky.org
+DTSTAMP:20190624T004719Z
+DTSTART:20190624T004719Z
+SUMMARY:Mercury at greatest elongation east
+DESCRIPTION:Mercury is bright and well placed in the evening sky. https://in-the-sky.org/news.php?id=20190624_11_101
+URL:https://in-the-sky.org/news.php?id=20190624_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190625_08_100@in-the-sky.org
+DTSTAMP:20190625T094703Z
+DTSTART:20190625T094703Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190625_08_100
+URL:https://in-the-sky.org/news.php?id=20190625_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190627_10_100@in-the-sky.org
+DTSTAMP:20190627T215604Z
+DTSTART:20190627T215604Z
+SUMMARY:June Bootid meteor shower
+DESCRIPTION:The June Bootid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190627_10_100
+URL:https://in-the-sky.org/news.php?id=20190627_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190629_16_100@in-the-sky.org
+DTSTAMP:20190629T235721Z
+DTSTART:20190629T235721Z
+SUMMARY:NGC 6633 is well placed
+DESCRIPTION:The open star cluster NGC 6633 in Ophiuchus is well placed for observation. https://in-the-sky.org/news.php?id=20190629_16_100
+URL:https://in-the-sky.org/news.php?id=20190629_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190702_14_100@in-the-sky.org
+DTSTAMP:20190702T213448Z
+DTSTART:20190702T213448Z
+SUMMARY:Asteroid 18 Melpomene at opposition
+DESCRIPTION:Asteroid 18 Melpomene is well placed for observation. https://in-the-sky.org/news.php?id=20190702_14_100
+URL:https://in-the-sky.org/news.php?id=20190702_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190702_16_100@in-the-sky.org
+DTSTAMP:20190702T235708Z
+DTSTART:20190702T235708Z
+SUMMARY:IC4756 is well placed
+DESCRIPTION:The open star cluster IC 4756 in Serpens is well placed for observation. https://in-the-sky.org/news.php?id=20190702_16_100
+URL:https://in-the-sky.org/news.php?id=20190702_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190704_07_100@in-the-sky.org
+DTSTAMP:20190704T221044Z
+DTSTART:20190704T221044Z
+SUMMARY:The Earth at aphelion
+DESCRIPTION:The Earth reaches its furthest point from the Sun. https://in-the-sky.org/news.php?id=20190704_07_100
+URL:https://in-the-sky.org/news.php?id=20190704_07_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190709_08_100@in-the-sky.org
+DTSTAMP:20190709T105523Z
+DTSTART:20190709T105523Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190709_08_100
+URL:https://in-the-sky.org/news.php?id=20190709_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190709_12_100@in-the-sky.org
+DTSTAMP:20190709T165354Z
+DTSTART:20190709T165354Z
+SUMMARY:Saturn at opposition
+DESCRIPTION:Saturn is well placed for observation. https://in-the-sky.org/news.php?id=20190709_12_100
+URL:https://in-the-sky.org/news.php?id=20190709_12_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190714_13_100@in-the-sky.org
+DTSTAMP:20190714T212825Z
+DTSTART:20190714T212825Z
+SUMMARY:134340 Pluto at opposition
+DESCRIPTION:134340 Pluto is well placed for observation. https://in-the-sky.org/news.php?id=20190714_13_100
+URL:https://in-the-sky.org/news.php?id=20190714_13_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190716_09_100@in-the-sky.org
+DTSTAMP:20190716T213100Z
+DTSTART:20190716T213100Z
+SUMMARY:Partial lunar eclipse
+DESCRIPTION:There will be an eclipse of the Moon, visible from Africa, Asia, Europe, South America and Australia. https://in-the-sky.org/news.php?id=20190716_09_100
+URL:https://in-the-sky.org/news.php?id=20190716_09_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190716_08_101@in-the-sky.org
+DTSTAMP:20190716T213853Z
+DTSTART:20190716T213853Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190716_08_101
+URL:https://in-the-sky.org/news.php?id=20190716_08_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190725_08_100@in-the-sky.org
+DTSTAMP:20190725T011839Z
+DTSTART:20190725T011839Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190725_08_100
+URL:https://in-the-sky.org/news.php?id=20190725_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190729_10_100@in-the-sky.org
+DTSTAMP:20190729T084013Z
+DTSTART:20190729T084013Z
+SUMMARY:Piscis Austrinid meteor shower
+DESCRIPTION:The Piscis Austrinid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190729_10_100
+URL:https://in-the-sky.org/news.php?id=20190729_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190730_10_100@in-the-sky.org
+DTSTAMP:20190730T171746Z
+DTSTART:20190730T171746Z
+SUMMARY:Southern δ-Aquariid meteor shower
+DESCRIPTION:The Southern δ-Aquariid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190730_10_100
+URL:https://in-the-sky.org/news.php?id=20190730_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190730_10_101@in-the-sky.org
+DTSTAMP:20190730T173250Z
+DTSTART:20190730T173250Z
+SUMMARY:α-Capricornid meteor shower
+DESCRIPTION:The α-Capricornid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190730_10_101
+URL:https://in-the-sky.org/news.php?id=20190730_10_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190807_14_100@in-the-sky.org
+DTSTAMP:20190807T115848Z
+DTSTART:20190807T115848Z
+SUMMARY:Asteroid 16 Psyche at opposition
+DESCRIPTION:Asteroid 16 Psyche is well placed for observation. https://in-the-sky.org/news.php?id=20190807_14_100
+URL:https://in-the-sky.org/news.php?id=20190807_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190807_08_100@in-the-sky.org
+DTSTAMP:20190807T173131Z
+DTSTART:20190807T173131Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190807_08_100
+URL:https://in-the-sky.org/news.php?id=20190807_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190810_11_101@in-the-sky.org
+DTSTAMP:20190810T032542Z
+DTSTART:20190810T032542Z
+SUMMARY:Mercury at greatest elongation west
+DESCRIPTION:Mercury is bright and well placed in the dawn sky. https://in-the-sky.org/news.php?id=20190810_11_101
+URL:https://in-the-sky.org/news.php?id=20190810_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20190810_11_100@in-the-sky.org
+DTSTAMP:20190812T032542Z
+DTSTART:20190812T032542Z
+SUMMARY:Mercury reaches highest point in morning sky
+DESCRIPTION:Mercury is bright and well placed in the dawn sky. https://in-the-sky.org/news.php?id=20190810_11_100
+URL:https://in-the-sky.org/news.php?id=20190810_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190812_11_100@in-the-sky.org
+DTSTAMP:20190812T134803Z
+DTSTART:20190812T134803Z
+SUMMARY:Mercury at dichotomy
+DESCRIPTION:Mercury reaches half phase in the dawn sky. https://in-the-sky.org/news.php?id=20190812_11_100
+URL:https://in-the-sky.org/news.php?id=20190812_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190812_14_100@in-the-sky.org
+DTSTAMP:20190812T213448Z
+DTSTART:20190812T213448Z
+SUMMARY:Asteroid 15 Eunomia at opposition
+DESCRIPTION:Asteroid 15 Eunomia is well placed for observation. https://in-the-sky.org/news.php?id=20190812_14_100
+URL:https://in-the-sky.org/news.php?id=20190812_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190813_10_100@in-the-sky.org
+DTSTAMP:20190813T065956Z
+DTSTART:20190813T065956Z
+SUMMARY:Perseid meteor shower
+DESCRIPTION:The Perseid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190813_10_100
+URL:https://in-the-sky.org/news.php?id=20190813_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190814_16_100@in-the-sky.org
+DTSTAMP:20190814T235840Z
+DTSTART:20190814T235840Z
+SUMMARY:M15 is well placed
+DESCRIPTION:The globular cluster M15 (NGC 7078) in Pegasus is well placed for observation. https://in-the-sky.org/news.php?id=20190814_16_100
+URL:https://in-the-sky.org/news.php?id=20190814_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190815_11_100@in-the-sky.org
+DTSTAMP:20190815T113448Z
+DTSTART:20190815T113448Z
+SUMMARY:Venus at greatest brightness
+DESCRIPTION:Venus reaches its greatest brightness in the evening sky. https://in-the-sky.org/news.php?id=20190815_11_100
+URL:https://in-the-sky.org/news.php?id=20190815_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190815_08_100@in-the-sky.org
+DTSTAMP:20190815T122958Z
+DTSTART:20190815T122958Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190815_08_100
+URL:https://in-the-sky.org/news.php?id=20190815_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190815_16_100@in-the-sky.org
+DTSTAMP:20190815T235814Z
+DTSTART:20190815T235814Z
+SUMMARY:M2 is well placed
+DESCRIPTION:The globular cluster M2 (NGC 7089) in Aquarius is well placed for observation. https://in-the-sky.org/news.php?id=20190815_16_100
+URL:https://in-the-sky.org/news.php?id=20190815_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190817_14_100@in-the-sky.org
+DTSTAMP:20190817T142248Z
+DTSTART:20190817T142248Z
+SUMMARY:Asteroid 39 Laetitia at opposition
+DESCRIPTION:Asteroid 39 Laetitia is well placed for observation. https://in-the-sky.org/news.php?id=20190817_14_100
+URL:https://in-the-sky.org/news.php?id=20190817_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190818_10_100@in-the-sky.org
+DTSTAMP:20190818T115708Z
+DTSTART:20190818T115708Z
+SUMMARY:κ-Cygnid meteor shower
+DESCRIPTION:The κ-Cygnid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190818_10_100
+URL:https://in-the-sky.org/news.php?id=20190818_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190823_08_100@in-the-sky.org
+DTSTAMP:20190823T145642Z
+DTSTART:20190823T145642Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190823_08_100
+URL:https://in-the-sky.org/news.php?id=20190823_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190901_10_100@in-the-sky.org
+DTSTAMP:20190901T142058Z
+DTSTART:20190901T142058Z
+SUMMARY:Aurigid meteor shower
+DESCRIPTION:The Aurigid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190901_10_100
+URL:https://in-the-sky.org/news.php?id=20190901_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190905_18_100@in-the-sky.org
+DTSTAMP:20190905T120000Z
+DTSTART:20190905T120000Z
+SUMMARY:C/2018 W2 (Africano) at perihelion
+DESCRIPTION:C/2018 W2 (Africano) makes its closest approach to the Sun. https://in-the-sky.org/news.php?id=20190905_18_100
+URL:https://in-the-sky.org/news.php?id=20190905_18_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190906_08_100@in-the-sky.org
+DTSTAMP:20190906T031101Z
+DTSTART:20190906T031101Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20190906_08_100
+URL:https://in-the-sky.org/news.php?id=20190906_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190906_14_100@in-the-sky.org
+DTSTAMP:20190906T093448Z
+DTSTART:20190906T093448Z
+SUMMARY:Asteroid 135 Hertha at opposition
+DESCRIPTION:Asteroid 135 Hertha is well placed for observation. https://in-the-sky.org/news.php?id=20190906_14_100
+URL:https://in-the-sky.org/news.php?id=20190906_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190909_10_100@in-the-sky.org
+DTSTAMP:20190909T225235Z
+DTSTART:20190909T225235Z
+SUMMARY:September ε-Perseid meteor shower
+DESCRIPTION:The September ε-Perseid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190909_10_100
+URL:https://in-the-sky.org/news.php?id=20190909_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190910_12_100@in-the-sky.org
+DTSTAMP:20190910T070851Z
+DTSTART:20190910T070851Z
+SUMMARY:Neptune at opposition
+DESCRIPTION:Neptune is well placed for observation. https://in-the-sky.org/news.php?id=20190910_12_100
+URL:https://in-the-sky.org/news.php?id=20190910_12_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190914_08_100@in-the-sky.org
+DTSTAMP:20190914T043328Z
+DTSTART:20190914T043328Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20190914_08_100
+URL:https://in-the-sky.org/news.php?id=20190914_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190922_08_100@in-the-sky.org
+DTSTAMP:20190922T024129Z
+DTSTART:20190922T024129Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20190922_08_100
+URL:https://in-the-sky.org/news.php?id=20190922_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190923_07_100@in-the-sky.org
+DTSTAMP:20190923T073447Z
+DTSTART:20190923T073447Z
+SUMMARY:September equinox
+DESCRIPTION:Day and night have equal length, marking the beginning of autumn in the northern hemisphere and spring in the southern hemisphere. https://in-the-sky.org/news.php?id=20190923_07_100
+URL:https://in-the-sky.org/news.php?id=20190923_07_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190924_15_100@in-the-sky.org
+DTSTAMP:20190924T220014Z
+DTSTART:20190924T220014Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;42&#39; of each other. https://in-the-sky.org/news.php?id=20190924_15_100
+URL:https://in-the-sky.org/news.php?id=20190924_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190926_18_100@in-the-sky.org
+DTSTAMP:20190926T120000Z
+DTSTART:20190926T120000Z
+SUMMARY:C/2018 W2 (Africano) reaches its brightest
+DESCRIPTION:C/2018 W2 (Africano) is well placed for observation. https://in-the-sky.org/news.php?id=20190926_18_100
+URL:https://in-the-sky.org/news.php?id=20190926_18_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190927_10_100@in-the-sky.org
+DTSTAMP:20190927T233918Z
+DTSTART:20190927T233918Z
+SUMMARY:Daytime Sextantid meteor shower
+DESCRIPTION:The Daytime Sextantid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20190927_10_100
+URL:https://in-the-sky.org/news.php?id=20190927_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20190928_14_100@in-the-sky.org
+DTSTAMP:20190928T071048Z
+DTSTART:20190928T071048Z
+SUMMARY:Asteroid 21 Lutetia at opposition
+DESCRIPTION:Asteroid 21 Lutetia is well placed for observation. https://in-the-sky.org/news.php?id=20190928_14_100
+URL:https://in-the-sky.org/news.php?id=20190928_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191001_16_100@in-the-sky.org
+DTSTAMP:20191001T235952Z
+DTSTART:20191001T235952Z
+SUMMARY:M110 is well placed
+DESCRIPTION:M110, the brightest satellite galaxy of the Andromeda galaxy (M31) is well placed for observation. https://in-the-sky.org/news.php?id=20191001_16_100
+URL:https://in-the-sky.org/news.php?id=20191001_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191002_16_100@in-the-sky.org
+DTSTAMP:20191002T235814Z
+DTSTART:20191002T235814Z
+SUMMARY:M32 is well placed
+DESCRIPTION:M32, the second brightest satellite galaxy of the Andromeda galaxy (M31) after M110 is well placed for observation. https://in-the-sky.org/news.php?id=20191002_16_100
+URL:https://in-the-sky.org/news.php?id=20191002_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191002_16_101@in-the-sky.org
+DTSTAMP:20191002T235817Z
+DTSTART:20191002T235817Z
+SUMMARY:M31 is well placed
+DESCRIPTION:The Andromeda galaxy (M31) is well placed for observation. https://in-the-sky.org/news.php?id=20191002_16_101
+URL:https://in-the-sky.org/news.php?id=20191002_16_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20191005_08_100@in-the-sky.org
+DTSTAMP:20191005T164744Z
+DTSTART:20191005T164744Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20191005_08_100
+URL:https://in-the-sky.org/news.php?id=20191005_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191006_10_100@in-the-sky.org
+DTSTAMP:20191006T101021Z
+DTSTART:20191006T101021Z
+SUMMARY:October Camelopardalid meteor shower
+DESCRIPTION:The October Camelopardalid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191006_10_100
+URL:https://in-the-sky.org/news.php?id=20191006_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191009_10_100@in-the-sky.org
+DTSTAMP:20191009T061747Z
+DTSTART:20191009T061747Z
+SUMMARY:Draconid meteor shower
+DESCRIPTION:The Draconid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191009_10_100
+URL:https://in-the-sky.org/news.php?id=20191009_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191010_10_100@in-the-sky.org
+DTSTAMP:20191010T211051Z
+DTSTART:20191010T211051Z
+SUMMARY:Southern Taurid meteor shower
+DESCRIPTION:The Southern Taurid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191010_10_100
+URL:https://in-the-sky.org/news.php?id=20191010_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191011_10_100@in-the-sky.org
+DTSTAMP:20191011T212756Z
+DTSTART:20191011T212756Z
+SUMMARY:δ-Aurigid meteor shower
+DESCRIPTION:The δ-Aurigid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191011_10_100
+URL:https://in-the-sky.org/news.php?id=20191011_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191013_14_100@in-the-sky.org
+DTSTAMP:20191013T115848Z
+DTSTART:20191013T115848Z
+SUMMARY:Asteroid 29 Amphitrite at opposition
+DESCRIPTION:Asteroid 29 Amphitrite is well placed for observation. https://in-the-sky.org/news.php?id=20191013_14_100
+URL:https://in-the-sky.org/news.php?id=20191013_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191013_08_100@in-the-sky.org
+DTSTAMP:20191013T210833Z
+DTSTART:20191013T210833Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20191013_08_100
+URL:https://in-the-sky.org/news.php?id=20191013_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191015_16_100@in-the-sky.org
+DTSTAMP:20191015T235809Z
+DTSTART:20191015T235809Z
+SUMMARY:M33 is well placed
+DESCRIPTION:The Triangulum galaxy (M33) is well placed for observation. https://in-the-sky.org/news.php?id=20191015_16_100
+URL:https://in-the-sky.org/news.php?id=20191015_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191017_13_100@in-the-sky.org
+DTSTAMP:20191017T170932Z
+DTSTART:20191017T170932Z
+SUMMARY:136199 Eris at opposition
+DESCRIPTION:136199 Eris is well placed for observation. https://in-the-sky.org/news.php?id=20191017_13_100
+URL:https://in-the-sky.org/news.php?id=20191017_13_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191018_10_100@in-the-sky.org
+DTSTAMP:20191018T230406Z
+DTSTART:20191018T230406Z
+SUMMARY:ε-Geminid meteor shower
+DESCRIPTION:The ε-Geminid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191018_10_100
+URL:https://in-the-sky.org/news.php?id=20191018_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191020_11_100@in-the-sky.org
+DTSTAMP:20190927T004030Z
+DTSTART:20190927T004030Z
+SUMMARY:Mercury reaches highest point in evening sky
+DESCRIPTION:Mercury is bright and well placed in the evening sky. https://in-the-sky.org/news.php?id=20191020_11_100
+URL:https://in-the-sky.org/news.php?id=20191020_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191020_11_101@in-the-sky.org
+DTSTAMP:20191020T004030Z
+DTSTART:20191020T004030Z
+SUMMARY:Mercury at greatest elongation east
+DESCRIPTION:Mercury is bright and well placed in the evening sky. https://in-the-sky.org/news.php?id=20191020_11_101
+URL:https://in-the-sky.org/news.php?id=20191020_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20191021_08_100@in-the-sky.org
+DTSTAMP:20191021T123951Z
+DTSTART:20191021T123951Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20191021_08_100
+URL:https://in-the-sky.org/news.php?id=20191021_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191021_10_100@in-the-sky.org
+DTSTAMP:20191021T233144Z
+DTSTART:20191021T233144Z
+SUMMARY:Orionid meteor shower
+DESCRIPTION:The Orionid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191021_10_100
+URL:https://in-the-sky.org/news.php?id=20191021_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191022_15_100@in-the-sky.org
+DTSTAMP:20191022T053258Z
+DTSTART:20191022T053258Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 0&deg;57&#39; of each other. https://in-the-sky.org/news.php?id=20191022_15_100
+URL:https://in-the-sky.org/news.php?id=20191022_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191024_10_100@in-the-sky.org
+DTSTAMP:20191024T235054Z
+DTSTART:20191024T235054Z
+SUMMARY:Leonis Minorid meteor shower
+DESCRIPTION:The Leonis Minorid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191024_10_100
+URL:https://in-the-sky.org/news.php?id=20191024_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191025_11_100@in-the-sky.org
+DTSTAMP:20191025T115427Z
+DTSTART:20191025T115427Z
+SUMMARY:Mercury at dichotomy
+DESCRIPTION:Mercury reaches half phase in the evening sky. https://in-the-sky.org/news.php?id=20191025_11_100
+URL:https://in-the-sky.org/news.php?id=20191025_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191026_14_100@in-the-sky.org
+DTSTAMP:20191026T022248Z
+DTSTART:20191026T022248Z
+SUMMARY:Asteroid 9 Metis at opposition
+DESCRIPTION:Asteroid 9 Metis is well placed for observation. https://in-the-sky.org/news.php?id=20191026_14_100
+URL:https://in-the-sky.org/news.php?id=20191026_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191026_16_100@in-the-sky.org
+DTSTAMP:20191026T235954Z
+DTSTART:20191026T235954Z
+SUMMARY:NGC 869 is well placed
+DESCRIPTION:The open star cluster NGC 869 in Perseus, also known as the western half of the double cluster is well placed for observation. https://in-the-sky.org/news.php?id=20191026_16_100
+URL:https://in-the-sky.org/news.php?id=20191026_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191027_16_100@in-the-sky.org
+DTSTAMP:20191027T235930Z
+DTSTART:20191027T235930Z
+SUMMARY:NGC 884 is well placed
+DESCRIPTION:The open star cluster NGC 884 in Perseus, also known as the eastern half of the double cluster is well placed for observation. https://in-the-sky.org/news.php?id=20191027_16_100
+URL:https://in-the-sky.org/news.php?id=20191027_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191028_12_100@in-the-sky.org
+DTSTAMP:20191028T080103Z
+DTSTART:20191028T080103Z
+SUMMARY:Uranus at opposition
+DESCRIPTION:Uranus is well placed for observation. https://in-the-sky.org/news.php?id=20191028_12_100
+URL:https://in-the-sky.org/news.php?id=20191028_12_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191104_08_100@in-the-sky.org
+DTSTAMP:20191104T102345Z
+DTSTART:20191104T102345Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20191104_08_100
+URL:https://in-the-sky.org/news.php?id=20191104_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191106_04_100@in-the-sky.org
+DTSTAMP:20191106T172959Z
+DTSTART:20191106T172959Z
+SUMMARY:Why have we all heard of Einstein?
+DESCRIPTION:Debunking the myth of Eddington's bias in the 1919 eclipse test of Einstein's General relativity https://in-the-sky.org/news.php?id=20191106_04_100
+URL:https://in-the-sky.org/news.php?id=20191106_04_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191111_11_101@in-the-sky.org
+DTSTAMP:20191111T152000Z
+DTSTART:20191111T152000Z
+SUMMARY:Transit of Mercury
+DESCRIPTION:Mercury will pass in front of the Sun, creating a transit visible from Africa, the Americas, Europe and French Polynesia. https://in-the-sky.org/news.php?id=20191111_11_101
+URL:https://in-the-sky.org/news.php?id=20191111_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20191112_08_100@in-the-sky.org
+DTSTAMP:20191112T133502Z
+DTSTART:20191112T133502Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20191112_08_100
+URL:https://in-the-sky.org/news.php?id=20191112_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191112_14_100@in-the-sky.org
+DTSTAMP:20191112T164648Z
+DTSTART:20191112T164648Z
+SUMMARY:Asteroid 4 Vesta at opposition
+DESCRIPTION:Asteroid 4 Vesta is well placed for observation. https://in-the-sky.org/news.php?id=20191112_14_100
+URL:https://in-the-sky.org/news.php?id=20191112_14_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191112_10_100@in-the-sky.org
+DTSTAMP:20191112T231555Z
+DTSTART:20191112T231555Z
+SUMMARY:Northern Taurid meteor shower
+DESCRIPTION:The Northern Taurid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191112_10_100
+URL:https://in-the-sky.org/news.php?id=20191112_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191118_10_100@in-the-sky.org
+DTSTAMP:20191118T053539Z
+DTSTART:20191118T053539Z
+SUMMARY:Leonid meteor shower
+DESCRIPTION:The Leonid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191118_10_100
+URL:https://in-the-sky.org/news.php?id=20191118_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191118_15_100@in-the-sky.org
+DTSTAMP:20191118T110821Z
+DTSTART:20191118T110821Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 1&deg;10&#39; of each other. https://in-the-sky.org/news.php?id=20191118_15_100
+URL:https://in-the-sky.org/news.php?id=20191118_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191118_16_100@in-the-sky.org
+DTSTAMP:20191118T235745Z
+DTSTART:20191118T235745Z
+SUMMARY:M45 is well placed
+DESCRIPTION:The Pleiades open star cluster (M45) in Taurus is well placed for observation. https://in-the-sky.org/news.php?id=20191118_16_100
+URL:https://in-the-sky.org/news.php?id=20191118_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191119_08_100@in-the-sky.org
+DTSTAMP:20191119T211130Z
+DTSTART:20191119T211130Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20191119_08_100
+URL:https://in-the-sky.org/news.php?id=20191119_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191122_10_100@in-the-sky.org
+DTSTAMP:20191122T044255Z
+DTSTART:20191122T044255Z
+SUMMARY:The unicorn produces a meteor storm
+DESCRIPTION:The α-Monocerotid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191122_10_100
+URL:https://in-the-sky.org/news.php?id=20191122_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191125_11_100@in-the-sky.org
+DTSTAMP:20191125T102305Z
+DTSTART:20191125T102305Z
+SUMMARY:Mercury at dichotomy
+DESCRIPTION:Mercury reaches half phase in the dawn sky. https://in-the-sky.org/news.php?id=20191125_11_100
+URL:https://in-the-sky.org/news.php?id=20191125_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191128_11_100@in-the-sky.org
+DTSTAMP:20191124T121705Z
+DTSTART:20191124T121705Z
+SUMMARY:Mercury reaches highest point in morning sky
+DESCRIPTION:Mercury is bright and well placed in the dawn sky. https://in-the-sky.org/news.php?id=20191128_11_100
+URL:https://in-the-sky.org/news.php?id=20191128_11_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191128_11_101@in-the-sky.org
+DTSTAMP:20191128T121705Z
+DTSTART:20191128T121705Z
+SUMMARY:Mercury at greatest elongation west
+DESCRIPTION:Mercury is bright and well placed in the dawn sky. https://in-the-sky.org/news.php?id=20191128_11_101
+URL:https://in-the-sky.org/news.php?id=20191128_11_101
+END:VEVENT
+BEGIN:VEVENT
+UID:20191128_10_100@in-the-sky.org
+DTSTAMP:20191128T193934Z
+DTSTART:20191128T193934Z
+SUMMARY:November Orionid meteor shower
+DESCRIPTION:The November Orionid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191128_10_100
+URL:https://in-the-sky.org/news.php?id=20191128_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191204_08_100@in-the-sky.org
+DTSTAMP:20191204T065855Z
+DTSTART:20191204T065855Z
+SUMMARY:Moon at First Quarter
+DESCRIPTION:The Moon appears high in the sky at sunset and sets in the west at around midnight. https://in-the-sky.org/news.php?id=20191204_08_100
+URL:https://in-the-sky.org/news.php?id=20191204_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191206_10_100@in-the-sky.org
+DTSTAMP:20191206T170037Z
+DTSTART:20191206T170037Z
+SUMMARY:December φ-Cassiopeid meteor shower
+DESCRIPTION:The December φ-Cassiopeid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191206_10_100
+URL:https://in-the-sky.org/news.php?id=20191206_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191209_10_100@in-the-sky.org
+DTSTAMP:20191209T155538Z
+DTSTART:20191209T155538Z
+SUMMARY:Monocerotid meteor shower
+DESCRIPTION:The Monocerotid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191209_10_100
+URL:https://in-the-sky.org/news.php?id=20191209_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191212_08_100@in-the-sky.org
+DTSTAMP:20191212T051253Z
+DTSTART:20191212T051253Z
+SUMMARY:Full Moon
+DESCRIPTION:The Moon is visible for much of the night. https://in-the-sky.org/news.php?id=20191212_08_100
+URL:https://in-the-sky.org/news.php?id=20191212_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191212_10_100@in-the-sky.org
+DTSTAMP:20191212T144754Z
+DTSTART:20191212T144754Z
+SUMMARY:σ-Hydrid meteor shower
+DESCRIPTION:The σ-Hydrid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191212_10_100
+URL:https://in-the-sky.org/news.php?id=20191212_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191214_10_100@in-the-sky.org
+DTSTAMP:20191214T184423Z
+DTSTART:20191214T184423Z
+SUMMARY:Geminid meteor shower
+DESCRIPTION:The Geminid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191214_10_100
+URL:https://in-the-sky.org/news.php?id=20191214_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191215_15_100@in-the-sky.org
+DTSTAMP:20191215T165224Z
+DTSTART:20191215T165224Z
+SUMMARY:Close approach of the Moon and M44
+DESCRIPTION:The Moon and M44 pass within 1&deg;17&#39; of each other. https://in-the-sky.org/news.php?id=20191215_15_100
+URL:https://in-the-sky.org/news.php?id=20191215_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191215_16_100@in-the-sky.org
+DTSTAMP:20191215T235856Z
+DTSTART:20191215T235856Z
+SUMMARY:NGC 1981 is well placed
+DESCRIPTION:The open star cluster NGC 1981 in Orion's sword is well placed for observation. https://in-the-sky.org/news.php?id=20191215_16_100
+URL:https://in-the-sky.org/news.php?id=20191215_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191216_10_100@in-the-sky.org
+DTSTAMP:20191216T131259Z
+DTSTART:20191216T131259Z
+SUMMARY:Comae Berenicid meteor shower
+DESCRIPTION:The Comae Berenicid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191216_10_100
+URL:https://in-the-sky.org/news.php?id=20191216_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191219_08_100@in-the-sky.org
+DTSTAMP:20191219T045740Z
+DTSTART:20191219T045740Z
+SUMMARY:Moon at Last Quarter
+DESCRIPTION:The Moon rises in the east at around midnight and appears high in the sky at sunrise. https://in-the-sky.org/news.php?id=20191219_08_100
+URL:https://in-the-sky.org/news.php?id=20191219_08_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191220_10_100@in-the-sky.org
+DTSTAMP:20191220T113216Z
+DTSTART:20191220T113216Z
+SUMMARY:December Leonis Minorid meteor shower
+DESCRIPTION:The December Leonis Minorid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191220_10_100
+URL:https://in-the-sky.org/news.php?id=20191220_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191222_07_100@in-the-sky.org
+DTSTAMP:20191222T040422Z
+DTSTART:20191222T040422Z
+SUMMARY:December solstice
+DESCRIPTION:22 December will be the shortest day of 2019 in the northern hemisphere. https://in-the-sky.org/news.php?id=20191222_07_100
+URL:https://in-the-sky.org/news.php?id=20191222_07_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191223_19_100@in-the-sky.org
+DTSTAMP:20191223T014911Z
+DTSTART:20191223T014911Z
+SUMMARY:Conjunction of the Moon and Mars
+DESCRIPTION:The Moon and Mars share the same right ascension, at a separation of 3&deg;31&#39;. https://in-the-sky.org/news.php?id=20191223_19_100
+URL:https://in-the-sky.org/news.php?id=20191223_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191223_10_100@in-the-sky.org
+DTSTAMP:20191223T030918Z
+DTSTART:20191223T030918Z
+SUMMARY:Ursid meteor shower
+DESCRIPTION:The Ursid meteor shower reaches its peak. https://in-the-sky.org/news.php?id=20191223_10_100
+URL:https://in-the-sky.org/news.php?id=20191223_10_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191223_15_100@in-the-sky.org
+DTSTAMP:20191223T035225Z
+DTSTART:20191223T035225Z
+SUMMARY:Close approach of the Moon and Mars
+DESCRIPTION:The Moon and Mars pass within 3&deg;20&#39; of each other. https://in-the-sky.org/news.php?id=20191223_15_100
+URL:https://in-the-sky.org/news.php?id=20191223_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191229_19_100@in-the-sky.org
+DTSTAMP:20191229T013232Z
+DTSTART:20191229T013232Z
+SUMMARY:Conjunction of the Moon and Venus
+DESCRIPTION:The Moon and Venus share the same right ascension, at a separation of 0&deg;59&#39;. https://in-the-sky.org/news.php?id=20191229_19_100
+URL:https://in-the-sky.org/news.php?id=20191229_19_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191229_15_100@in-the-sky.org
+DTSTAMP:20191229T015655Z
+DTSTART:20191229T015655Z
+SUMMARY:Close approach of the Moon and Venus
+DESCRIPTION:The Moon and Venus pass within 0&deg;58&#39; of each other. https://in-the-sky.org/news.php?id=20191229_15_100
+URL:https://in-the-sky.org/news.php?id=20191229_15_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191229_16_100@in-the-sky.org
+DTSTAMP:20191229T235636Z
+DTSTART:20191229T235636Z
+SUMMARY:NGC 2232 is well placed
+DESCRIPTION:The open star cluster NGC 2232 in Monoceros is well placed for observation. https://in-the-sky.org/news.php?id=20191229_16_100
+URL:https://in-the-sky.org/news.php?id=20191229_16_100
+END:VEVENT
+BEGIN:VEVENT
+UID:20191230_16_100@in-the-sky.org
+DTSTAMP:20191230T235634Z
+DTSTART:20191230T235634Z
+SUMMARY:NGC 2244 is well placed
+DESCRIPTION:The open star cluster NGC 2244, in the rosette nebula in Monoceros is well placed for observation. https://in-the-sky.org/news.php?id=20191230_16_100
+URL:https://in-the-sky.org/news.php?id=20191230_16_100
+END:VEVENT
+END:VCALENDAR
