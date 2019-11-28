@@ -18,9 +18,10 @@
     
     <!-- Data paths -->
     <string name="constellation_asset_path">constellation_data.json</string>
+    <string name="events_asset_path">events_data.json</string>
 
     <!-- TODO: Sandbox -->
-    <string name="skl_hint_word">Word...</string>
+    <string name="skl_hint_word">Word…</string>
     <string name="skl_button_save">Save</string>
     <string name="skl_empty_not_saved">Word not saved because it is empty.</string>
 </resources>

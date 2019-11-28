@@ -13,6 +13,7 @@ import com.example.skylite.MainActivity;
 import com.example.skylite.Model.ModelConstellationInfo;
 import com.example.skylite.Model.ModelConstellationList;
 import com.example.skylite.R;
+import com.example.skylite.Services.ServiceBase;
 
 import java.util.ArrayList;
 import java.util.HashMap;

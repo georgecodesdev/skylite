@@ -6,10 +6,12 @@ public class ServiceBase {
     private IConstellationService _constellationService;
     private IWikiService _wikiService;
     private IJsonService _json;
+    private IEventsService _events;
     private static ServiceBase _services;
 
     public ServiceBase(Context context) {
         _constellationService = new ConstellationService(context);
+        _events = new EventsService(context);
     }
 
     public static void init(ServiceBase services) {
@@ -17,6 +19,7 @@ public class ServiceBase {
         _services.setWikiService();
         _services.setJsonService();
         _services._constellationService.populateList();
+        _services._events.populateList();
     }
 
     public static IConstellationService constellationService() {
@@ -34,4 +37,6 @@ public class ServiceBase {
     private void setJsonService() { this._json = new JsonService(); }
 
     public static IJsonService jsonService() { return _services._json; }
+
+    public static IEventsService eventsService() { return _services._events; }
 }
