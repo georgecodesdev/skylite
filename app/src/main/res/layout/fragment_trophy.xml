@@ -4,6 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="200dp"
     tools:context="com.example.skylite.Fragments.FragmentTrophy"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
     android:background="@drawable/border">
 
     <RelativeLayout
