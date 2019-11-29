@@ -18,7 +18,7 @@ import com.example.skylite.Activities.ActivityCalendar;
 import com.example.skylite.Data.Event;
 import com.example.skylite.R;
 
-public class fragmentCalendarEventInfomationListItem extends Fragment {
+public class FragmentCalendarEventInformationListItem extends Fragment {
 
     private String date;
     private String longDescription;
@@ -31,7 +31,7 @@ public class fragmentCalendarEventInfomationListItem extends Fragment {
     private TextView eventDate;
     private TextView eventShortDescription;
 
-    public fragmentCalendarEventInfomationListItem(Event _event) {
+    public FragmentCalendarEventInformationListItem(Event _event) {
         date = _event.getDate();
         longDescription = _event.getLongDescription();
         shortDescription = _event.getShortDescription();
