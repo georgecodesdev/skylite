@@ -24,14 +24,16 @@ import com.squareup.picasso.Picasso;
 import com.example.skylite.R;
 
 /**
- * Kelsey Osos
- * This is the adapter for the Constellation Wiki RecyclerView
- */
+ * This class is an adapter for the recycler view created in ActivityConstellationInfo n it will take the list and
+ * place the apropriate data in the correct location on the view and there will also be a lister on each card
+ * which will allow users to get more information about a constellation on a card
+ * */
 public class ConstellationListAdapter extends RecyclerView.Adapter<ConstellationListAdapter.ConstellationListViewHolder> {
 
     private List<ModelConstellationList> ConstellationList;
     private Context context;
 
+    //constructs a view whiten the recycle view
     public class ConstellationListViewHolder extends RecyclerView.ViewHolder {
         public TextView name, description, longdesc;
         public ImageView imageView;
@@ -54,7 +56,8 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
         this.ConstellationList = ConstellationList;
 
     }
-
+    
+    //will create our view holder which is construct above
     @Override
     public ConstellationListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -63,7 +66,8 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
         return new ConstellationListViewHolder(itemView);
     }
 
-
+   /*will bind a view assigned to by holder and will also store the position of the view
+    holder so using the onclick listener, when a view holder is clicked, i can pass that position to different activity's*/
     @Override
     public void onBindViewHolder(ConstellationListViewHolder holder, int position) {
 
@@ -81,7 +85,7 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
 
         });
     }
-
+    //keeps count of the amount of card views added to the recycler view
     @Override
     public int getItemCount() {
         return ConstellationList.size();
