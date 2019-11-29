@@ -1,6 +1,5 @@
 package com.example.skylite.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
@@ -13,15 +12,16 @@ import com.example.skylite.MainActivity;
 import com.example.skylite.Model.ModelConstellationInfo;
 import com.example.skylite.Model.ModelConstellationList;
 import com.example.skylite.R;
-import com.example.skylite.Services.ServiceBase;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class ActivityConstellationInfo extends AppCompatActivity {
+public class ActivityConstellationInfo extends AbstractActivityTopBar {
 
     private ModelConstellationList info;
     private LinearLayout linearLayout;
+
+
     private String cachedFragmentTitle = "";
 
     private ArrayList<FragmentConstellationInfoListItem> fragmentListItems;
@@ -36,6 +36,7 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
         setContentView(R.layout.activity_constellation_info_list);
         info = (ModelConstellationList) getIntent().getExtras().get("ModelList");
+        initIntent(this);
         getElementsByID();
     }
 
@@ -114,5 +115,9 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
     private void getElementsByID(){
         linearLayout = findViewById(R.id.fragmentList);
+        toolbar = findViewById(R.id.toolbar);
+        homeNavigationImage = findViewById(R.id.homeNavigationImage);
+        setSupportActionBar(toolbar);
+        setToolbarActionListener();
     }
 }

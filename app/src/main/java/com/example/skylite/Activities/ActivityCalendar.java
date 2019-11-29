@@ -1,17 +1,11 @@
 package com.example.skylite.Activities;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import androidx.appcompat.widget.Toolbar;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.skylite.Fragments.fragmentCalendarEventInfomationListItem;
-import com.example.skylite.MainActivity;
 import com.example.skylite.Services.ServiceBase;
 import com.example.skylite.Data.Event;
 import com.example.skylite.Fragments.FragmentCalendarEventInformation;
@@ -28,26 +22,21 @@ import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 
-public class ActivityCalendar extends AppCompatActivity {
+public class ActivityCalendar extends AbstractActivityTopBar {
 
     final private String NO_EVENT_FRAGMENT_IDENTIFIER = "noEvent";
     private static final Level LOGGING_LEVEL = Level.OFF;
 
     private MaterialCalendarView calendarView;
     private LinearLayout constellationEventDescriptionLayout;
-    private Toolbar toolbar;
-    private ImageView homeNavigationImage;
 
     private SimpleDateFormat dateFormat;
-    private Intent mainIntent;
-
     private boolean eventDescriptionDisplaying = false;
     private boolean eventListDisplaying = false;
 
     private ArrayList<fragmentCalendarEventInfomationListItem> listItems;
     private FragmentCalendarEventInformation eventInformation;
     private FragmentNoEventsAvailable noEventsAvailable;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,17 +47,15 @@ public class ActivityCalendar extends AppCompatActivity {
         noEventsAvailable = new FragmentNoEventsAvailable();
         listItems = new ArrayList<>();
 
-        mainIntent = new Intent(this, MainActivity.class);
 
         setContentView(R.layout.activity_calendar);
         grabElementsByID();
+        initIntent(this);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        grabElementsByID();
-        setActionListener();
         setSelectedCalenderDate(CalendarDay.today());
         populateFragmentBasedOnDateSelected(convertSelectedDate(calendarView.getSelectedDate()));
     }
@@ -159,6 +146,7 @@ public class ActivityCalendar extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         homeNavigationImage = findViewById(R.id.homeNavigationImage);
         setSupportActionBar(toolbar);
+        setActionListener();
     }
 
     private void setSelectedCalenderDate(CalendarDay requestedDate){
@@ -172,16 +160,9 @@ public class ActivityCalendar extends AppCompatActivity {
     }
 
     private void setActionListener(){
-
         calendarView.setOnDateChangedListener((widget, date, selected) -> {
             populateFragmentBasedOnDateSelected(convertSelectedDate(date));
         });
-        homeNavigationImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-                startActivity(mainIntent);
-            }
-        });
+        setToolbarActionListener();
     }
 }

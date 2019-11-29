@@ -1,7 +1,5 @@
 package com.example.skylite.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -9,7 +7,7 @@ import com.example.skylite.Fragments.FragmentTrophy;
 import com.example.skylite.MainActivity;
 import com.example.skylite.R;
 
-public class ActivityTrophy extends AppCompatActivity {
+public class ActivityTrophy extends AbstractActivityTopBar {
 
     // The Fragments we are looking for are going to be defined here
     private FragmentTrophy stargazer;
@@ -19,12 +17,13 @@ public class ActivityTrophy extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trophy);
+        initIntent(this);
+        getElementsByID();
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        getFragments();
         setFragmentAttributes();
     }
 
@@ -34,10 +33,13 @@ public class ActivityTrophy extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // gets the UI elements and maps them to the private variables
-    private void getFragments(){
+    private void getElementsByID(){
         stargazer = (FragmentTrophy) getSupportFragmentManager().findFragmentById(R.id.starTrophy);
         astronomer = (FragmentTrophy) getSupportFragmentManager().findFragmentById(R.id.astronomerTrophy);
+        toolbar = findViewById(R.id.toolbar);
+        homeNavigationImage = findViewById(R.id.homeNavigationImage);
+        setSupportActionBar(toolbar);
+        setToolbarActionListener();
     }
 
     private void setFragmentAttributes(){
