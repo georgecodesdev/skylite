@@ -27,3 +27,5 @@ obj
 .project
 .settings/
 bin
+
+app/build/

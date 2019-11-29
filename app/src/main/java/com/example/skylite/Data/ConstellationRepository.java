@@ -6,6 +6,11 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
+/**
+ * Kelsey Osos
+ * This is the repository abstraction for constellation models.
+ * It acts as an abstraction layer that sits atop the SQLite database.
+ */
 public class ConstellationRepository {
     private ConstellationDao constellationDao;
     private LiveData<List<Constellation>> constellations;

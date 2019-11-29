@@ -16,6 +16,12 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/**
+ * Kelsey Osos
+ * EventsService provides functionality for querying, management and
+ * transformation of Event data. It also stores the events as a local
+ * cache list.
+ */
 public class EventsService implements IEventsService {
     private Context _context;
     private List<Event> _events;
@@ -33,7 +39,8 @@ public class EventsService implements IEventsService {
 
     @Override
     public void populateList() {
-        Type listType = new TypeToken<List<Event>>() {}.getType();
+        Type listType = new TypeToken<List<Event>>() {
+        }.getType();
         String json = ServiceBase.jsonService().readJsonFromAsset(ASSET_PATH, this._context);
         this._events = ServiceBase.jsonService().gson().fromJson(json, listType);
     }
@@ -131,14 +138,14 @@ public class EventsService implements IEventsService {
     }
 
     @Override
-    public List<Event> getEventsByDate(String date){
+    public List<Event> getEventsByDate(String date) {
         return this._events.stream()
                 .filter(d -> d.getDate().equals(date))
                 .collect(Collectors.toList());
     }
 
     @Override
-    public SimpleDateFormat getDateFormat(){
+    public SimpleDateFormat getDateFormat() {
         return this.format;
     }
 }

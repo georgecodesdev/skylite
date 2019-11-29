@@ -8,6 +8,10 @@ import androidx.room.Query;
 
 import java.util.List;
 
+/**
+ * Kelsey Osos
+ * This is the data access handler for the Constellation model
+ */
 @Dao
 public interface ConstellationDao {
     @Query("SELECT * FROM constellation_table")
