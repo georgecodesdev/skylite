@@ -1,9 +1,7 @@
 package com.example.skylite.Fragments;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -16,17 +14,14 @@ import androidx.fragment.app.Fragment;
 import com.example.skylite.R;
 
 public class FragmentCalendarEventInformation extends Fragment {
-    private TextView constellationTitle;
+    private TextView eventTitle;
     private TextView constellationDescription;
 
-    private String constellationTitleStr;
     private String constellationDescriptionStr;
     private String eventDateStr;
 
-    public FragmentCalendarEventInformation(String constellationTitleStr,
-                                            String constellationDescriptionStr,
+    public FragmentCalendarEventInformation(String constellationDescriptionStr,
                                             String eventDate){
-        this.constellationTitleStr = constellationTitleStr;
         this.constellationDescriptionStr = constellationDescriptionStr;
         this.eventDateStr = eventDate;
     }
@@ -56,13 +51,13 @@ public class FragmentCalendarEventInformation extends Fragment {
     public String getEventDateStr(){ return eventDateStr; }
 
     private void mapUIElementsByID(){
-        constellationTitle = getView().findViewById(R.id.constellationEventTitle);
+        eventTitle = getView().findViewById(R.id.constellationEventTitle);
         constellationDescription = getView().findViewById(R.id.constellationEventDescription);
     }
 
     private void setAttributes(){
-        constellationTitle.setText(constellationTitleStr);
-        constellationTitle.setTypeface(null, Typeface.BOLD);
+        eventTitle.setText(eventDateStr);
+        eventTitle.setTypeface(null, Typeface.BOLD);
         constellationDescription.setText(constellationDescriptionStr);
     }
 }

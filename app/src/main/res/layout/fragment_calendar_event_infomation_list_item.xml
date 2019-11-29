@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.skylite.Fragments.fragmentCalendarEventInfomationListItem">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/constellationImage"
+                android:layout_gravity="left"
+                android:layout_weight="0.6"
+                android:src="@drawable/constellation_icon"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/constellationEventDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/whiteText"
+                    android:text="Title Text goes here"/>
+
+                <TextView
+                    android:id="@+id/constellationDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/whiteText"
+                    android:text="Description Text goes here"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/moreInfoButton"
+                android:background="@drawable/round_circle"
+                android:src="@drawable/info_white"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:id="@+id/emailShareButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/round_circle"
+                android:src="@drawable/share_email"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>
