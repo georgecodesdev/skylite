@@ -40,6 +40,7 @@ public class Constellation {
     @ColumnInfo(name = "FirstAppeared")
     private String FirstAppeared;
 
+
     public Constellation(@NonNull String Id, String ObservationSeason, String Name, float Area, String Declination, String RightAscension, String PrincipalStar, String CelestialEquatorZone, String EclipticZone, String Quadrant, String NameOrigin, String Meaning, String Image, String Story, String FirstAppeared) {
         this.Id = Id;
         this.ObservationSeason = ObservationSeason;

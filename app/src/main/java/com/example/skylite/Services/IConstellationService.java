@@ -1,3 +1,9 @@
+/*
+
+    Kelsey Osos
+This is the interface contract for constellation services.
+
+ */
 package com.example.skylite.Services;
 
 import com.example.skylite.Data.Constellation;

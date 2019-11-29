@@ -6,7 +6,6 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
-import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.AttributeSet;
@@ -76,32 +75,15 @@ public class FragmentConstellationInfoListItem extends Fragment {
             @Override
             public void onClick(View view)
             {
-                ((ActivityConstellationInfo)getActivity()).switchToWikiView(constellationTitleStr);
+               // ((ActivityConstellationInfo)getActivity()).switchToWikiView(constellationTitleStr);
             }
         });
     }
 
     private void getImageFromDrawable(){
-        //Resources res = getResources();
-        //int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
-        int min = 1;
-        int max = 5;
-        int randomImage = min + (int)(Math.random() * ((max - min) + 1));
-
-        Drawable image = null;
-
-        switch (randomImage) {
-            case 1:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon, null);
-                break;
-            case 2:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon2, null);
-                break;
-            case 3:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon3, null);
-                break;
-            case 4:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon4, null);
-                break;
-            case 5:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon5, null);
-                break;
-        }
+        Resources res = getResources();
+        int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
+        Drawable image = res.getDrawable(resourceId, getActivity().getTheme());
         constellationImage.setImageDrawable(image);
     }
 
@@ -110,5 +92,13 @@ public class FragmentConstellationInfoListItem extends Fragment {
         constellationTitle = getView().findViewById(R.id.constellationTitle);
         constellationImage = getView().findViewById(R.id.constellationImage);
         moreInfoImage = getView().findViewById(R.id.moreInfoButton);
+    }
+
+    public String getConstellationImageName() {
+        return constellationImageName;
+    }
+
+    public String getConstellationDescriptionStr(){
+        return constellationDescriptionStr;
     }
 }

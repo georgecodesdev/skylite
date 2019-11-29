@@ -16,37 +16,52 @@
             android:layout_height="fill_parent"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="75dp"
-                android:background="@drawable/trapaziod"
-                android:id="@+id/constellationEventTitle"
-                android:text="Title Text goes here"
-                android:textColor="@color/whiteText"
-                android:gravity="center_horizontal" />
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/colorPrimaryLightPurple"
+                    android:src="@drawable/backward_icon"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/constellationEventTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Title Text goes here"
+                    android:textColor="@color/whiteText"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
             <ScrollView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:orientation="vertical"
                     android:gravity="center"
-                    android:background="@drawable/text_box">
+                    android:orientation="vertical">
 
                     <TextView
-                        android:padding="10dp"
+                        android:id="@+id/constellationEventDescription"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Detailed description goes here"
-                        android:gravity="center"
-                        android:id="@+id/constellationEventDescription" />
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:padding="10dp"
+                        android:text="Detailed description goes here" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>

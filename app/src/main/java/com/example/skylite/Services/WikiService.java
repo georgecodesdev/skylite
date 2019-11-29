@@ -1,3 +1,13 @@
+/*
+
+    Kelsey Osos
+Our constellation data contains some attributes unneeded by the current version
+of the app, but we want to keep it around.
+This service is essentially a mapping profile between the Constellation model and
+the
+ModelConstellationInfo and List used by the Wiki screen.
+
+ */
 package com.example.skylite.Services;
 
 import com.example.skylite.Data.Constellation;
@@ -18,6 +28,7 @@ public class WikiService implements IWikiService {
 
     @Override
     public ModelConstellationInfo getInfo(Constellation constellation) {
+        // We don't store image names, so the constellationService creates it for us
         String image = ServiceBase.constellationService().getImageName(constellation);
         ModelConstellationInfo model = new ModelConstellationInfo(
                 image,

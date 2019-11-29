@@ -15,12 +15,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.ActivityTrophy"
             android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activities.ActivityOnBoarding"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityConstellation"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityConstellationInfo"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityCalendar"
             android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ConstellationInDepthView"
+            android:screenOrientation="portrait">
+        </activity>
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
