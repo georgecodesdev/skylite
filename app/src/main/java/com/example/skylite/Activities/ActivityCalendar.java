@@ -63,7 +63,11 @@ public class ActivityCalendar extends AppCompatActivity {
         populateFragmentBasedOnDateSelected(convertSelectedDate(calendarView.getSelectedDate()));
     }
 
-    private void populateFragmentBasedOnDateSelected(String dateSelected){
+    public String getCurrentDateSelected(){
+        return convertSelectedDate(calendarView.getSelectedDate());
+    }
+
+    public void populateFragmentBasedOnDateSelected(String dateSelected){
         List<Event> events = ServiceBase.eventsService().getEventsByDate(dateSelected);
         if(events.size() != 0){
             removeCurrentFragment();
