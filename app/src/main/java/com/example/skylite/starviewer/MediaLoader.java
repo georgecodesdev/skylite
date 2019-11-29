@@ -98,7 +98,7 @@ public class MediaLoader {
     private static final int DEFAULT_SPHERE_ROWS = 12;
     private static final int DEFAULT_SPHERE_COLUMNS = 24;
 
-    private final String IMAGE_NAME = "starmap_8k.jpg";
+    private final String IMAGE_NAME = "starmap_withConstellations_8k.jpg";
 
     private final Context context;
     // This can be replaced by any media player that renders to a Surface. In a real app, this

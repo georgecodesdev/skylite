@@ -29,10 +29,9 @@ import android.view.InputDevice;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
-import android.widget.TextView;
+
 import androidx.annotation.AnyThread;
 import androidx.annotation.MainThread;
 import androidx.annotation.Nullable;
@@ -53,7 +52,7 @@ public class VideoUiView extends LinearLayout {
   // These UI elements are only useful when the app is displaying a video.
   private int seekBarValue;
   private final UiUpdater uiUpdater = new UiUpdater();
-  private MonoscopicView bortle;
+  private MonoscopicView monoscopicView;
   // Since MediaPlayer lacks synchronization for internal events, it should only be accessed on the
   // main thread.
   @Nullable
@@ -66,6 +65,10 @@ public class VideoUiView extends LinearLayout {
   /** Creates this View using standard XML inflation. */
   public VideoUiView(Context context, AttributeSet attrs) {
     super(context, attrs);
+  }
+
+  public void init(MonoscopicView monoscopicView){
+    this.monoscopicView = monoscopicView;
   }
 
   /**
@@ -155,7 +158,7 @@ public class VideoUiView extends LinearLayout {
   @Override
   public void onFinishInflate() {
     super.onFinishInflate();
-
+    ((SeekBar)findViewById(R.id.seek_bar)).setOnSeekBarChangeListener(new SeekBarListener());
   }
 
   /**
@@ -233,17 +236,7 @@ public class VideoUiView extends LinearLayout {
   private final class SeekBarListener implements SeekBar.OnSeekBarChangeListener {
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-      if (fromUser && mediaPlayer != null) {
-
-        // ToDo send progress int to bortle scale
-        progress=seekBarValue;
-        bortle.setBortleValue(progress);
-
-
-      //} // else this was from the ActivityEventHandler.onNewFrame()'s seekBar.setProgress update.
-    }
-
-
+        monoscopicView.setBortleValue(progress);
   }
 
     @Override

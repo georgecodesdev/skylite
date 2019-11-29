@@ -75,7 +75,6 @@ public final class Mesh {
               "float a = contrastMod;",
               "float b = (0.5f - (a*0.5f)) + (brightnessMod - 1.0f);",
               "t[i] = (a*t[i]) + b;",
-              //"t[i] = (t[i] < 0.0f) ? 0.0f : (1.0 < t[i]) ? 1f : t[i];",
               "}",
             "gl_FragColor = t;",
         "}"

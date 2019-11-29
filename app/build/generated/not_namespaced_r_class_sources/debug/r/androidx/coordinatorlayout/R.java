@@ -147,20 +147,20 @@ public final class R {
         public static final int right = 0x7f080102;
         public static final int right_icon = 0x7f080103;
         public static final int right_side = 0x7f080104;
-        public static final int start = 0x7f080135;
-        public static final int tag_accessibility_actions = 0x7f08013c;
-        public static final int tag_accessibility_clickable_spans = 0x7f08013d;
-        public static final int tag_accessibility_heading = 0x7f08013e;
-        public static final int tag_accessibility_pane_title = 0x7f08013f;
-        public static final int tag_screen_reader_focusable = 0x7f080140;
-        public static final int tag_transition_group = 0x7f080141;
-        public static final int tag_unhandled_key_event_manager = 0x7f080142;
-        public static final int tag_unhandled_key_listeners = 0x7f080143;
-        public static final int text = 0x7f080146;
-        public static final int text2 = 0x7f080147;
-        public static final int time = 0x7f080154;
-        public static final int title = 0x7f080155;
-        public static final int top = 0x7f080158;
+        public static final int start = 0x7f080136;
+        public static final int tag_accessibility_actions = 0x7f08013d;
+        public static final int tag_accessibility_clickable_spans = 0x7f08013e;
+        public static final int tag_accessibility_heading = 0x7f08013f;
+        public static final int tag_accessibility_pane_title = 0x7f080140;
+        public static final int tag_screen_reader_focusable = 0x7f080141;
+        public static final int tag_transition_group = 0x7f080142;
+        public static final int tag_unhandled_key_event_manager = 0x7f080143;
+        public static final int tag_unhandled_key_listeners = 0x7f080144;
+        public static final int text = 0x7f080147;
+        public static final int text2 = 0x7f080148;
+        public static final int time = 0x7f080155;
+        public static final int title = 0x7f080156;
+        public static final int top = 0x7f080159;
     }
     public static final class integer {
         private integer() {}

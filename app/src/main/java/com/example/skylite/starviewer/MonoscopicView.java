@@ -80,7 +80,6 @@ public final class MonoscopicView extends GLSurfaceView {
     setEGLContextClientVersion(2);
     setRenderer(renderer);
     setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
-setBortleValue(1.1f);
     // Configure sensors and touch.
     sensorManager = (SensorManager) getContext().getSystemService(Context.SENSOR_SERVICE);
     // TYPE_GAME_ROTATION_VECTOR is the easiest sensor since it handles all the complex math for
@@ -94,13 +93,10 @@ setBortleValue(1.1f);
     setOnTouchListener(touchTracker);
   }
 
-  public void setBortleValue(int progress_temp){
-    //TODO: come up with equation for converting Bortle Value to brightness/contrast
-    //progress is an int from 0-100, so we can use it as a percentage??
-    
-   float progress =progress_temp;
-    renderer.scene.setBrightnessMod(progress);
-    renderer.scene.setContrastMod(1 + ((progress-1)/100));
+  public void setBortleValue(int progress){
+
+    renderer.scene.setBrightnessMod(1 - ((float)progress/80));
+    renderer.scene.setContrastMod(1 + (float)progress/90);
   }
 
   /** Starts the sensor & video only when this View is active. */
