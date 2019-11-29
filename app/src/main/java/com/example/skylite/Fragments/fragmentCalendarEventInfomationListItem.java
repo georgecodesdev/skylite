@@ -102,25 +102,14 @@ public class fragmentCalendarEventInfomationListItem extends Fragment {
 
         getImageFromDrawable();
 
-        moreInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                ((ActivityCalendar)getActivity()).switchToEventDetailFragment(event);
-            }
-        });
+        moreInfo.setOnClickListener(view -> ((ActivityCalendar)getActivity()).switchToEventDetailFragment(event));
 
-        emailShareIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("plain/text");
-                intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "some@email.address" });
-                intent.putExtra(Intent.EXTRA_SUBJECT, "subject");
-                intent.putExtra(Intent.EXTRA_TEXT, "mail body");
-                startActivity(Intent.createChooser(intent, ""));
-            }
+        emailShareIcon.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("plain/text");
+            intent.putExtra(Intent.EXTRA_SUBJECT, event.getDate() + " - " + shortDescription);
+            intent.putExtra(Intent.EXTRA_TEXT, longDescription);
+            startActivity(Intent.createChooser(intent, ""));
         });
     }
 }
