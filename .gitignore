@@ -1,5 +1,4 @@
 *.iml
-.gradle
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -24,3 +23,4 @@ bin
 obj
 .project
 .settings/
+bin

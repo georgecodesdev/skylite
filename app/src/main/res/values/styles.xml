@@ -6,9 +6,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="colorPrimary"></item> @color/colorPrimaryBlue-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryLightPurple</item>-->
+<!--        <item name="colorAccent">@color/colorAccentButtonBlue</item>-->
+        <item name="colorPrimary">@color/colorAccentButtonBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBlue</item>
+        <item name="colorAccent">@color/colorPrimaryLightPurple</item>
         <item name="android:windowActionBarOverlay">true</item>
     </style>
 
@@ -26,4 +29,19 @@
         <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
     </style>
 
+    <style name="TitleBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/colorBorderDarkerGrey</item>
+    </style>
+
+    <style name="TitleBarProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:layout_marginTop">14dip</item>
+        <item name="android:indeterminate">true</item>
+    </style>
 </resources>

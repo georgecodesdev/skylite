@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.skylite.Activities.ActivityCalendar;
 import com.example.skylite.Activities.ActivityConstellation;
 import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.Activities.ActivityTrophy;
@@ -44,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
             switchToConstellationListActivity();
             //TODO
         }
+        else if(v.getId() == R.id.calendarButton){
+            switchToCalendarActivity();
+        }
     }
 
     private void switchToTrophyActivity(){
@@ -74,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
         Bundle args = new Bundle();
         args.putSerializable("ARRAYLIST", (Serializable) modelConstellationInfo);
         intent.putExtra("BUNDLE",args);
+        startActivity(intent);
+    }
+
+    private void switchToCalendarActivity(){
+        Intent intent = new Intent(this, ActivityCalendar.class);
         startActivity(intent);
     }
 }

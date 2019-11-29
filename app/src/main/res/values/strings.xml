@@ -6,17 +6,40 @@
     <string name="play_label">Play video</string>
     <string name="app_name">skylite</string>
     <string name="Hello">test</string>
+    <string name="events">UPCOMING EVENTS</string>
+    <string name="accounts">Accounts</string>
+    <string name="icon_desc">Application icon</string>
+    <string name="title_separator_desc">Title separator</string>
+    <string name="refresh">Refresh</string>
+    <string name="error">Error</string>
+    <string name="error_format">[Error] %s</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skl_app_name">S K Y L I T E</string>
+    <!-- VR labels -->
+    <string name="skl_enter_vr_label">Enter VR mode</string>
+    <string name="skl_exit_vr_label">Exit VR mode</string>
+    <string name="skl_pause_label">Pause video</string>
+    <string name="skl_permission_warning">This app will not run without permission to read from storage. Click to enable permission.</string>
+    <string name="skl_play_label">Play video</string>
+    <!-- Main Menu labels -->
     <string name="skl_trophy_label">TROPHIES</string>
     <string name="skl_wiki_label">WIKI</string>
     <string name="skl_calendar_label">CALENDAR</string>
     <string name="skl_settings_label">SETTINGS</string>
+    <!-- Activities titles -->
+    <string name="skl_wiki_activity_title">CONSTELLATIONS WIKI</string>
+    <string name="skl_calendar_activity_title">UPCOMING EVENTS</string>
+    <string name="skl_trophies_activity_title">YOUR ACHIEVEMENTS</string>
 
     <!-- Data paths -->
     <string name="constellation_asset_path">constellation_data.json</string>
     <string name="events_asset_path">events_data.json</string>
 
     <!-- TODO: Sandbox -->
-    <string name="hint_word">Word...</string>
-    <string name="button_save">Save</string>
-    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="skl_hint_word">Word…</string>
+    <string name="skl_button_save">Save</string>
+    <string name="skl_empty_not_saved">Word not saved because it is empty.</string>
 </resources>

@@ -34,7 +34,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="@string/skl_trophy_label"
-                    android:textColor="@color/whiteTesting"
+                    android:textColor="@color/whiteText"
                     android:textSize="16sp" />
 
                 <Button
@@ -48,7 +48,7 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="@string/skl_wiki_label"
-                    android:textColor="@color/whiteTesting"
+                    android:textColor="@color/whiteText"
                     android:textSize="16sp" />
             </TableRow>
 
@@ -58,7 +58,7 @@
                     android:layout_width="150dp"
                     android:layout_height="140dp"
                     android:drawableTop="@drawable/calendar_description"
-                    android:textColor="@color/whiteTesting"
+                    android:textColor="@color/whiteText"
                     android:textSize="16sp"
                     android:id="@+id/calendarButton"
                     android:paddingTop="10dp"
@@ -72,7 +72,7 @@
                     android:layout_width="150dp"
                     android:layout_height="140dp"
                     android:drawableTop="@drawable/settings_description"
-                    android:textColor="@color/whiteTesting"
+                    android:textColor="@color/whiteText"
                     android:textSize="16sp"
                     android:id="@+id/settingsButton"
                     android:paddingTop="10dp"
@@ -88,25 +88,28 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/border">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_height="20dp"
-            android:layout_width="match_parent"/>
-
-        <fragment android:name="com.example.skylite.starviewer.StarViewFragment"
-            android:id="@+id/starView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            tools:layout="@layout/video_activity" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_height="20dp"
+                android:layout_width="0dp"
+                android:layout_weight=".75"
+                android:backgroundTint="@color/whiteText"/>
+
+            <fragment android:name="com.example.skylite.starviewer.StarViewFragment"
+                android:id="@+id/starView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/video_activity"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </RelativeLayout>>
 
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+

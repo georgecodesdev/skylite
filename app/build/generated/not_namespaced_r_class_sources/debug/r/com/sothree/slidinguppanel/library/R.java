@@ -12,22 +12,22 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int layoutManager = 0x7f030174;
-        public static final int reverseLayout = 0x7f030207;
-        public static final int spanCount = 0x7f030224;
-        public static final int stackFromEnd = 0x7f03022a;
-        public static final int umanoAnchorPoint = 0x7f0302a5;
-        public static final int umanoClipPanel = 0x7f0302a6;
-        public static final int umanoDragView = 0x7f0302a7;
-        public static final int umanoFadeColor = 0x7f0302a8;
-        public static final int umanoFlingVelocity = 0x7f0302a9;
-        public static final int umanoInitialState = 0x7f0302aa;
-        public static final int umanoOverlay = 0x7f0302ab;
-        public static final int umanoPanelHeight = 0x7f0302ac;
-        public static final int umanoParallaxOffset = 0x7f0302ad;
-        public static final int umanoScrollInterpolator = 0x7f0302ae;
-        public static final int umanoScrollableView = 0x7f0302af;
-        public static final int umanoShadowHeight = 0x7f0302b0;
+        public static final int layoutManager = 0x7f030177;
+        public static final int reverseLayout = 0x7f03021d;
+        public static final int spanCount = 0x7f03023a;
+        public static final int stackFromEnd = 0x7f030240;
+        public static final int umanoAnchorPoint = 0x7f0302bb;
+        public static final int umanoClipPanel = 0x7f0302bc;
+        public static final int umanoDragView = 0x7f0302bd;
+        public static final int umanoFadeColor = 0x7f0302be;
+        public static final int umanoFlingVelocity = 0x7f0302bf;
+        public static final int umanoInitialState = 0x7f0302c0;
+        public static final int umanoOverlay = 0x7f0302c1;
+        public static final int umanoPanelHeight = 0x7f0302c2;
+        public static final int umanoParallaxOffset = 0x7f0302c3;
+        public static final int umanoScrollInterpolator = 0x7f0302c4;
+        public static final int umanoScrollableView = 0x7f0302c5;
+        public static final int umanoShadowHeight = 0x7f0302c6;
     }
     public static final class dimen {
         private dimen() {}
@@ -45,16 +45,16 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int anchored = 0x7f080044;
-        public static final int collapsed = 0x7f080063;
-        public static final int expanded = 0x7f080086;
-        public static final int hidden = 0x7f080098;
-        public static final int item_touch_helper_previous_elevation = 0x7f0800a3;
+        public static final int anchored = 0x7f080046;
+        public static final int collapsed = 0x7f080066;
+        public static final int expanded = 0x7f080090;
+        public static final int hidden = 0x7f0800a4;
+        public static final int item_touch_helper_previous_elevation = 0x7f0800b0;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] RecyclerView = { 0x10100c4, 0x10100eb, 0x10100f1, 0x7f03011e, 0x7f03011f, 0x7f030120, 0x7f030121, 0x7f030122, 0x7f030174, 0x7f030207, 0x7f030224, 0x7f03022a };
+        public static final int[] RecyclerView = { 0x10100c4, 0x10100eb, 0x10100f1, 0x7f03011f, 0x7f030120, 0x7f030121, 0x7f030122, 0x7f030123, 0x7f030177, 0x7f03021d, 0x7f03023a, 0x7f030240 };
         public static final int RecyclerView_android_orientation = 0;
         public static final int RecyclerView_android_clipToPadding = 1;
         public static final int RecyclerView_android_descendantFocusability = 2;
@@ -67,7 +67,7 @@ public final class R {
         public static final int RecyclerView_reverseLayout = 9;
         public static final int RecyclerView_spanCount = 10;
         public static final int RecyclerView_stackFromEnd = 11;
-        public static final int[] SlidingUpPanelLayout = { 0x7f0302a5, 0x7f0302a6, 0x7f0302a7, 0x7f0302a8, 0x7f0302a9, 0x7f0302aa, 0x7f0302ab, 0x7f0302ac, 0x7f0302ad, 0x7f0302ae, 0x7f0302af, 0x7f0302b0 };
+        public static final int[] SlidingUpPanelLayout = { 0x7f0302bb, 0x7f0302bc, 0x7f0302bd, 0x7f0302be, 0x7f0302bf, 0x7f0302c0, 0x7f0302c1, 0x7f0302c2, 0x7f0302c3, 0x7f0302c4, 0x7f0302c5, 0x7f0302c6 };
         public static final int SlidingUpPanelLayout_umanoAnchorPoint = 0;
         public static final int SlidingUpPanelLayout_umanoClipPanel = 1;
         public static final int SlidingUpPanelLayout_umanoDragView = 2;

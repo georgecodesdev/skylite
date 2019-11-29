@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\anaconda\\projects\\skylite-recycler-version2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+            "outputFile": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Nexás\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

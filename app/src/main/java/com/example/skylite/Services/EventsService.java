@@ -1,11 +1,3 @@
-/*
-
-    Kelsey Osos
-This service handles access and data transformations of all event data.
-It is used by activities to do the dirty work of handling event data.
-
- */
-
 package com.example.skylite.Services;
 
 import android.content.Context;
@@ -138,5 +130,15 @@ public class EventsService implements IEventsService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public List<Event> getEventsByDate(String date){
+        return this._events.stream()
+                .filter(d -> d.getDate().equals(date))
+                .collect(Collectors.toList());
+    }
 
+    @Override
+    public SimpleDateFormat getDateFormat(){
+        return this.format;
+    }
 }

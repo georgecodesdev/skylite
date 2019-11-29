@@ -3,6 +3,7 @@ package com.example.skylite.Activities;
 //import android.support.v7.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -81,8 +83,6 @@ public class ActivityConstellationInfo extends AppCompatActivity {
             constellationList.add(ModelConstellationInfoForList);
 
         }
-
-
 
         mAdapter.notifyDataSetChanged();
     }

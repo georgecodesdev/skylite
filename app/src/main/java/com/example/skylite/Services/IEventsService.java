@@ -1,13 +1,8 @@
-/*
-
-    Kelsey Osos
-This is the interface contract for event services.
-
- */
 package com.example.skylite.Services;
 
 import com.example.skylite.Data.Event;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -22,7 +17,9 @@ public interface IEventsService {
     int getMonth(Event event);
     int getDayOfMonth(String date);
     int getDayOfMonth(Event event);
+    SimpleDateFormat getDateFormat();
     List<Event> getEventsByMonth(int month);
     List<Event> getEventsByYear(int year);
     List<Event> getEventsByYearAndMonth(int year, int month);
+    List<Event> getEventsByDate(String date);
 }

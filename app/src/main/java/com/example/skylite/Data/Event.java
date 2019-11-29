@@ -1,11 +1,3 @@
-/*
-
-    Kelsey Osos
-This is the basic Model class for Event information.
-It represents event data loaded from JSON through the IEventService.
-Information is pulled from in-the-sky.org, detailed in the report.
-
- */
 package com.example.skylite.Data;
 
 public class Event {
