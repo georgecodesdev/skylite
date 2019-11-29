@@ -25,20 +25,22 @@
                 android:layout_gravity="center"
                 android:orientation="horizontal">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/back_button"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/round_circle"
-                    android:src="@drawable/share_email" />
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/colorPrimaryLightPurple"
+                    android:src="@drawable/backward_icon"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
 
                 <TextView
                     android:id="@+id/constellationEventTitle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Title Text goes here"
                     android:gravity="center"
+                    android:text="Title Text goes here"
                     android:textColor="@color/whiteText"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -60,7 +62,7 @@
                         android:id="@+id/constellationEventDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:layout_gravity="center_vertical|end"
                         android:padding="10dp"
                         android:text="Detailed description goes here" />
                 </LinearLayout>

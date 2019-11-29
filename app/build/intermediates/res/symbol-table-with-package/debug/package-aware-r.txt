@@ -1453,6 +1453,7 @@ drawable ari_image
 drawable aur_image
 drawable avd_hide_password
 drawable avd_show_password
+drawable backward_icon
 drawable below_shadow
 drawable blocked_trophy_icon
 drawable boo_image
