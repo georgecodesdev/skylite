@@ -32,12 +32,12 @@
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\vir_image.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_ripple_color.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\mtrl_extended_fab_ripple_color.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_common_signin_btn_text_disabled_light.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-mdpi\\common_signin_btn_text_disabled_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_ripple_color.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\mtrl_extended_fab_ripple_color.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_actions.xml.flat",
@@ -48,12 +48,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_line_height_from_layout.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout\\text_view_with_line_height_from_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_line_height_from_layout.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout\\text_view_with_line_height_from_layout.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi_ic_plusone_small_off_client.png.flat",
@@ -160,28 +160,28 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pyx_image.png.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\pyx_image.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pyx_image.png.flat",
-        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\pyx_image.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_common_signin_btn_text_disabled_focus_dark.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-mdpi\\common_signin_btn_text_disabled_focus_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -200,16 +200,16 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_close_white_24.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\618ad4ebcd8a60546d481deca944ecd2\\sdk-base-1.190.0\\res\\drawable-hdpi-v4\\quantum_ic_close_white_24.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_days_of_week.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout\\mtrl_calendar_days_of_week.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_close_white_24.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\618ad4ebcd8a60546d481deca944ecd2\\sdk-base-1.190.0\\res\\drawable-hdpi-v4\\quantum_ic_close_white_24.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pup_image.png.flat",
@@ -312,16 +312,16 @@
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\layout\\video_activity.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_select_dialog_multichoice.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout\\mtrl_alert_select_dialog_multichoice.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -376,12 +376,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\mtrl_bottom_nav_colored_ripple_color.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_bg_color_selector.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\mtrl_extended_fab_bg_color_selector.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_common_signin_btn_icon_focus_light.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-hdpi\\common_signin_btn_icon_focus_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_bg_color_selector.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\mtrl_extended_fab_bg_color_selector.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
@@ -420,12 +420,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-hdpi\\common_signin_btn_text_focus_light.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_mtrl_calendar_month.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout-v26\\mtrl_calendar_month.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_title_material.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_mtrl_calendar_month.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout-v26\\mtrl_calendar_month.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
@@ -456,44 +456,44 @@
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\leo_image.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_wiki_icon.png.flat",
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\wiki_icon.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi_enter_vr.png.flat",
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable-nodpi\\enter_vr.png"
     },
     {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_constellation_info_list.xml.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\layout\\activity_constellation_info_list.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_constellation_info_list.xml.flat",
-        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\layout\\activity_constellation_info_list.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -576,16 +576,16 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\mtrl_navigation_item_icon_tint.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avd_show_password.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\drawable\\avd_show_password.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\anim\\btn_radio_to_off_mtrl_dot_group_animation.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\anim\\btn_radio_to_off_mtrl_dot_group_animation.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_avd_show_password.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\drawable\\avd_show_password.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
@@ -620,12 +620,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-hdpi\\common_signin_btn_icon_pressed_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cep_image.png.flat",
-        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\cep_image.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cep_image.png.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\cep_image.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_common_signin_btn_icon_disabled_focus_light.9.png.flat",
@@ -652,12 +652,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_toggle.xml.flat",
@@ -748,12 +748,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xxhdpi\\common_signin_btn_text_focus_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lib_image.png.flat",
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\lib_image.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_video_ui.xml.flat",
@@ -780,12 +780,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\618ad4ebcd8a60546d481deca944ecd2\\sdk-base-1.190.0\\res\\drawable-xxhdpi-v4\\quantum_ic_settings_white_24.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_unchecked_box_inner_merged_animation.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_unchecked_box_inner_merged_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -808,12 +808,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xhdpi\\common_signin_btn_icon_pressed_light.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -832,20 +832,20 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_calendar_event_infomation_list_item.xml.flat",
-        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\layout\\fragment_calendar_event_infomation_list_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\color\\abc_hint_foreground_material_light.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_checked_icon_null_animation.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_checked_icon_null_animation.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_checked_icon_null_animation.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_checked_icon_null_animation.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_calendar_event_infomation_list_item.xml.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\layout\\fragment_calendar_event_infomation_list_item.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_back_button.xml.flat",
@@ -888,12 +888,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_common_signin_btn_icon_disabled_light.9.png.flat",
@@ -956,12 +956,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout\\mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1088,12 +1088,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_common_signin_btn_icon_disabled_focus_dark.9.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xhdpi\\common_signin_btn_icon_disabled_focus_dark.9.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_common_signin_btn_icon_disabled_focus_dark.9.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xhdpi\\common_signin_btn_icon_disabled_focus_dark.9.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_common_signin_btn_text_focus_light.9.png.flat",
@@ -1116,12 +1116,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_primary_emphasis_medium.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\color\\material_on_primary_emphasis_medium.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_common_full_open_on_phone.png.flat",
@@ -1204,16 +1204,16 @@
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\wiki_description.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_plusone_tall_off_client.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xxhdpi\\ic_plusone_tall_off_client.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_mtrl_card_lowers_interpolator.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\anim\\mtrl_card_lowers_interpolator.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_common_signin_btn_text_focus_light.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xxhdpi\\common_signin_btn_text_focus_light.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_mtrl_card_lowers_interpolator.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\anim\\mtrl_card_lowers_interpolator.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_plusone_tall_off_client.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xxhdpi\\ic_plusone_tall_off_client.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_crv_image.png.flat",
@@ -1248,12 +1248,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\xml\\standalone_badge.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout-ldrtl-land-v17_settings_button.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\618ad4ebcd8a60546d481deca944ecd2\\sdk-base-1.190.0\\res\\layout-ldrtl-land-v17\\settings_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\xml\\standalone_badge.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\anim_fragment_fade_enter.xml.flat",
@@ -1296,16 +1296,16 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\c308b6d01f9c4518aa77ff7bbd857235\\jetified-play-services-base-7.3.0\\res\\drawable-xhdpi\\common_signin_btn_icon_pressed_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_ic_visibility_off.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\drawable\\design_ic_visibility_off.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
@@ -1332,12 +1332,12 @@
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
-        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
+        "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_common_signin_btn_text_light.xml.flat",
@@ -2026,6 +2026,10 @@
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_back_button.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\618ad4ebcd8a60546d481deca944ecd2\\sdk-base-1.190.0\\res\\layout-land\\back_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_backward_icon.png.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\backward_icon.png"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi_ic_plusone_medium_off_client.png.flat",

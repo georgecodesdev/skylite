@@ -40,7 +40,7 @@ public final class R {
         private drawable() {}
 
         public static final int above_shadow = 0x7f07005d;
-        public static final int below_shadow = 0x7f070068;
+        public static final int below_shadow = 0x7f070069;
     }
     public static final class id {
         private id() {}

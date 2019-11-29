@@ -28,13 +28,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // slidingLayout = findViewById(R.id.sliding_layout);
-        //slidingLayout.setAnchorPoint(0.3f);
+        slidingLayout = findViewById(R.id.sliding_layout);
+        slidingLayout.setAnchorPoint(0.3f);
 
         ServiceBase.init(new ServiceBase(this.getApplicationContext()));
-
-
-//                switchToTrophyActivity();
     }
 
     public void goToActivity(View v){

@@ -56,7 +56,7 @@
                 android:id="@+id/constellationDescriptionlong"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
+                android:layout_gravity="center_vertical|end"
                 android:padding="10dp"
                 android:text="Detailed description goes here"
                 android:gravity="start"
