@@ -1,46 +1,54 @@
+/*
+
+    Kelsey Osos
+This service handles all repository accesses for Constellation data.
+It abstracts the "dirt work" of pulling assets and populating the table, and keeps
+a record of the constellation information and needed transformations.
+
+ */
 package com.example.skylite.Services;
 
 import android.content.Context;
 
 import com.example.skylite.Data.Constellation;
 import com.example.skylite.Data.ConstellationDao;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.example.skylite.R;
 import com.google.gson.reflect.TypeToken;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.lang.reflect.Type;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ConstellationService implements IConstellationService {
     private Context _context;
     private List<Constellation> constellations;
+    private final String ASSET_PATH;
 
-    public ConstellationService(Context context) {
+    ConstellationService(Context context) {
         this._context = context;
         constellations = new ArrayList<>();
+        this.ASSET_PATH = this._context.getResources().getString(R.string.constellation_asset_path);
     }
 
+    // Maintain a local list of constellation data from the local JSON file
+    @Override
     public void populateList() {
-        Gson gson = new GsonBuilder().create();
-
         Type listType = new TypeToken<List<Constellation>>() {}.getType();
-        constellations = gson.fromJson(readJSONFromAsset(), listType);
+        String json = ServiceBase.jsonService().readJsonFromAsset(ASSET_PATH, this._context);
+        constellations = ServiceBase.jsonService().gson().fromJson(json, listType);
     }
 
+    @Override
+    public void populateList(List<Constellation> constellations) {
+        this.constellations = constellations;
+    }
+
+    // Use constellation data in list and the DAO to populate the database
     @Override
     public void populateTable(ConstellationDao dao) {
         if (constellations.isEmpty()) {
             populateList();
         }
-//        Gson gson = new GsonBuilder().create();
-//
-//        Type listType = new TypeToken<List<Constellation>>() {}.getType();
-//        List<Constellation> fromJson = gson.fromJson(readJSONFromAsset(), listType);
-//        if (fromJson != null) {
         this.constellations.forEach(dao::insert);
     }
 
@@ -49,34 +57,9 @@ public class ConstellationService implements IConstellationService {
         return this.constellations;
     }
 
-    @Override
-    public void get(String id) {
-
-    }
-
-    @Override
-    public void getByName(String name) {
-
-    }
-
+    // Abstract details of getting image names for easy assets access
     @Override
     public String getImageName(Constellation constellation) {
         return constellation.getId() + "_image";
-    }
-
-    private String readJSONFromAsset() {
-        String json;
-        try {
-            InputStream is = this._context.getAssets().open("constellation_data.json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, StandardCharsets.UTF_8);
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        return json;
     }
 }

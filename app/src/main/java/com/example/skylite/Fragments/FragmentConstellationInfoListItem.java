@@ -75,7 +75,7 @@ public class FragmentConstellationInfoListItem extends Fragment {
             @Override
             public void onClick(View view)
             {
-                ((ActivityConstellationInfo)getActivity()).switchToWikiView(constellationTitleStr);
+               // ((ActivityConstellationInfo)getActivity()).switchToWikiView(constellationTitleStr);
             }
         });
     }
@@ -92,5 +92,13 @@ public class FragmentConstellationInfoListItem extends Fragment {
         constellationTitle = getView().findViewById(R.id.constellationTitle);
         constellationImage = getView().findViewById(R.id.constellationImage);
         moreInfoImage = getView().findViewById(R.id.moreInfoButton);
+    }
+
+    public String getConstellationImageName() {
+        return constellationImageName;
+    }
+
+    public String getConstellationDescriptionStr(){
+        return constellationDescriptionStr;
     }
 }

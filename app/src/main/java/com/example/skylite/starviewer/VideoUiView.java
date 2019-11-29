@@ -29,10 +29,8 @@ import android.view.InputDevice;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
-import android.widget.TextView;
 
 import androidx.annotation.AnyThread;
 import androidx.annotation.MainThread;
@@ -52,8 +50,9 @@ import com.example.skylite.starviewer.rendering.CanvasQuad;
  */
 public class VideoUiView extends LinearLayout {
   // These UI elements are only useful when the app is displaying a video.
+  private int seekBarValue;
   private final UiUpdater uiUpdater = new UiUpdater();
-
+  private MonoscopicView monoscopicView;
   // Since MediaPlayer lacks synchronization for internal events, it should only be accessed on the
   // main thread.
   @Nullable
@@ -66,6 +65,10 @@ public class VideoUiView extends LinearLayout {
   /** Creates this View using standard XML inflation. */
   public VideoUiView(Context context, AttributeSet attrs) {
     super(context, attrs);
+  }
+
+  public void init(MonoscopicView monoscopicView){
+    this.monoscopicView = monoscopicView;
   }
 
   /**
@@ -86,6 +89,10 @@ public class VideoUiView extends LinearLayout {
     view.setLayoutParams(CanvasQuad.getLayoutParams());
     view.setVisibility(View.VISIBLE);
     parent.addView(view, 0);
+
+    //can be removed
+   // view.findViewById(R.id.enter_exit_vr).setContentDescription(
+       //     view.getResources().getString(R.string.exit_vr_label));
 
     return view;
   }
@@ -151,6 +158,7 @@ public class VideoUiView extends LinearLayout {
   @Override
   public void onFinishInflate() {
     super.onFinishInflate();
+    ((SeekBar)findViewById(R.id.seek_bar)).setOnSeekBarChangeListener(new SeekBarListener());
   }
 
   /**
@@ -159,6 +167,8 @@ public class VideoUiView extends LinearLayout {
    *
    * @param androidUiCanvas used in 2D mode to render children to the screen
    */
+
+
   @Override
   public void dispatchDraw(Canvas androidUiCanvas) {
     if (canvasQuad == null) {
@@ -196,7 +206,7 @@ public class VideoUiView extends LinearLayout {
 
   /** Updates the seek bar and status text. */
   private final class UiUpdater implements SurfaceTexture.OnFrameAvailableListener {
-    private int videoDurationMs = 0;
+
 
     // onFrameAvailable is called on an arbitrary thread, but we can only access mediaPlayer on the
     // main thread.
@@ -207,12 +217,6 @@ public class VideoUiView extends LinearLayout {
           return;
         }
 
-        int positionMs = mediaPlayer.getCurrentPosition();
-
-        StringBuilder status = new StringBuilder();
-        status.append(String.format("%.2f", positionMs / 1000f));
-        status.append(" / ");
-        status.append(videoDurationMs / 1000);
 
         if (canvasQuad != null) {
           // When in VR, we will need to manually invalidate this View.
@@ -232,15 +236,20 @@ public class VideoUiView extends LinearLayout {
   private final class SeekBarListener implements SeekBar.OnSeekBarChangeListener {
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-      if (fromUser && mediaPlayer != null) {
-        mediaPlayer.seekTo(progress);
-      } // else this was from the ActivityEventHandler.onNewFrame()'s seekBar.setProgress update.
+        monoscopicView.setBortleValue(progress);
+  }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+
     }
 
     @Override
-    public void onStartTrackingTouch(SeekBar seekBar) {}
+    public void onStopTrackingTouch(SeekBar seekBar) {
 
-    @Override
-    public void onStopTrackingTouch(SeekBar seekBar) {}
+    }
+
+
   }
+
 }

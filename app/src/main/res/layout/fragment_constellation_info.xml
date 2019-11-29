@@ -3,73 +3,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.skylite.Fragments.FragmentConstellationInfo"
-    android:background="@drawable/border">
+    android:background="@drawable/border"
+    tools:context="com.example.skylite.Fragments.FragmentConstellationInfo">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"> />
+
             <ImageView
-                android:layout_marginTop="20dp"
+                android:id="@+id/constellationImage"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_gravity="center"
-                android:id="@+id/constellationImage"
-                android:src="@drawable/trophy"/>
+                android:layout_marginTop="20dp"
+                android:src="@drawable/trophy" />
 
-            <LinearLayout
-                android:orientation="vertical"
+            <TextView
+                android:id="@+id/constellationTitle"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_box"
+                android:layout_gravity="center"
+                android:text="Title Text goes here"
+                android:textColor="@color/colorTextWhitish"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/constellationDescription"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Detailed description goes here"
+                android:textSize="18sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="75dp"
-                        android:background="@drawable/trapaziod"
-                        android:id="@+id/constellationTitle"
-                        android:text="Title Text goes here"
-                        android:textColor="@color/colorText"
-                        android:gravity="center_horizontal" />
-                </LinearLayout>
-
-                <ScrollView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:background="@drawable/text_box">
-
-                        <TextView
-                            android:padding="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Detailed description goes here"
-                            android:gravity="center"
-                            android:id="@+id/constellationDescription" />
-                    </LinearLayout>
-                </ScrollView>
-            </LinearLayout>
+            <TextView
+                android:id="@+id/constellationDescriptionlong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|end"
+                android:padding="10dp"
+                android:text="Detailed description goes here"
+                android:gravity="start"
+                android:textSize="16sp" />
         </LinearLayout>
-    </RelativeLayout>
-</FrameLayout>
+    </ScrollView>
+</RelativeLayout></FrameLayout>

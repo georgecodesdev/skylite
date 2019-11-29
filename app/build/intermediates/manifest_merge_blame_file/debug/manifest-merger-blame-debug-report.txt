@@ -1,0 +1,166 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.skylite"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+8-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+11-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:5:5-71
+11-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:5:22-68
+12    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+12-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:6:5-74
+12-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:6:22-71
+13    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+13-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:7:5-74
+13-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:7:22-71
+14
+15    <uses-feature
+15-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:11:5-13:35
+16        android:glEsVersion="0x00020000"
+16-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:12:9-41
+17        android:required="true" /> <!-- Required to read/write the paired viewer's distortion parameters. -->
+17-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:13:9-32
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:16:5-80
+18-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:16:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Indicates use of Android's VR-mode, available only on Android N+. -->
+19-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:17:5-81
+19-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:17:22-78
+20    <uses-feature
+20-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:20:5-22:36
+21        android:name="android.software.vr.mode"
+21-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:21:9-48
+22        android:required="false" /> <!-- Indicates use of VR features that are available only on Daydream-ready devices. -->
+22-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:22:9-33
+23    <uses-feature
+23-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:24:5-26:36
+24        android:name="android.hardware.vr.high_performance"
+24-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:25:9-60
+25        android:required="false" />
+25-->[com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:26:9-33
+26
+27    <application
+27-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:9:5-36:19
+28        android:allowBackup="true"
+28-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:10:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.1.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:11:9-43
+32        android:label="@string/skl_app_name"
+32-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:12:9-45
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:13:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:14:9-35
+35        android:testOnly="true"
+36        android:theme="@style/AppTheme" >
+36-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:15:9-40
+37        <activity
+37-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:16:9-17:61
+38            android:name="com.example.skylite.Activities.ActivityTrophy"
+38-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:16:19-60
+39            android:screenOrientation="portrait" />
+39-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:17:13-49
+40        <activity
+40-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:18:9-19:61
+41            android:name="com.example.skylite.Activities.ActivityOnBoarding"
+41-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:18:19-64
+42            android:screenOrientation="portrait" />
+42-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:19:13-49
+43        <activity
+43-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:20:9-21:61
+44            android:name="com.example.skylite.Activities.ActivityConstellation"
+44-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:20:19-67
+45            android:screenOrientation="portrait" />
+45-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:21:13-49
+46        <activity
+46-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:22:9-23:61
+47            android:name="com.example.skylite.Activities.ActivityConstellationInfo"
+47-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:22:19-71
+48            android:screenOrientation="portrait" />
+48-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:23:13-49
+49        <activity
+49-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:24:9-25:51
+50            android:name="com.example.skylite.Activities.ActivityCalendar"
+50-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:24:19-62
+51            android:screenOrientation="portrait" />
+51-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:25:13-49
+52        <activity
+52-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:26:9-28:20
+53            android:name="com.example.skylite.Activities.ConstellationInDepthView"
+53-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:26:19-70
+54            android:screenOrientation="portrait" >
+54-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:27:13-49
+55        </activity>
+56        <activity
+56-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:29:9-35:20
+57            android:name="com.example.skylite.MainActivity"
+57-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:29:19-47
+58            android:screenOrientation="portrait" >
+58-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:30:13-49
+59            <intent-filter>
+59-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:31:13-34:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:32:17-69
+60-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:32:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:33:17-77
+62-->C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:33:27-74
+63            </intent-filter>
+64        </activity>
+65
+66        <provider
+66-->[com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:12:9-16:40
+67            android:name="com.prolificinteractive.materialcalendarview.MaterialCalendarViewInitProvider"
+67-->[com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:13:13-105
+68            android:authorities="com.example.skylite.materialcalendarviewinitprovider"
+68-->[com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:14:13-84
+69            android:enabled="true"
+69-->[com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:15:13-35
+70            android:exported="false" />
+70-->[com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:16:13-37
+71
+72        <meta-data
+72-->[com.google.android.gms:play-services-base:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\c308b6d01f9c4518aa77ff7bbd857235\jetified-play-services-base-7.3.0\AndroidManifest.xml:21:9-23:69
+73            android:name="com.google.android.gms.version"
+73-->[com.google.android.gms:play-services-base:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\c308b6d01f9c4518aa77ff7bbd857235\jetified-play-services-base-7.3.0\AndroidManifest.xml:22:13-58
+74            android:value="@integer/google_play_services_version" />
+74-->[com.google.android.gms:play-services-base:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\c308b6d01f9c4518aa77ff7bbd857235\jetified-play-services-base-7.3.0\AndroidManifest.xml:23:13-66
+75
+76        <service
+76-->[androidx.room:room-runtime:2.2.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:25:9-27:40
+77            android:name="androidx.room.MultiInstanceInvalidationService"
+77-->[androidx.room:room-runtime:2.2.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:26:13-74
+78            android:exported="false" />
+78-->[androidx.room:room-runtime:2.2.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:27:13-37
+79
+80        <provider
+80-->[com.squareup.picasso:picasso:2.71828] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\8b76dbd6cd66a4358e2b9eb2ce8eb5c0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+81            android:name="com.squareup.picasso.PicassoProvider"
+81-->[com.squareup.picasso:picasso:2.71828] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\8b76dbd6cd66a4358e2b9eb2ce8eb5c0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+82            android:authorities="com.example.skylite.com.squareup.picasso"
+82-->[com.squareup.picasso:picasso:2.71828] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\8b76dbd6cd66a4358e2b9eb2ce8eb5c0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+83            android:exported="false" />
+83-->[com.squareup.picasso:picasso:2.71828] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\8b76dbd6cd66a4358e2b9eb2ce8eb5c0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+84        <provider
+84-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\789443f34303da1edef03874eab5645d\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:25:9-29:43
+85            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\789443f34303da1edef03874eab5645d\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:26:13-79
+86            android:authorities="com.example.skylite.lifecycle-process"
+86-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\789443f34303da1edef03874eab5645d\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:27:13-69
+87            android:exported="false"
+87-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\789443f34303da1edef03874eab5645d\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:28:13-37
+88            android:multiprocess="true" />
+88-->[androidx.lifecycle:lifecycle-process:2.2.0-rc02] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\789443f34303da1edef03874eab5645d\lifecycle-process-2.2.0-rc02\AndroidManifest.xml:29:13-40
+89    </application>
+90
+91</manifest>

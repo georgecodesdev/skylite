@@ -5,8 +5,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModelConstellationList implements Serializable {
+    private String imageName;
+    private String title;
+    private String descriptionShort;
 
-    public ArrayList<ModelConstellationInfo> constellationInfo;
+
+    public ModelConstellationList(String imageName, String title, String descriptionShort){
+        this.imageName = imageName;
+        this.title = title;
+        this.descriptionShort = descriptionShort;
+
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescriptionShort() {
+        return descriptionShort;
+    }
+
+
+    private ArrayList<ModelConstellationInfo> constellationInfo;
 
     public ModelConstellationList(){
         constellationInfo = new ArrayList<>();
@@ -18,5 +42,9 @@ public class ModelConstellationList implements Serializable {
 
     public void addConstellationInfo(List<ModelConstellationInfo> info) {
         info.forEach(this::addConstellationInfo);
+    }
+
+    public List<ModelConstellationInfo> getConstellationInfo() {
+        return this.constellationInfo;
     }
 }
