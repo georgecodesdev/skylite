@@ -11,6 +11,55 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/homeNavigationImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/home_white_36dp"
+                    android:background="@drawable/topbar_button"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skl_wiki_label"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:paddingLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/wiki_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:paddingTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -20,7 +69,5 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/fragmentList"/>
         </ScrollView>
-
     </RelativeLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

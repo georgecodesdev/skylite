@@ -1,7 +1,5 @@
 package com.example.skylite.Activities;
 
-//import android.support.v7.app.AppCompatActivity;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.FragmentTransaction;
@@ -31,10 +29,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class ActivityConstellationInfo extends AppCompatActivity {
+public class ActivityConstellationInfo extends AbstractActivityTopBar {
 
     private ModelConstellationList info;
     private LinearLayout linearLayout;
+
+
     private String cachedFragmentTitle = "";
     private SlidingUpPanelLayout slidingLayout;
 
@@ -60,6 +60,13 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
         setContentView(R.layout.data_main_layout);
 
+        info = (ModelConstellationList) getIntent().getExtras().get("ModelList");
+        initIntent(this);
+        toolbar = findViewById(R.id.toolbar);
+        homeNavigationImage = findViewById(R.id.homeNavigationImage);
+        setSupportActionBar(toolbar);
+        setToolbarActionListener();
+
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         mAdapter = new ConstellationListAdapter(constellationList);
@@ -83,11 +90,6 @@ public class ActivityConstellationInfo extends AppCompatActivity {
             constellationList.add(ModelConstellationInfoForList);
 
         }
-
         mAdapter.notifyDataSetChanged();
     }
-
-
-
-
 }

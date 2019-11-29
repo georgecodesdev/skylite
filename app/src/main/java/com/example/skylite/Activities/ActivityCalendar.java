@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.skylite.Fragments.FragmentCalendarEventInformationListItem;
@@ -24,7 +23,7 @@ import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 
-public class ActivityCalendar extends AppCompatActivity {
+public class ActivityCalendar extends AbstractActivityTopBar {
 
     final private String NO_EVENT_FRAGMENT_IDENTIFIER = "noEvent";
     private static final Level LOGGING_LEVEL = Level.OFF;
@@ -33,14 +32,12 @@ public class ActivityCalendar extends AppCompatActivity {
     private LinearLayout constellationEventDescriptionLayout;
 
     private SimpleDateFormat dateFormat;
-
     private boolean eventDescriptionDisplaying = false;
     private boolean eventListDisplaying = false;
 
     private ArrayList<FragmentCalendarEventInformationListItem> listItems;
     private FragmentCalendarEventInformation eventInformation;
     private FragmentNoEventsAvailable noEventsAvailable;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,15 +48,15 @@ public class ActivityCalendar extends AppCompatActivity {
         noEventsAvailable = new FragmentNoEventsAvailable();
         listItems = new ArrayList<>();
 
+
         setContentView(R.layout.activity_calendar);
         grabElementsByID();
+        initIntent(this);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        grabElementsByID();
-        setActionListener();
         setSelectedCalenderDate(CalendarDay.today());
         populateFragmentBasedOnDateSelected(convertSelectedDate(calendarView.getSelectedDate()));
     }
@@ -159,6 +156,10 @@ public class ActivityCalendar extends AppCompatActivity {
     private void grabElementsByID(){
         calendarView = findViewById(R.id.calendar);
         constellationEventDescriptionLayout = findViewById(R.id.constellationEventLayout);
+        toolbar = findViewById(R.id.toolbar);
+        homeNavigationImage = findViewById(R.id.homeNavigationImage);
+        setSupportActionBar(toolbar);
+        setActionListener();
     }
 
     private void setSelectedCalenderDate(CalendarDay requestedDate){
@@ -175,5 +176,6 @@ public class ActivityCalendar extends AppCompatActivity {
         calendarView.setOnDateChangedListener((widget, date, selected) -> {
             populateFragmentBasedOnDateSelected(convertSelectedDate(date));
         });
+        setToolbarActionListener();
     }
 }
