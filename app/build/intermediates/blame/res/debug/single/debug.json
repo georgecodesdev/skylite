@@ -3044,6 +3044,10 @@
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border_wiki.xml.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\border_wiki.xml"
+    },
+    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },

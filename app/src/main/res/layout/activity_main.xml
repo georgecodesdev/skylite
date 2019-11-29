@@ -123,13 +123,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/border">
+            android:orientation="vertical">
 
             <com.google.android.material.button.MaterialButton
-                android:layout_height="20dp"
-                android:layout_width="0dp"
-                android:layout_weight=".75"
+                android:layout_height="wrap_content"
+                android:text="SLIDE ME UP!"
+                android:layout_width="match_parent"
                 android:backgroundTint="@color/whiteText"/>
 
             <fragment android:name="com.example.skylite.starviewer.StarViewFragment"

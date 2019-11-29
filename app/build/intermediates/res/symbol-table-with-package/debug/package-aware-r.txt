@@ -852,6 +852,7 @@ color common_signin_btn_light_text_focused
 color common_signin_btn_light_text_pressed
 color common_signin_btn_text_dark
 color common_signin_btn_text_light
+color constellationListFix
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1476,6 +1477,7 @@ drawable below_shadow
 drawable blocked_trophy_icon
 drawable boo_image
 drawable border
+drawable border_wiki
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl

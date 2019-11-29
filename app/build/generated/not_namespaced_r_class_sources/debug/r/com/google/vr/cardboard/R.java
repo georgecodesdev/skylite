@@ -13,7 +13,7 @@ public final class R {
         private color() {}
 
         public static final int alignment_marker_color = 0x7f05001a;
-        public static final int white_transparent = 0x7f0500df;
+        public static final int white_transparent = 0x7f0500e0;
     }
     public static final class dimen {
         private dimen() {}
@@ -25,10 +25,10 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int quantum_ic_close_white_24 = 0x7f070112;
-        public static final int quantum_ic_settings_white_24 = 0x7f070113;
-        public static final int rippleable = 0x7f070115;
-        public static final int transition = 0x7f070129;
+        public static final int quantum_ic_close_white_24 = 0x7f070113;
+        public static final int quantum_ic_settings_white_24 = 0x7f070114;
+        public static final int rippleable = 0x7f070116;
+        public static final int transition = 0x7f07012a;
     }
     public static final class id {
         private id() {}
