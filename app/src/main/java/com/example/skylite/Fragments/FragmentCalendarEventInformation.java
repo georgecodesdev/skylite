@@ -7,15 +7,19 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.skylite.Activities.ActivityCalendar;
+import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.R;
 
 public class FragmentCalendarEventInformation extends Fragment {
     private TextView eventTitle;
     private TextView constellationDescription;
+    private ImageView backImage;
 
     private String constellationDescriptionStr;
     private String eventDateStr;
@@ -53,11 +57,21 @@ public class FragmentCalendarEventInformation extends Fragment {
     private void mapUIElementsByID(){
         eventTitle = getView().findViewById(R.id.constellationEventTitle);
         constellationDescription = getView().findViewById(R.id.constellationEventDescription);
+        backImage = getView().findViewById(R.id.back_button);
     }
 
     private void setAttributes(){
         eventTitle.setText(eventDateStr);
         eventTitle.setTypeface(null, Typeface.BOLD);
         constellationDescription.setText(constellationDescriptionStr);
+
+        backImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                ((ActivityCalendar)getActivity()).populateFragmentBasedOnDateSelected(
+                        ((ActivityCalendar)getActivity()).getCurrentDateSelected());
+            }
+        });
     }
 }

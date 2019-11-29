@@ -29,6 +29,16 @@
                 android:textColor="@color/whiteText"
                 android:gravity="center_horizontal" />
 
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:src="@drawable/share_email"
+                android:background="@drawable/round_circle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/back_button"/>
+
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

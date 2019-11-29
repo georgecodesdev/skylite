@@ -2,11 +2,12 @@ package com.example.skylite.Activities;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.skylite.Fragments.fragmentCalendarEventInfomationListItem;
+import com.example.skylite.Fragments.FragmentCalendarEventInformationListItem;
 import com.example.skylite.Services.ServiceBase;
 import com.example.skylite.Data.Event;
 import com.example.skylite.Fragments.FragmentCalendarEventInformation;
@@ -36,7 +37,7 @@ public class ActivityCalendar extends AppCompatActivity {
     private boolean eventDescriptionDisplaying = false;
     private boolean eventListDisplaying = false;
 
-    private ArrayList<fragmentCalendarEventInfomationListItem> listItems;
+    private ArrayList<FragmentCalendarEventInformationListItem> listItems;
     private FragmentCalendarEventInformation eventInformation;
     private FragmentNoEventsAvailable noEventsAvailable;
 
@@ -63,10 +64,15 @@ public class ActivityCalendar extends AppCompatActivity {
         populateFragmentBasedOnDateSelected(convertSelectedDate(calendarView.getSelectedDate()));
     }
 
-    private void populateFragmentBasedOnDateSelected(String dateSelected){
+    public String getCurrentDateSelected(){
+        return convertSelectedDate(calendarView.getSelectedDate());
+    }
+
+    public void populateFragmentBasedOnDateSelected(String dateSelected){
         List<Event> events = ServiceBase.eventsService().getEventsByDate(dateSelected);
         if(events.size() != 0){
             removeCurrentFragment();
+            makeNotificationToast(events.size());
             switchToEventList(events);
         }
         else if (eventDescriptionDisplaying){
@@ -77,6 +83,13 @@ public class ActivityCalendar extends AppCompatActivity {
             removeCurrentFragment();
             switchToNoEventFragment();
         }
+    }
+
+    private void makeNotificationToast(int numEvents){
+        String notificationMessage;
+        if (numEvents  ==  1)  notificationMessage = " event is occurring";
+        else notificationMessage = " events are occurring";
+        Toast.makeText(getApplicationContext(), numEvents + notificationMessage, Toast.LENGTH_SHORT).show();
     }
 
     private void removeCurrentFragment(){
@@ -107,7 +120,7 @@ public class ActivityCalendar extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
         for (Event currentEvent : events) {
-            fragmentCalendarEventInfomationListItem newItem = new fragmentCalendarEventInfomationListItem(currentEvent);
+            FragmentCalendarEventInformationListItem newItem = new FragmentCalendarEventInformationListItem(currentEvent);
             listItems.add(newItem);
             fragmentTransaction.add(constellationEventDescriptionLayout.getId(), newItem, currentEvent.getLongDescription());
         }
@@ -136,7 +149,7 @@ public class ActivityCalendar extends AppCompatActivity {
 
     private void removeEventList(){
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        for (fragmentCalendarEventInfomationListItem currFragment: listItems) {
+        for (FragmentCalendarEventInformationListItem currFragment: listItems) {
             fragmentTransaction.remove(currFragment);
         }
         fragmentTransaction.commit();
