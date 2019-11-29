@@ -17,8 +17,12 @@ import java.util.List;
 
 
 /**
- * Class handling achievements.
+ * This class is entered when a card view in the recycler view is pressed, it will show a larger image of the constellation
+ * and will provide more of a description for it, this data displayed will be based on the index of the card selected
+ * as i pass the index into this activity by intent and using that index, i can reference the correct object from the
+ * modelConstellationInfo object list and this will have the correct data
  */
+
 public class ConstellationInDepthView extends AppCompatActivity {
     List<ModelConstellationInfo> modelConstellationInfo = MainActivity.modelConstellationInfo;
 
@@ -30,6 +34,8 @@ public class ConstellationInDepthView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent mIntent = getIntent();
+        
+        //getting index of the object from the intent
         int intValue = mIntent.getIntExtra("intVariableName", 0);
         setContentView(R.layout.fragment_constellation_info);
         ModelConstellationInfo temp = modelConstellationInfo.get(intValue);
