@@ -16,8 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Displays constellation info taken from Data
- */
+ * This Activity class builds the recycler view to display all the wiki information in a linear fashion
+ * it does so by creating an object adapter using the class ConstellationListAdapter, and feeding the information it the
+ * adapter object which will then populate the recycler view with the right information
+ * */
 public class ActivityConstellationInfo extends AbstractActivityTopBar {
 
     private List<ModelConstellationList> constellationList = new ArrayList<>();
@@ -32,6 +34,9 @@ public class ActivityConstellationInfo extends AbstractActivityTopBar {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         Bundle args = intent.getBundleExtra("BUNDLE");
+        
+        /*this gets the array list im passing in,
+        but android makes you send an array list by making it Serializable, so i have to cast it back to an array list*/
         modelConstellationList = (ArrayList<ModelConstellationInfo>) args.getSerializable("ARRAYLIST");
 
 
@@ -57,6 +62,8 @@ public class ActivityConstellationInfo extends AbstractActivityTopBar {
 
     }
 
+    /*This method is used to take the required information we need to pass into the adapter,
+     * it does so by passing a list of objects into mAdapter which is dealt with in ConstellationListAdapter*/
     private void populateData(ArrayList<ModelConstellationInfo> constellationListTemp) {
 
         for (ModelConstellationInfo Temp : constellationListTemp) {
