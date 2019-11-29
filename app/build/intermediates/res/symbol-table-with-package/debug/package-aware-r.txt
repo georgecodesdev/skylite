@@ -1555,6 +1555,7 @@ drawable for_image
 drawable gem_image
 drawable gru_image
 drawable her_image
+drawable home_white_36dp
 drawable hor_image
 drawable hya_image
 drawable hyi_image
@@ -1578,6 +1579,8 @@ drawable ic_plusone_standard_off_client
 drawable ic_plusone_tall_off_client
 drawable icon
 drawable ind_image
+drawable info_description
+drawable info_icon
 drawable info_white
 drawable lac_image
 drawable leo_image
@@ -1647,8 +1650,6 @@ drawable sco_image
 drawable sct_image
 drawable selected_item_dot
 drawable ser_image
-drawable settings_description
-drawable settings_icon
 drawable sex_image
 drawable sge_image
 drawable sgr_image
@@ -1660,6 +1661,7 @@ drawable test_custom_background
 drawable text_box
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable topbar_button
 drawable tra_image
 drawable transition
 drawable trapaziod
@@ -1836,7 +1838,6 @@ id filled
 id fitToContents
 id fixed
 id forever
-id fragmentList
 id fragment_container_view_tag
 id friday
 id ghost_view
@@ -1849,12 +1850,14 @@ id hidden
 id hideable
 id home
 id homeAsUp
+id homeNavigationImage
 id horizontal
 id icon
 id icon_group
 id ifRoom
 id image
 id info
+id infoDescription
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1965,7 +1968,6 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id settingsButton
-id settingsDescription
 id shortcut
 id showCustom
 id showHome
@@ -2024,6 +2026,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -2131,7 +2134,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_calendar
-layout activity_constellation_info_list
 layout activity_main
 layout activity_on_boarding
 layout activity_sandbox
@@ -2228,6 +2230,7 @@ layout ui_layer
 layout ui_layer_with_portrait_support
 layout video_activity
 layout video_ui
+menu calendar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2395,10 +2398,10 @@ string skl_empty_not_saved
 string skl_enter_vr_label
 string skl_exit_vr_label
 string skl_hint_word
+string skl_info_label
 string skl_pause_label
 string skl_permission_warning
 string skl_play_label
-string skl_settings_label
 string skl_trophies_activity_title
 string skl_trophy_label
 string skl_wiki_activity_title

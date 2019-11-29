@@ -101,13 +101,13 @@
                 <Button
                     android:layout_width="150dp"
                     android:layout_height="140dp"
-                    android:drawableTop="@drawable/settings_description"
+                    android:drawableTop="@drawable/info_description"
                     android:textColor="@color/whiteText"
                     android:textSize="16sp"
                     android:id="@+id/settingsButton"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:text="@string/skl_settings_label"
+                    android:text="@string/skl_info_label"
                     android:onClick="goToActivity"
                     android:background="@drawable/main_menu_buttons"
                     android:layout_margin="10dp"/>

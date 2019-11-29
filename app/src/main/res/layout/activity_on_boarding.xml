@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/screenBackground"
     tools:context="com.example.skylite.Activities.ActivityOnBoarding">
 
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager_introduction"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,7 +16,7 @@
     <LinearLayout
         android:id="@+id/viewPagerCountDots"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="@dimen/pager_height"
         android:layout_above="@+id/ll_footer"
         android:layout_marginBottom="12dp"
         android:layout_alignParentLeft="true"
@@ -36,10 +37,10 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/colorPrimaryBlue"
-            android:text="Hi"
+            android:text="@string/ob_get_started"
             android:textAllCaps="false"
             android:textColor="@color/whiteText"
-            android:textSize="30dp"
+            android:textSize="@dimen/button_text"
             android:visibility="gone"
             />
 

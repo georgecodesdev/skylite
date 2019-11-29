@@ -5,14 +5,14 @@ INJECTED from C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:2:1-38
 INJECTED from C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\7987a8c29106f28468fd0ebd3cf826b4\jetified-library-3.3.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:2:1-19:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-identity:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\3bfd1a992c4e3a4cf067be8f94fbeb40\play-services-identity-7.3.0\AndroidManifest.xml:16:1-20:12
 MERGED from [com.google.android.gms:play-services-base:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\c308b6d01f9c4518aa77ff7bbd857235\jetified-play-services-base-7.3.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:3:1-28:12
 MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:17:1-30:12
@@ -89,14 +89,14 @@ application
 ADDED from C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml:9:5-36:19
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\7987a8c29106f28468fd0ebd3cf826b4\jetified-library-3.3.1\AndroidManifest.xml:9:5-20
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\7987a8c29106f28468fd0ebd3cf826b4\jetified-library-3.3.1\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:22:5-20
 MERGED from [com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:11:5-17:19
 MERGED from [com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.android.gms:play-services-identity:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\3bfd1a992c4e3a4cf067be8f94fbeb40\play-services-identity-7.3.0\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-identity:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\3bfd1a992c4e3a4cf067be8f94fbeb40\play-services-identity-7.3.0\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-base:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\c308b6d01f9c4518aa77ff7bbd857235\jetified-play-services-base-7.3.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-base:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\c308b6d01f9c4518aa77ff7bbd857235\jetified-play-services-base-7.3.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:24:5-28:19
@@ -185,8 +185,12 @@ INJECTED from C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\bacci\git\skylite\app\src\main\AndroidManifest.xml
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\7987a8c29106f28468fd0ebd3cf826b4\jetified-library-3.3.1\AndroidManifest.xml:7:5-43
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\7987a8c29106f28468fd0ebd3cf826b4\jetified-library-3.3.1\AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:20:5-44
 MERGED from [com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.prolificinteractive:material-calendarview:2.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\da18d54ebb728e04c27f9c2f0190317f\jetified-material-calendarview-2.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-identity:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\3bfd1a992c4e3a4cf067be8f94fbeb40\play-services-identity-7.3.0\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-identity:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\3bfd1a992c4e3a4cf067be8f94fbeb40\play-services-identity-7.3.0\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-base:7.3.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\c308b6d01f9c4518aa77ff7bbd857235\jetified-play-services-base-7.3.0\AndroidManifest.xml:18:5-42
@@ -197,10 +201,6 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\bacci\.gradl
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.vr:sdk-base:1.190.0] C:\Users\bacci\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:7:5-9:41
