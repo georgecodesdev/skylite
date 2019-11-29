@@ -6,49 +6,53 @@
     tools:context="com.example.skylite.Activities.ActivityCalendar"
     android:background="@color/screenBackground">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_height="wrap_content"
-            android:text="@string/skl_calendar_activity_title"
-            android:textAlignment="center"
-            android:layout_marginTop="20dp"
-            android:textColor="@android:color/white"
-            android:textSize="23sp"
-            android:background="@drawable/border"/>
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:layout_marginTop="20dp"
-            android:layout_centerHorizontal="true"
             android:orientation="vertical"
             android:gravity="center">
 
-            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/calendar"
+            <TextView
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
                 android:layout_height="wrap_content"
-                app:mcv_showOtherDates="all"
-                app:mcv_selectionColor="#00F"
-                />
+                android:text="@string/skl_calendar_activity_title"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                android:background="@drawable/border"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mcv_showOtherDates="all"
+                    app:mcv_selectionColor="#00F"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/constellationEventLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/constellationEventLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"/>
-
-    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -6,19 +6,20 @@ import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.skylite.Fragments.fragmentCalendarEventInfomationListItem;
 import com.example.skylite.Services.ServiceBase;
 import com.example.skylite.Data.Event;
 import com.example.skylite.Fragments.FragmentCalendarEventInformation;
 import com.example.skylite.Fragments.FragmentNoEventsAvailable;
 import com.example.skylite.R;
 
-import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 
@@ -29,12 +30,16 @@ public class ActivityCalendar extends AppCompatActivity {
 
     private MaterialCalendarView calendarView;
     private LinearLayout constellationEventDescriptionLayout;
-    private SimpleDateFormat dateFormat;
-    private boolean eventDescriptionDisplaying = false;
-    private boolean init = false;
 
+    private SimpleDateFormat dateFormat;
+
+    private boolean eventDescriptionDisplaying = false;
+    private boolean eventListDisplaying = false;
+
+    private ArrayList<fragmentCalendarEventInfomationListItem> listItems;
     private FragmentCalendarEventInformation eventInformation;
     private FragmentNoEventsAvailable noEventsAvailable;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,63 +48,75 @@ public class ActivityCalendar extends AppCompatActivity {
 
         dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         noEventsAvailable = new FragmentNoEventsAvailable();
+        listItems = new ArrayList<>();
 
         setContentView(R.layout.activity_calendar);
         grabElementsByID();
-//        populateCalenderInfo();
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        init = true;
         grabElementsByID();
         setActionListener();
-    //    populateFragmentBasedOnDateSelected(convertCurrentDateSelected());
-        init = false;
+        setSelectedCalenderDate(CalendarDay.today());
+        populateFragmentBasedOnDateSelected(convertSelectedDate(calendarView.getSelectedDate()));
     }
 
     private void populateFragmentBasedOnDateSelected(String dateSelected){
-        // TODO this will be eventually changed to be a SQL look-up
-
         List<Event> events = ServiceBase.eventsService().getEventsByDate(dateSelected);
-        // we have events for the requested date
         if(events.size() != 0){
-
-        }
-     /*   if (constellationEventsLookUp.get(dateSelected) != null){
             removeCurrentFragment();
-            ModelConstellationDateTimeInfo eventModelInfomation = constellationEventsLookUp.get(dateSelected);
-            eventInformation = new FragmentCalendarEventInformation(
-                    eventModelInfomation.eventTitle,
-                    eventModelInfomation.eventDescription,
-                    eventModelInfomation.date);
-            switchToEventFragment(eventInformation);
+            switchToEventList(events);
         }
-        else if (eventDescriptionDisplaying) {
+        else if (eventDescriptionDisplaying){
             removeCurrentFragment();
             switchToNoEventFragment();
         }
-        else if (eventInformation == null && !noEventsAvailable.isVisible()) {
+        else if (!noEventsAvailable.isVisible()) {
+            removeCurrentFragment();
             switchToNoEventFragment();
         }
-       */
     }
 
     private void removeCurrentFragment(){
         if (eventDescriptionDisplaying) removeEventFragment();
+        else if (eventListDisplaying) removeEventList();
         else removeNoEventFragment();
     }
 
-    private void switchToEventFragment(FragmentCalendarEventInformation info){
+    public void switchToEventDetailFragment(Event requestedEvent){
+        removeCurrentFragment();
+
         eventDescriptionDisplaying = true;
+        eventListDisplaying = false;
+
+        eventInformation = new FragmentCalendarEventInformation(
+                requestedEvent.getLongDescription(),
+                requestedEvent.getDate());
+
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(constellationEventDescriptionLayout.getId(), info , info.getEventDateStr());
+        fragmentTransaction.add(constellationEventDescriptionLayout.getId(), eventInformation, eventInformation.getEventDateStr());
+        fragmentTransaction.commit();
+    }
+
+    private void switchToEventList(List<Event> events){
+        eventListDisplaying = true;
+        eventDescriptionDisplaying = false;
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        for (Event currentEvent : events) {
+            fragmentCalendarEventInfomationListItem newItem = new fragmentCalendarEventInfomationListItem(currentEvent);
+            listItems.add(newItem);
+            fragmentTransaction.add(constellationEventDescriptionLayout.getId(), newItem, currentEvent.getLongDescription());
+        }
         fragmentTransaction.commit();
     }
 
     private void switchToNoEventFragment(){
         eventDescriptionDisplaying = false;
+        eventListDisplaying = false;
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.add(constellationEventDescriptionLayout.getId(), noEventsAvailable , NO_EVENT_FRAGMENT_IDENTIFIER);
         fragmentTransaction.commit();
@@ -117,26 +134,33 @@ public class ActivityCalendar extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
+    private void removeEventList(){
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        for (fragmentCalendarEventInfomationListItem currFragment: listItems) {
+            fragmentTransaction.remove(currFragment);
+        }
+        fragmentTransaction.commit();
+        listItems.clear();
+    }
+
     private void grabElementsByID(){
         calendarView = findViewById(R.id.calendar);
         constellationEventDescriptionLayout = findViewById(R.id.constellationEventLayout);
     }
 
-    private void populateCalenderInfo(){
-        List<Event> events = ServiceBase.eventsService().getEvents();
+    private void setSelectedCalenderDate(CalendarDay requestedDate){
+        calendarView.setDateSelected(requestedDate, true);
+    }
 
-        for (Event currentEvent: events) {
-
-        }
-
+    private String convertSelectedDate(CalendarDay calendarDay){
+        String convertedMonth = String.format("%02d", calendarDay.getMonth());
+        String convertedDay = String.format("%02d", calendarDay.getDay());
+        return calendarDay.getYear() + "-" + convertedMonth + "-" + convertedDay;
     }
 
     private void setActionListener(){
         calendarView.setOnDateChangedListener((widget, date, selected) -> {
-            String convertedMonth = date.getMonth() < 10 ? String.format("%01d", date.getMonth()): "" + date.getMonth();
-            String convertedDay = String.format("%02d", date.getDay());
-
-            populateFragmentBasedOnDateSelected(date.getYear() + "-" + convertedMonth + "-" + convertedDay);
+            populateFragmentBasedOnDateSelected(convertSelectedDate(date));
         });
     }
 }
