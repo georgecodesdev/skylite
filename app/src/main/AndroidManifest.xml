@@ -17,8 +17,6 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityOnBoarding"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".Activities.ActivityConstellation"
-            android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityConstellationInfo"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityCalendar"

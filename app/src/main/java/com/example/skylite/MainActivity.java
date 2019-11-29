@@ -18,9 +18,12 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class MainActivity extends AppCompatActivity {
     private SlidingUpPanelLayout slidingLayout;
     public static final List<ModelConstellationInfo> modelConstellationInfo = new ArrayList<>();
+    List<Constellation> constellations;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
         slidingLayout.setAnchorPoint(0.3f);
 
         ServiceBase.init(new ServiceBase(this.getApplicationContext()));
+        constellations = ServiceBase.constellationService().get();
+        ServiceBase.wikiService().getInfo(constellations);
+        
+        constellations = constellations.subList(0, ServiceBase.wikiService().getModelConstellationInfo().size());
+
+        for (Constellation Temp  : constellations) {
+            ModelConstellationInfo ModelConstellationInfoTemp = new ModelConstellationInfo(Temp.getId()+"_image",Temp.getName(),Temp.getNameOrigin(),Temp.getStory());
+            modelConstellationInfo.add(ModelConstellationInfoTemp);
+
+        }
     }
 
     public void goToActivity(View v){
@@ -38,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(v.getId() == R.id.wikiButton){
             switchToConstellationListActivity();
-            //TODO
         }
         else if(v.getId() == R.id.calendarButton){
             switchToCalendarActivity();
@@ -53,24 +65,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void switchToScrollingActivity(){
-        //TODO
-    }
 
     private void switchToConstellationListActivity(){
-        List<Constellation> constellations = ServiceBase.constellationService().get();
-        ServiceBase.wikiService().getInfo(constellations);
-        // TODO: Only loading the first 25 because the full set breaks it
-        constellations = constellations.subList(0, ServiceBase.wikiService().getModelConstellationInfo().size());
-
-        for (Constellation Temp  : constellations) {
-            ModelConstellationInfo ModelConstellationInfoTemp = new ModelConstellationInfo(Temp.getId()+"_image",Temp.getName(),Temp.getNameOrigin(),Temp.getStory());
-            modelConstellationInfo.add(ModelConstellationInfoTemp);
-
-        }
         constellations.clear();
-
-        //modelConstellationList.addConstellationInfo(ServiceBase.wikiService().getInfo(constellations));
 
         Intent intent = new Intent(this, ActivityConstellationInfo.class);
         Bundle args = new Bundle();

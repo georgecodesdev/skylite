@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
-    android:background="@color/cardview_dark_background">
+    android:backgroundTint="@color/screenBackground">
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -20,7 +20,7 @@
             android:layout_marginTop="3dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="3dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border_wiki">
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -29,7 +29,8 @@
 
                 <ImageView
                     android:id="@+id/constellationImage"
-                    android:layout_width="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="220dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="center"
                     android:layout_weight="0.6"

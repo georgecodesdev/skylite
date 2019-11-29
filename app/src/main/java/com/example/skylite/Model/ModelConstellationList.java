@@ -39,12 +39,4 @@ public class ModelConstellationList implements Serializable {
     public void addConstellationInfo(ModelConstellationInfo info){
         constellationInfo.add(info);
     }
-
-    public void addConstellationInfo(List<ModelConstellationInfo> info) {
-        info.forEach(this::addConstellationInfo);
-    }
-
-    public List<ModelConstellationInfo> getConstellationInfo() {
-        return this.constellationInfo;
-    }
 }

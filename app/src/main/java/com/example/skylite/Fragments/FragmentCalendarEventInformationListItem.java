@@ -18,6 +18,9 @@ import com.example.skylite.Activities.ActivityCalendar;
 import com.example.skylite.Data.Event;
 import com.example.skylite.R;
 
+/**
+ * Fragment representing a list item corresponding to cosmological events
+ */
 public class FragmentCalendarEventInformationListItem extends Fragment {
 
     private String date;
@@ -69,25 +72,29 @@ public class FragmentCalendarEventInformationListItem extends Fragment {
         emailShareIcon = getView().findViewById(R.id.emailShareButton);
     }
 
-    private void getImageFromDrawable(){
-        //Resources res = getResources();
-        //int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
+    // Gets random image from drawable
+    private void getImageFromDrawable() {
         int min = 1;
         int max = 5;
-        int randomImage = min + (int)(Math.random() * ((max - min) + 1));
+        int randomImage = min + (int) (Math.random() * ((max - min) + 1));
 
         Drawable image = null;
 
         switch (randomImage) {
-            case 1:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon, null);
+            case 1:
+                image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon, null);
                 break;
-            case 2:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon2, null);
+            case 2:
+                image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon2, null);
                 break;
-            case 3:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon3, null);
+            case 3:
+                image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon3, null);
                 break;
-            case 4:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon4, null);
+            case 4:
+                image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon4, null);
                 break;
-            case 5:  image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon5, null);
+            case 5:
+                image = ResourcesCompat.getDrawable(getResources(), R.drawable.constellation_icon5, null);
                 break;
         }
         imageIcon.setImageDrawable(image);
@@ -99,7 +106,7 @@ public class FragmentCalendarEventInformationListItem extends Fragment {
 
         getImageFromDrawable();
 
-        moreInfo.setOnClickListener(view -> ((ActivityCalendar)getActivity()).switchToEventDetailFragment(event));
+        moreInfo.setOnClickListener(view -> ((ActivityCalendar) getActivity()).switchToEventDetailFragment(event));
 
         emailShareIcon.setOnClickListener(view -> {
             Intent intent = new Intent(Intent.ACTION_SEND);

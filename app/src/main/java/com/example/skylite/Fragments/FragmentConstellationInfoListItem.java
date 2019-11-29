@@ -18,6 +18,9 @@ import android.widget.TextView;
 import com.example.skylite.Activities.ActivityConstellationInfo;
 import com.example.skylite.R;
 
+/**
+ * Fragment corresponding to a constellation info list item
+ */
 public class FragmentConstellationInfoListItem extends Fragment {
 
     private ImageView constellationImage;
@@ -31,7 +34,7 @@ public class FragmentConstellationInfoListItem extends Fragment {
 
     public FragmentConstellationInfoListItem(String constellationImageName,
                                              String constellationTitleStr,
-                                             String constellationDescriptionShortStr){
+                                             String constellationDescriptionShortStr) {
         this.constellationImageName = constellationImageName;
         this.constellationTitleStr = constellationTitleStr;
         this.constellationDescriptionStr = constellationDescriptionShortStr;
@@ -59,28 +62,15 @@ public class FragmentConstellationInfoListItem extends Fragment {
         super.onInflate(context, attrs, savedInstanceState);
     }
 
-    public String getConstellationTitleStr(){
-        return constellationTitleStr;
-    }
-
-    private void setAttributes(){
+    private void setAttributes() {
         constellationTitle.setText(constellationTitleStr);
         constellationTitle.setTypeface(null, Typeface.BOLD);
 
         constellationDescription.setText(constellationDescriptionStr);
-
         getImageFromDrawable();
-
-        moreInfoImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-               // ((ActivityConstellationInfo)getActivity()).switchToWikiView(constellationTitleStr);
-            }
-        });
     }
 
-    private void getImageFromDrawable(){
+    private void getImageFromDrawable() {
         Resources res = getResources();
         int resourceId = res.getIdentifier(constellationImageName, "drawable", getActivity().getPackageName());
         Drawable image = res.getDrawable(resourceId, getActivity().getTheme());
@@ -92,13 +82,5 @@ public class FragmentConstellationInfoListItem extends Fragment {
         constellationTitle = getView().findViewById(R.id.constellationTitle);
         constellationImage = getView().findViewById(R.id.constellationImage);
         moreInfoImage = getView().findViewById(R.id.moreInfoButton);
-    }
-
-    public String getConstellationImageName() {
-        return constellationImageName;
-    }
-
-    public String getConstellationDescriptionStr(){
-        return constellationDescriptionStr;
     }
 }

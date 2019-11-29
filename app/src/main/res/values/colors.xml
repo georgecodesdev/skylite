@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="constellationListFix">#121212</color>
     <color name="colorPrimaryBlue">#2E313B</color>
     <color name="colorPrimaryLightPurple">#6A7097</color>
     <color name="colorAccentButtonBlue">#25262C</color>

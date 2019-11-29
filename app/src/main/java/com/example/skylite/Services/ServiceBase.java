@@ -1,15 +1,13 @@
-/*
-
-    Kelsey Osos
-This class is the singleton factory for all services.
-It ensures we only instantiate each service once within the context.
-It provides a one-stop interface to access any service from anywhere.
-
- */
 package com.example.skylite.Services;
 
 import android.content.Context;
 
+/**
+ * Kelsey Osos
+ * This class is the singleton factory for all services.
+ * It ensures we only instantiate each service once within the context.
+ * It provides a one-stop interface to access any service from anywhere.
+ **/
 public class ServiceBase {
     private IConstellationService _constellationService;
     private IWikiService _wikiService;
@@ -43,9 +41,15 @@ public class ServiceBase {
         return _services._wikiService;
     }
 
-    private void setJsonService() { this._json = new JsonService(); }
+    private void setJsonService() {
+        this._json = new JsonService();
+    }
 
-    static IJsonService jsonService() { return _services._json; }
+    static IJsonService jsonService() {
+        return _services._json;
+    }
 
-    public static IEventsService eventsService() { return _services._events; }
+    public static IEventsService eventsService() {
+        return _services._events;
+    }
 }

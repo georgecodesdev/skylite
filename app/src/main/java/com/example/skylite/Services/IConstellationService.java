@@ -1,9 +1,3 @@
-/*
-
-    Kelsey Osos
-This is the interface contract for constellation services.
-
- */
 package com.example.skylite.Services;
 
 import com.example.skylite.Data.Constellation;
@@ -17,10 +11,18 @@ import org.json.JSONException;
 import java.lang.reflect.Type;
 import java.util.List;
 
+/**
+ * Kelsey Osos
+ * This is the interface contract for constellation services.
+ **/
 public interface IConstellationService {
     void populateList();
+
     void populateList(List<Constellation> constellations);
+
     void populateTable(ConstellationDao dao) throws JSONException;
+
     List<Constellation> get();
+
     String getImageName(Constellation constellation);
 }

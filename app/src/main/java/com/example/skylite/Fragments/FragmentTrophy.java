@@ -17,7 +17,9 @@ import android.widget.TextView;
 
 import com.example.skylite.R;
 
-
+/**
+ * Fragment which represents a trophy
+ */
 public class FragmentTrophy extends Fragment {
 
     private String descriptionStr;
@@ -35,7 +37,7 @@ public class FragmentTrophy extends Fragment {
         // Required empty public constructor
     }
 
-    public void setIdentifiers(String identifier, boolean hasCompletedTrophy){
+    public void setIdentifiers(String identifier, boolean hasCompletedTrophy) {
         this.hasCompletedTrophy = hasCompletedTrophy;
         this.identifier = identifier;
         toggleCompletion(this.hasCompletedTrophy);
@@ -63,7 +65,7 @@ public class FragmentTrophy extends Fragment {
     }
 
     @Override
-    public void onInflate(Context context, AttributeSet attrs, Bundle savedInstanceState){
+    public void onInflate(Context context, AttributeSet attrs, Bundle savedInstanceState) {
         super.onInflate(context, attrs, savedInstanceState);
 
         if (context != null && attrs != null) {
@@ -82,21 +84,13 @@ public class FragmentTrophy extends Fragment {
 
     }
 
-    public void toggleCompletion(boolean hasCompletedTrophy){
+    public void toggleCompletion(boolean hasCompletedTrophy) {
         if (hasCompletedTrophy) trophyImage.setImageDrawable(completedTrophy);
         else trophyImage.setImageDrawable(uncompletedTrophy);
     }
 
-    public String getIdentifier(){
-        return identifier;
-    }
-
-    public boolean getTroophyCompletion(){
-        return hasCompletedTrophy;
-    }
-
     // gets the UI elements and maps them to the private variables
-    private void mapUIElementsByID(){
+    private void mapUIElementsByID() {
         description = getView().findViewById(R.id.description);
         title = getView().findViewById(R.id.title);
         trophyImage = getView().findViewById(R.id.trophyImage);

@@ -10,3 +10,6 @@
         }
 
 - in onCreate(), comment out whichever switchTo... is being called and add yours
+
+## Running S K Y L I T E
+Due to key VR functionality, the application does not fully work on the Android emulator. OpenGL ES2 is not supported, and navigating to certain screens will cause the emulated app to crash. For this reason, it is important to test and run the app on a physical Android phone with a minimum SDK of 27.

@@ -1,5 +1,9 @@
 package com.example.skylite.Data;
 
+/**
+ * Kelsey Osos
+ * This is the entity model for SQLite
+ */
 public class Event {
     private String ShortDescription;
     private String Date;
