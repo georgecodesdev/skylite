@@ -12,8 +12,6 @@ import com.example.skylite.R;
 public class ActivityTrophy extends AppCompatActivity {
 
     // The Fragments we are looking for are going to be defined here
-    private FragmentTrophy stargazer;
-    private FragmentTrophy astronomer;
     public static FragmentTrophy researcher;
 
     boolean achievement_complete =  ConstellationInDepthView.achievement;
@@ -45,14 +43,10 @@ public class ActivityTrophy extends AppCompatActivity {
 
     // gets the UI elements and maps them to the private variables
     private void getFragments(){
-        stargazer = (FragmentTrophy) getSupportFragmentManager().findFragmentById(R.id.starTrophy);
-        astronomer = (FragmentTrophy) getSupportFragmentManager().findFragmentById(R.id.astronomerTrophy);
         researcher=(FragmentTrophy) getSupportFragmentManager().findFragmentById(R.id.researcherTrophy);
     }
 
     private void setFragmentAttributes(){
-        stargazer.setIdentifiers("stargazer", true);
-        astronomer.setIdentifiers("astronomer", false);
         researcher.setIdentifiers("Constellation researcher", false);
     }
 
