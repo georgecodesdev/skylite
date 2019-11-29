@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/peter/AndroidProjects/skylite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "/home/peter/.gradle/caches/transforms-2/files-2.1/4538d57e63975b8a2f5a8197d0ffbf75/material-1.2.0-alpha01/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

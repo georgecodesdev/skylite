@@ -64,6 +64,4 @@
                 android:layout_marginRight="5dp"/>
         </LinearLayout>
     </RelativeLayout>
-
-
 </FrameLayout>

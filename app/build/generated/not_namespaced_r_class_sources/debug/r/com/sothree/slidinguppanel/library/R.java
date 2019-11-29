@@ -48,8 +48,8 @@ public final class R {
         public static final int anchored = 0x7f080046;
         public static final int collapsed = 0x7f080067;
         public static final int expanded = 0x7f080091;
-        public static final int hidden = 0x7f0800a5;
-        public static final int item_touch_helper_previous_elevation = 0x7f0800b1;
+        public static final int hidden = 0x7f0800a4;
+        public static final int item_touch_helper_previous_elevation = 0x7f0800b2;
     }
     public static final class styleable {
         private styleable() {}

@@ -1,5 +1,6 @@
 package com.example.skylite.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
+
+import com.example.skylite.MainActivity;
 import com.example.skylite.R;
 
 import java.util.ArrayList;
@@ -80,8 +83,7 @@ public class ActivityOnBoarding extends AppCompatActivity {
         btn_get_started.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast.makeText(ActivityOnBoarding.this,"Redirect to wherever you want",Toast.LENGTH_LONG).show();
+                switchToMainActivity();
             }
         });
 
@@ -195,5 +197,9 @@ public class ActivityOnBoarding extends AppCompatActivity {
         dots[0].setImageDrawable(ContextCompat.getDrawable(ActivityOnBoarding.this, R.drawable.selected_item_dot));
     }
 
+    private void switchToMainActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
 }
