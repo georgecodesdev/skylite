@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+/* This is a modified version of the Google Android VR SDK sampel "Video360"
+ * for original code see: https://github.com/googlevr/gvr-android-sdk
+*/
+
 package com.example.skylite.starviewer;
 
 import android.content.Context;
@@ -93,6 +97,7 @@ public final class MonoscopicView extends GLSurfaceView {
     setOnTouchListener(touchTracker);
   }
 
+  /** is external endpoint for setting the Bortle value the screen should emulate */
   public void setBortleValue(int progress){
 
     renderer.scene.setBrightnessMod(1 - ((float)progress/80));
