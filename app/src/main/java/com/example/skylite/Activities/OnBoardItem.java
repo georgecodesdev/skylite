@@ -1,7 +1,6 @@
 package com.example.skylite.Activities;
 
-public class OnBoardItem
-{
+public class OnBoardItem {
     int imageID;
     String title;
     String description;

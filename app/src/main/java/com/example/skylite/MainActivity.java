@@ -66,16 +66,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void switchToScrollingActivity(){
-        //TODO
-    }
 
     private void switchToConstellationListActivity(){
-       // List<Constellation> constellations = ServiceBase.constellationService().get();
-
         constellations.clear();
-
-        //modelConstellationList.addConstellationInfo(ServiceBase.wikiService().getInfo(constellations));
 
         Intent intent = new Intent(this, ActivityConstellationInfo.class);
         Bundle args = new Bundle();

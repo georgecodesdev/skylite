@@ -1,7 +1,6 @@
 package com.example.skylite.Activities;
 
 import android.os.Bundle;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -16,21 +15,17 @@ import com.example.skylite.R;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
-
+/**
+ * Activity allows for user to select events which contain constellation infomation
+ */
 public class ActivityCalendar extends AbstractActivityTopBar {
-
-    final private String NO_EVENT_FRAGMENT_IDENTIFIER = "noEvent";
-    private static final Level LOGGING_LEVEL = Level.OFF;
 
     private MaterialCalendarView calendarView;
     private LinearLayout constellationEventDescriptionLayout;
-    private ImageView moreInfoIcon;
 
     private SimpleDateFormat dateFormat;
     private boolean eventDescriptionDisplaying = false;
@@ -43,13 +38,10 @@ public class ActivityCalendar extends AbstractActivityTopBar {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Logger.getLogger("com.google.api.client").setLevel(LOGGING_LEVEL);
 
         init = true;
         dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         listItems = new ArrayList<>();
-
-
         setContentView(R.layout.activity_calendar);
         grabElementsByID();
         initIntent(this);
@@ -63,47 +55,46 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         init = false;
     }
 
-    public String getCurrentDateSelected(){
+    public String getCurrentDateSelected() {
         return convertSelectedDate(calendarView.getSelectedDate());
     }
 
-    public void populateFragmentBasedOnDateSelected(String dateSelected){
+    // Swaps out the fragment based on date selected
+    public void populateFragmentBasedOnDateSelected(String dateSelected) {
         List<Event> events = ServiceBase.eventsService().getEventsByDate(dateSelected);
         removeCurrentFragment();
-        if(events.size() != 0){
+        if (events.size() != 0) {
             if (!init) makeNotificationToast(events.size());
             switchToEventList(events);
-        }
-        else if (eventDescriptionDisplaying){
+        } else if (eventDescriptionDisplaying) {
             if (!init) makeNoDatesToast();
             switchToNoEventFragment();
-        }
-        else {
+        } else {
             if (!init) makeNoDatesToast();
         }
     }
 
-    private void makeNotificationToast(int numEvents){
+    private void makeNotificationToast(int numEvents) {
         String notificationMessage;
-        if (numEvents  ==  1)  notificationMessage = "Event predicted";
+        if (numEvents == 1) notificationMessage = "Event predicted";
         else notificationMessage = "Events predicted, scroll down to discover more";
         Toast.makeText(getApplicationContext(), notificationMessage, Toast.LENGTH_SHORT).show();
     }
 
-    private void makeInfoToast(){
+    private void makeInfoToast() {
         Toast.makeText(getApplicationContext(), "Pick a date to see constellation events", Toast.LENGTH_LONG).show();
     }
 
-    private void makeNoDatesToast(){
+    private void makeNoDatesToast() {
         Toast.makeText(getApplicationContext(), "No events predicted", Toast.LENGTH_SHORT).show();
     }
 
-    private void removeCurrentFragment(){
+    private void removeCurrentFragment() {
         if (eventDescriptionDisplaying) removeEventFragment();
         else if (eventListDisplaying) removeEventList();
     }
 
-    public void switchToEventDetailFragment(Event requestedEvent){
+    public void switchToEventDetailFragment(Event requestedEvent) {
         removeCurrentFragment();
 
         eventDescriptionDisplaying = true;
@@ -118,7 +109,7 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         fragmentTransaction.commit();
     }
 
-    private void switchToEventList(List<Event> events){
+    private void switchToEventList(List<Event> events) {
         eventListDisplaying = true;
         eventDescriptionDisplaying = false;
 
@@ -132,27 +123,27 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         fragmentTransaction.commit();
     }
 
-    private void switchToNoEventFragment(){
+    private void switchToNoEventFragment() {
         eventDescriptionDisplaying = false;
         eventListDisplaying = false;
     }
 
-    private void removeEventFragment(){
+    private void removeEventFragment() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.remove(eventInformation);
         fragmentTransaction.commit();
     }
 
-    private void removeEventList(){
+    private void removeEventList() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        for (FragmentCalendarEventInformationListItem currFragment: listItems) {
+        for (FragmentCalendarEventInformationListItem currFragment : listItems) {
             fragmentTransaction.remove(currFragment);
         }
         fragmentTransaction.commit();
         listItems.clear();
     }
 
-    private void grabElementsByID(){
+    private void grabElementsByID() {
         calendarView = findViewById(R.id.calendar);
         constellationEventDescriptionLayout = findViewById(R.id.constellationEventLayout);
         toolbar = findViewById(R.id.toolbar);
@@ -162,18 +153,17 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         makeInfoToast();
     }
 
-    private void setSelectedCalenderDate(CalendarDay requestedDate){
+    private void setSelectedCalenderDate(CalendarDay requestedDate) {
         calendarView.setDateSelected(requestedDate, true);
     }
 
-    private String convertSelectedDate(CalendarDay calendarDay){
+    private String convertSelectedDate(CalendarDay calendarDay) {
         String convertedMonth = String.format("%02d", calendarDay.getMonth());
         String convertedDay = String.format("%02d", calendarDay.getDay());
         return calendarDay.getYear() + "-" + convertedMonth + "-" + convertedDay;
     }
 
-
-    private void setActionListener(){
+    private void setActionListener() {
         calendarView.setOnDateChangedListener((widget, date, selected) -> {
             populateFragmentBasedOnDateSelected(convertSelectedDate(date));
         });
