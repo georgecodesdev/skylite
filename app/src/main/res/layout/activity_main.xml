@@ -102,12 +102,12 @@
                 android:layout_weight=".75"
                 android:backgroundTint="@color/whiteText"/>
 
-            <fragment android:name="com.example.skylite.starviewer.StarViewFragment"
-                android:id="@+id/starView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout="@layout/video_activity"
-                android:layout_gravity="center"/>
+<!--            <fragment android:name="com.example.skylite.starviewer.StarViewFragment"-->
+<!--                android:id="@+id/starView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:layout="@layout/video_activity"-->
+<!--                android:layout_gravity="center"/>-->
         </LinearLayout>
     </RelativeLayout>>
 

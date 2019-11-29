@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        switchToConstellationListActivity();
 //                switchToTrophyActivity();
-        switchToCalendarActivity();
+//        switchToCalendarActivity();
     }
 
     public void goToActivity(View v){
