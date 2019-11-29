@@ -5,6 +5,10 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+/**
+ * Kelsey Osos
+ * This is the entity model for SQLite
+ */
 @Entity(tableName = "constellation_table")
 public class Constellation {
     @PrimaryKey

@@ -1,10 +1,3 @@
-/*
-
-    Kelsey Osos
-This class handles access of the local JSON files and parsing them to strings.
-It also ensures we only instantiate GSON once.
-
- */
 package com.example.skylite.Services;
 
 import android.content.Context;
@@ -16,6 +9,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * Kelsey Osos
+ * This class handles access of the local JSON files and parsing them to strings.
+ * It also ensures we only instantiate GSON once.
+ **/
 public class JsonService implements IJsonService {
     private Gson _gson;
 

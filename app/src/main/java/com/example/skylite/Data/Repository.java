@@ -13,6 +13,11 @@ import com.example.skylite.Services.ServiceBase;
 
 import java.util.List;
 
+/**
+ * Kelsey Osos
+ * This is a singleton repository for persistence in the local storage.
+ * It ensures ModelConstellationList and ModelConstellationInfo are not replicated.
+ */
 public class Repository {
     private static ModelConstellationList modelConstellationList;
 
@@ -23,10 +28,6 @@ public class Repository {
     public static ModelConstellationList getModelConstellationList() {
         return modelConstellationList;
     }
-
-    //public static List<ModelConstellationInfo> getModelConstellationInfos() {
-     //   return modelConstellationList.getConstellationInfo();
-   // }
 
     public static void setModelConstellationList(ModelConstellationList input) {
         modelConstellationList = input;

@@ -15,6 +15,12 @@ import org.json.JSONException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * Kelsey Osos
+ * This class handles versioning and persistence in the SQLite database.
+ * It maintains the DAO and ensures the SQLite table is populated.
+ * This code was mostly taken from the Google Android Rooms Tutorial
+ */
 @Database(entities = {Constellation.class}, version = 7, exportSchema = false)
 public abstract class ConstellationRoomDatabase extends RoomDatabase {
     public abstract ConstellationDao constellationDao();
@@ -39,6 +45,8 @@ public abstract class ConstellationRoomDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
+    // On database instance creation, the DAO is assigned from the instance.
+    // Afterwards, the table is cleared and repopulated with the appropriate data.
     private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
         @Override
         public void onOpen(@NonNull SupportSQLiteDatabase db) {

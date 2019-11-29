@@ -1,11 +1,3 @@
-/*
-
-    Kelsey Osos
-This service handles all repository accesses for Constellation data.
-It abstracts the "dirt work" of pulling assets and populating the table, and keeps
-a record of the constellation information and needed transformations.
-
- */
 package com.example.skylite.Services;
 
 import android.content.Context;
@@ -19,6 +11,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Kelsey Osos
+ * This service handles all repository accesses for Constellation data.
+ * It abstracts the "dirt work" of pulling assets and populating the table, and keeps
+ * a record of the constellation information and needed transformations.
+ **/
 public class ConstellationService implements IConstellationService {
     private Context _context;
     private List<Constellation> constellations;
@@ -33,7 +31,8 @@ public class ConstellationService implements IConstellationService {
     // Maintain a local list of constellation data from the local JSON file
     @Override
     public void populateList() {
-        Type listType = new TypeToken<List<Constellation>>() {}.getType();
+        Type listType = new TypeToken<List<Constellation>>() {
+        }.getType();
         String json = ServiceBase.jsonService().readJsonFromAsset(ASSET_PATH, this._context);
         constellations = ServiceBase.jsonService().gson().fromJson(json, listType);
     }
