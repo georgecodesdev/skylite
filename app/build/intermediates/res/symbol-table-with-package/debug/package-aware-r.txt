@@ -828,6 +828,7 @@ color bright_foreground_material_light
 color buttonLabel
 color button_material_dark
 color button_material_light
+color calendar_date_normal
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -1965,6 +1966,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seek_bar
 id select_dialog_listview
 id selected
 id settingsButton
@@ -2161,7 +2163,6 @@ layout fragment_calendar_event_infomation
 layout fragment_calendar_event_infomation_list_item
 layout fragment_constellation_info
 layout fragment_constellation_info_list_item
-layout fragment_no_events_available
 layout fragment_trophy
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2755,6 +2756,7 @@ style TextAppearance_AppCompat_Widget_PopupMenu_Large
 style TextAppearance_AppCompat_Widget_PopupMenu_Small
 style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
+style TextAppearance_CalendarDate
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
 style TextAppearance_Compat_Notification_Info_Media

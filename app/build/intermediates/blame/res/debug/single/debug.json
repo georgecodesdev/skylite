@@ -104,6 +104,10 @@
         "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\drawable\\del_image.png"
     },
     {
+        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\color_calendar_date_normal.xml.flat",
+        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\color\\calendar_date_normal.xml"
+    },
+    {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable_below_shadow.xml.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\7987a8c29106f28468fd0ebd3cf826b4\\jetified-library-3.3.1\\res\\drawable\\below_shadow.xml"
     },
@@ -2454,10 +2458,6 @@
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\bacci\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
-        "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_no_events_available.xml.flat",
-        "source": "C:\\Users\\bacci\\git\\skylite\\app\\src\\main\\res\\layout\\fragment_no_events_available.xml"
     },
     {
         "merged": "C:\\Users\\bacci\\git\\skylite\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_common_signin_btn_icon_pressed_light.9.png.flat",
