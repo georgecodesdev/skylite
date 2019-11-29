@@ -106,7 +106,7 @@ public class ActivityCalendar extends AppCompatActivity {
 
         eventInformation = new FragmentCalendarEventInformation(
                 requestedEvent.getLongDescription(),
-                requestedEvent.getDate());
+                requestedEvent.getShortDescription());
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.add(constellationEventDescriptionLayout.getId(), eventInformation, eventInformation.getEventDateStr());

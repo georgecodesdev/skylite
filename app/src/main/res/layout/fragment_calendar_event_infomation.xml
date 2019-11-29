@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.skylite.Fragments.FragmentCalendarEventInformation"
-    android:layout_marginTop="5dp"
-    android:layout_marginBottom="5dp"
     android:layout_marginLeft="3dp"
+    android:layout_marginTop="5dp"
     android:layout_marginRight="3dp"
-    android:background="@drawable/border">
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/border"
+    tools:context="com.example.skylite.Fragments.FragmentCalendarEventInformation">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -19,25 +19,29 @@
             android:layout_height="fill_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/constellationEventTitle"
-                android:textSize="20sp"
-                android:text="Title Text goes here"
-                android:textColor="@color/whiteText"
-                android:gravity="center_horizontal" />
+                android:layout_gravity="center"
+                android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="left"
-                android:src="@drawable/share_email"
-                android:background="@drawable/round_circle"
-                android:layout_marginLeft="15dp"
-                android:layout_marginBottom="5dp"
-                android:id="@+id/back_button"/>
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/round_circle"
+                    android:src="@drawable/share_email" />
+
+                <TextView
+                    android:id="@+id/constellationEventTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Title Text goes here"
+                    android:gravity="center"
+                    android:textColor="@color/whiteText"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -49,16 +53,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:padding="10dp"
+                        android:id="@+id/constellationEventDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Detailed description goes here"
                         android:gravity="center"
-                        android:id="@+id/constellationEventDescription" />
+                        android:padding="10dp"
+                        android:text="Detailed description goes here" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>

@@ -29,7 +29,6 @@ public class FragmentCalendarEventInformationListItem extends Fragment {
     private ImageView emailShareIcon;
     private ImageView imageIcon;
     private TextView eventDate;
-    private TextView eventShortDescription;
 
     public FragmentCalendarEventInformationListItem(Event _event) {
         date = _event.getDate();
@@ -65,7 +64,6 @@ public class FragmentCalendarEventInformationListItem extends Fragment {
 
     private void mapUIElementsByID() {
         eventDate = getView().findViewById(R.id.constellationEventDate);
-        eventShortDescription = getView().findViewById(R.id.constellationDescription);
         moreInfo = getView().findViewById(R.id.moreInfoButton);
         imageIcon = getView().findViewById(R.id.constellationImage);
         emailShareIcon = getView().findViewById(R.id.emailShareButton);
@@ -96,9 +94,8 @@ public class FragmentCalendarEventInformationListItem extends Fragment {
     }
 
     private void setAttributes() {
-        eventDate.setText(date);
+        eventDate.setText(shortDescription);
         eventDate.setTypeface(null, Typeface.BOLD);
-        eventShortDescription.setText(shortDescription);
 
         getImageFromDrawable();
 
