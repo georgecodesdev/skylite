@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.skylite.MainActivity;
 import com.example.skylite.Model.ModelConstellationInfo;
 import com.example.skylite.Model.ModelConstellationList;
@@ -27,7 +29,7 @@ public class ConstellationInDepthView extends AppCompatActivity  {
     public TextView name, description,longdesc;
     public ImageView imageView;
     private ArrayList<ModelConstellationInfo> modelConstellationList = new ArrayList<>();
-
+    public static boolean achievement=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +42,11 @@ public class ConstellationInDepthView extends AppCompatActivity  {
         description =  (TextView) findViewById(R.id.constellationDescription);
         longdesc = (TextView) findViewById(R.id.constellationDescriptionlong);
         imageView = (ImageView) findViewById(R.id.constellationImage);
+        //Log.d("myTag", "This is my message="+achievement);
+        if(achievement==false){
+            Toast.makeText(ConstellationInDepthView.this,"You Unlocked the Achievment:Constellation researcher",Toast.LENGTH_LONG).show();}
+        achievement=true;
 
-        //Log.d("myTag", "This is my message="+temp.getTitle());
         name.setText(temp.getTitle());
         description.setText(temp.getDescriptionShort());
         longdesc.setText(temp.getDescriptionLong());
