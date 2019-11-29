@@ -18,6 +18,10 @@ import com.example.skylite.R;
 
 import java.util.ArrayList;
 
+
+/**
+ * Adapted form https://github.com/jaisonfdo/Onboarding
+ */
 public class ActivityOnBoarding extends AppCompatActivity {
     private LinearLayout pager_indicator;
     private int dotsCount;

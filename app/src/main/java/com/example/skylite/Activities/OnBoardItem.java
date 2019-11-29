@@ -1,5 +1,9 @@
 package com.example.skylite.Activities;
 
+/**
+ * Adapted form https://github.com/jaisonfdo/Onboarding
+ */
+
 public class OnBoardItem {
     int imageID;
     String title;

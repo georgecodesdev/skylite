@@ -15,6 +15,10 @@ import com.example.skylite.R;
 
 import java.util.List;
 
+
+/**
+ * Class handling achievements.
+ */
 public class ConstellationInDepthView extends AppCompatActivity {
     List<ModelConstellationInfo> modelConstellationInfo = MainActivity.modelConstellationInfo;
 

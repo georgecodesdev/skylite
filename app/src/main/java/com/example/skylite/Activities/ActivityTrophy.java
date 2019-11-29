@@ -1,7 +1,4 @@
 package com.example.skylite.Activities;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -9,6 +6,9 @@ import com.example.skylite.Fragments.FragmentTrophy;
 import com.example.skylite.MainActivity;
 import com.example.skylite.R;
 
+/**
+ * Activity handling trophies and its fragments
+ */
 public class ActivityTrophy extends AbstractActivityTopBar {
 
     // The Fragments we are looking for are going to be defined here
