@@ -1,6 +1,7 @@
 package com.example.skylite.Activities;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -29,10 +30,12 @@ public class ActivityCalendar extends AbstractActivityTopBar {
 
     private MaterialCalendarView calendarView;
     private LinearLayout constellationEventDescriptionLayout;
+    private ImageView moreInfoIcon;
 
     private SimpleDateFormat dateFormat;
     private boolean eventDescriptionDisplaying = false;
     private boolean eventListDisplaying = false;
+    private boolean init = false;
 
     private ArrayList<FragmentCalendarEventInformationListItem> listItems;
     private FragmentCalendarEventInformation eventInformation;
@@ -42,6 +45,7 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         super.onCreate(savedInstanceState);
         Logger.getLogger("com.google.api.client").setLevel(LOGGING_LEVEL);
 
+        init = true;
         dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         listItems = new ArrayList<>();
 
@@ -56,6 +60,7 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         super.onStart();
         setSelectedCalenderDate(CalendarDay.today());
         populateFragmentBasedOnDateSelected(convertSelectedDate(calendarView.getSelectedDate()));
+        init = false;
     }
 
     public String getCurrentDateSelected(){
@@ -66,11 +71,15 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         List<Event> events = ServiceBase.eventsService().getEventsByDate(dateSelected);
         removeCurrentFragment();
         if(events.size() != 0){
-            makeNotificationToast(events.size());
+            if (!init) makeNotificationToast(events.size());
             switchToEventList(events);
         }
         else if (eventDescriptionDisplaying){
+            if (!init) makeNoDatesToast();
             switchToNoEventFragment();
+        }
+        else {
+            if (!init) makeNoDatesToast();
         }
     }
 
@@ -79,6 +88,14 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         if (numEvents  ==  1)  notificationMessage = "Event predicted";
         else notificationMessage = "Events predicted, scroll down to discover more";
         Toast.makeText(getApplicationContext(), notificationMessage, Toast.LENGTH_SHORT).show();
+    }
+
+    private void makeInfoToast(){
+        Toast.makeText(getApplicationContext(), "Pick a date to see constellation events", Toast.LENGTH_LONG).show();
+    }
+
+    private void makeNoDatesToast(){
+        Toast.makeText(getApplicationContext(), "No events predicted", Toast.LENGTH_SHORT).show();
     }
 
     private void removeCurrentFragment(){
@@ -142,6 +159,7 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         homeNavigationImage = findViewById(R.id.homeNavigationImage);
         setSupportActionBar(toolbar);
         setActionListener();
+        makeInfoToast();
     }
 
     private void setSelectedCalenderDate(CalendarDay requestedDate){
@@ -153,6 +171,7 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         String convertedDay = String.format("%02d", calendarDay.getDay());
         return calendarDay.getYear() + "-" + convertedMonth + "-" + convertedDay;
     }
+
 
     private void setActionListener(){
         calendarView.setOnDateChangedListener((widget, date, selected) -> {
