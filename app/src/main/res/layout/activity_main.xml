@@ -138,7 +138,7 @@
                 tools:layout="@layout/video_activity"
                 android:layout_gravity="center"/>
         </LinearLayout>
-    </RelativeLayout>>
+    </RelativeLayout>
 
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>
 
