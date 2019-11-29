@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.skylite.Data.Constellation;
@@ -49,6 +50,7 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         Bundle args = intent.getBundleExtra("BUNDLE");
@@ -68,6 +70,8 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
 
         populateData(modelConstellationList);
+
+
     }
 
     private void populateData(ArrayList<ModelConstellationInfo> constellationListTemp) {
@@ -82,6 +86,8 @@ public class ActivityConstellationInfo extends AppCompatActivity {
 
         mAdapter.notifyDataSetChanged();
     }
+
+
 
 
 }

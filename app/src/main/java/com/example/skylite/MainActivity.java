@@ -21,7 +21,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private SlidingUpPanelLayout slidingLayout;
-
+    public static final List<ModelConstellationInfo> modelConstellationInfo = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity {
         ServiceBase.wikiService().getInfo(constellations);
         // TODO: Only loading the first 25 because the full set breaks it
         constellations = constellations.subList(0, ServiceBase.wikiService().getModelConstellationInfo().size());
-        List<ModelConstellationInfo> modelConstellationInfo = new ArrayList<>();
+
         for (Constellation Temp  : constellations) {
-            ModelConstellationInfo ModelConstellationInfoTemp = new ModelConstellationInfo(Temp.getImage(),Temp.getName(),Temp.getNameOrigin(),Temp.getStory());
+            ModelConstellationInfo ModelConstellationInfoTemp = new ModelConstellationInfo(Temp.getId()+"_image",Temp.getName(),Temp.getNameOrigin(),Temp.getStory());
             modelConstellationInfo.add(ModelConstellationInfoTemp);
 
         }
-
+        constellations.clear();
 
         //modelConstellationList.addConstellationInfo(ServiceBase.wikiService().getInfo(constellations));
 

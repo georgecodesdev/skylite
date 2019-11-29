@@ -24,18 +24,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:paddingTop="10dp"
-                    android:layout_width="300dp"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/constellationImage"
-                    android:layout_gravity="left"
-                    android:layout_weight="0.6"
-                    android:src="@drawable/constellation_icon"/>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
@@ -64,6 +53,18 @@
                         android:text="Description Text goes here"/>
 
                 </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:paddingTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/constellationImage"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/trophy"/>
 
                 <ImageView
                     android:id="@+id/moreInfoButton"

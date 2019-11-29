@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\bed76dccb817ce18ab9e5a93cf682658\jetified-library-3.3.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d74b5b498b35fd5cb32d0a6997bb1d3d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -11,11 +11,11 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Nexás\.g
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.vr:sdk-base:1.190.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:3:1-28:12
 MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:17:1-30:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d6046599f6c70a53cba79e12e81b9d62\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\45be30856cfab3b90057433a417a31e1\lifecycle-extensions-2.2.0-rc02\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta05] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\080d57f002c22846f4d90c16c6714d19\viewpager2-1.0.0-beta05\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta05] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\cb3bf776438f897614a3c99337fe25d9\recyclerview-1.1.0-beta05\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d6046599f6c70a53cba79e12e81b9d62\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\45be30856cfab3b90057433a417a31e1\lifecycle-extensions-2.2.0-rc02\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\e9459f740e0cce0d476177aeca29873f\coordinatorlayout-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\5bbb72600245c24a4fed81f14e5302b4\transition-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -52,25 +52,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Nexás\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml
-		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml
-		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:5:5-24:19
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\bed76dccb817ce18ab9e5a93cf682658\jetified-library-3.3.1\AndroidManifest.xml:9:5-20
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\bed76dccb817ce18ab9e5a93cf682658\jetified-library-3.3.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha01] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\4538d57e63975b8a2f5a8197d0ffbf75\material-1.2.0-alpha01\AndroidManifest.xml:22:5-20
@@ -115,20 +115,24 @@ activity#com.example.skylite.Activities.ActivityConstellationInfo
 ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:14:9-83
 	android:name
 		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:14:19-71
+activity#com.example.skylite.Activities.ConstellationInDepthView
+ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:9-82
+	android:name
+		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:19-70
 activity#com.example.skylite.MainActivity
-ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:9-22:20
+ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:16:9-23:20
 	android:name
-		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:16:13-21:29
+ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:17:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml
@@ -147,16 +151,16 @@ MERGED from [com.google.vr:sdk-base:1.190.0] C:\Users\Nexás\.gradle\caches\trans
 MERGED from [com.google.vr:sdk-base:1.190.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.2.1] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\a8fb54ced0dad97cc5a98b80b1f03cea\room-runtime-2.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d6046599f6c70a53cba79e12e81b9d62\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d6046599f6c70a53cba79e12e81b9d62\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\45be30856cfab3b90057433a417a31e1\lifecycle-extensions-2.2.0-rc02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\45be30856cfab3b90057433a417a31e1\lifecycle-extensions-2.2.0-rc02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta05] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\080d57f002c22846f4d90c16c6714d19\viewpager2-1.0.0-beta05\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta05] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\080d57f002c22846f4d90c16c6714d19\viewpager2-1.0.0-beta05\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta05] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\cb3bf776438f897614a3c99337fe25d9\recyclerview-1.1.0-beta05\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0-beta05] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\cb3bf776438f897614a3c99337fe25d9\recyclerview-1.1.0-beta05\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d6046599f6c70a53cba79e12e81b9d62\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\d6046599f6c70a53cba79e12e81b9d62\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\45be30856cfab3b90057433a417a31e1\lifecycle-extensions-2.2.0-rc02\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\45be30856cfab3b90057433a417a31e1\lifecycle-extensions-2.2.0-rc02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\e9459f740e0cce0d476177aeca29873f\coordinatorlayout-1.1.0-beta01\AndroidManifest.xml:20:5-22:41

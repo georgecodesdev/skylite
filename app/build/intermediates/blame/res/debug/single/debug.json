@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Nexás\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\anaconda\\projects\\skylite-recycler-version2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
-        "source": "C:\\Users\\Nexás\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\drawable\\mtrl_tabs_default_indicator.xml"
-    },
-    {
         "merged": "C:\\anaconda\\projects\\skylite-recycler-version2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
         "source": "C:\\Users\\Nexás\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\anaconda\\projects\\skylite-recycler-version2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
+        "source": "C:\\Users\\Nexás\\.gradle\\caches\\transforms-2\\files-2.1\\4538d57e63975b8a2f5a8197d0ffbf75\\material-1.2.0-alpha01\\res\\drawable\\mtrl_tabs_default_indicator.xml"
     },
     {
         "merged": "C:\\anaconda\\projects\\skylite-recycler-version2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",

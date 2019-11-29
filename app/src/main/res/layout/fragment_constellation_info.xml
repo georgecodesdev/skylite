@@ -67,6 +67,13 @@
                             android:text="Detailed description goes here"
                             android:gravity="center"
                             android:id="@+id/constellationDescription" />
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Detailed description goes here"
+                            android:gravity="center"
+                            android:id="@+id/constellationDescriptionlong" />
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>

@@ -36,7 +36,7 @@
 21-->[com.google.vr:sdk-base:1.190.0] C:\Users\Nexás\.gradle\caches\transforms-2\files-2.1\618ad4ebcd8a60546d481deca944ecd2\sdk-base-1.190.0\AndroidManifest.xml:26:9-33
 22
 23    <application
-23-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:5:5-23:19
+23-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:5:5-24:19
 24        android:allowBackup="true"
 24-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:6:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -50,30 +50,32 @@
 29-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:9:9-54
 30        android:supportsRtl="true"
 30-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:10:9-35
-31        android:testOnly="true"
-32        android:theme="@style/AppTheme" >
-32-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:11:9-40
-33        <activity android:name="com.example.skylite.Activities.ActivityTrophy" />
-33-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:12:9-72
-33-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:12:19-60
-34        <activity android:name="com.example.skylite.Activities.ActivityConstellation" />
-34-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:13:9-79
-34-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:13:19-67
-35        <activity android:name="com.example.skylite.Activities.ActivityConstellationInfo" />
-35-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:14:9-83
-35-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:14:19-71
+31        android:theme="@style/AppTheme" >
+31-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:11:9-40
+32        <activity android:name="com.example.skylite.Activities.ActivityTrophy" />
+32-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:12:9-72
+32-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:12:19-60
+33        <activity android:name="com.example.skylite.Activities.ActivityConstellation" />
+33-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:13:9-79
+33-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:13:19-67
+34        <activity android:name="com.example.skylite.Activities.ActivityConstellationInfo" />
+34-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:14:9-83
+34-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:14:19-71
+35        <activity android:name="com.example.skylite.Activities.ConstellationInDepthView" />
+35-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:9-82
+35-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:19-70
 36        <activity android:name="com.example.skylite.MainActivity" >
-36-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:9-22:20
-36-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:15:19-47
+36-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:16:9-23:20
+36-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:16:19-47
 37            <intent-filter>
-37-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:16:13-21:29
+37-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:17:13-22:29
 38                <action android:name="android.intent.action.MAIN" />
-38-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:17:17-69
-38-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:17:25-66
+38-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:18:17-69
+38-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:18:25-66
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:20:17-77
-40-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:20:27-74
+40-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:21:17-77
+40-->C:\anaconda\projects\skylite-recycler-version2\app\src\main\AndroidManifest.xml:21:27-74
 41            </intent-filter>
 42        </activity>
 43
