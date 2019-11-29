@@ -68,9 +68,9 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
         holder.description.setText(constellation.getDescriptionShort());
 
         int resID= holder.imageView.getResources().getIdentifier(constellation.getImageName(), "drawable", context.getPackageName());
-        Picasso.get().load(resID).into(holder.imageView);
-        Picasso.get().load(resID).into(holder.imageView);
-        Log.d("myTag", "This is my message="+constellation.getImageName());
+        Picasso.get().load(resID).fit().into(holder.imageView);
+        //Picasso.get().load(resID).into(holder.imageView);
+        //Log.d("myTag", "This is my message="+constellation.getImageName());
         holder.cv.setOnClickListener(v -> { //lambda
 
             Intent intent = new Intent(v.getContext(), ConstellationInDepthView.class);
