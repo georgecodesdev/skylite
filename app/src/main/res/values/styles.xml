@@ -46,4 +46,9 @@
         <item name="android:layout_marginTop">14dip</item>
         <item name="android:indeterminate">true</item>
     </style>
+
+    <style name="TextAppearance.CalendarDate" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/calendar_date_normal</item>
+    </style>
 </resources>
