@@ -4,6 +4,10 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     tools:context="com.example.skylite.Fragments.FragmentCalendarEventInformation"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
     android:background="@drawable/border">
 
     <RelativeLayout
@@ -18,31 +22,30 @@
             <TextView
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="75dp"
-                android:background="@drawable/trapaziod"
+                android:layout_height="wrap_content"
                 android:id="@+id/constellationEventTitle"
+                android:textSize="20sp"
                 android:text="Title Text goes here"
                 android:textColor="@color/whiteText"
                 android:gravity="center_horizontal" />
 
             <ScrollView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:orientation="vertical"
-                    android:gravity="center"
-                    android:background="@drawable/text_box">
+                    android:gravity="center">
 
                     <TextView
                         android:padding="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="Detailed description goes here"
                         android:gravity="center"
                         android:id="@+id/constellationEventDescription" />

@@ -6,7 +6,6 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
-import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import android.util.AttributeSet;
@@ -58,6 +57,7 @@ public class FragmentConstellationInfo extends Fragment {
     public void onInflate(Context context, AttributeSet attrs, Bundle savedInstanceState){
         super.onInflate(context, attrs, savedInstanceState);
     }
+
 
     public String getConstellationTitleStr(){
         return constellationTitleStr;

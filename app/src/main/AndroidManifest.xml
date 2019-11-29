@@ -21,6 +21,9 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityCalendar"
             android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ConstellationInDepthView"
+            android:screenOrientation="portrait">
+        </activity>
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>

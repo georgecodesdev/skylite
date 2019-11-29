@@ -1,3 +1,10 @@
+/*
+
+    Kelsey Osos
+This Repository manages all ModelConstellationInfo data in the app,
+ensuring that we don't have multiple sources.
+
+ */
 package com.example.skylite.Data;
 
 import com.example.skylite.Model.ModelConstellationInfo;
@@ -17,9 +24,9 @@ public class Repository {
         return modelConstellationList;
     }
 
-    public static List<ModelConstellationInfo> getModelConstellationInfos() {
-        return modelConstellationList.getConstellationInfo();
-    }
+    //public static List<ModelConstellationInfo> getModelConstellationInfos() {
+     //   return modelConstellationList.getConstellationInfo();
+   // }
 
     public static void setModelConstellationList(ModelConstellationList input) {
         modelConstellationList = input;

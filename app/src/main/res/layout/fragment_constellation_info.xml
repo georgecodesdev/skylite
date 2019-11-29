@@ -23,22 +23,24 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:id="@+id/constellationImage"
-                android:src="@drawable/constellation_icon"/>
+                android:src="@drawable/trophy"/>
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="75dp"
+                        android:textSize="20sp"
                         android:background="@drawable/trapaziod"
                         android:id="@+id/constellationTitle"
                         android:text="Title Text goes here"
@@ -62,11 +64,20 @@
 
                         <TextView
                             android:padding="10dp"
+                            android:textSize="18sp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Detailed description goes here"
                             android:gravity="center"
                             android:id="@+id/constellationDescription" />
+                        <TextView
+                            android:padding="10dp"
+                            android:textSize="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Detailed description goes here"
+                            android:gravity="center"
+                            android:id="@+id/constellationDescriptionlong" />
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>

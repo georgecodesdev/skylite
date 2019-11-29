@@ -44,52 +44,52 @@ public final class Mesh {
 
   // Basic vertex & fragment shaders to render a mesh with 3D position & 2D texture data.
   private static final String[] VERTEX_SHADER_CODE =
-      new String[] {
-        "uniform mat4 uMvpMatrix;",
-        "attribute vec4 aPosition;",
-        "attribute vec2 aTexCoords;",
-        "varying vec2 vTexCoords;",
+          new String[] {
+                  "uniform mat4 uMvpMatrix;",
+                  "attribute vec4 aPosition;",
+                  "attribute vec2 aTexCoords;",
+                  "varying vec2 vTexCoords;",
 
-        // Standard transformation.
-        "void main() {",
-        "  gl_Position = uMvpMatrix * aPosition;",
-        "  vTexCoords = aTexCoords;",
-        "}"
-      };
+                  // Standard transformation.
+                  "void main() {",
+                  "  gl_Position = uMvpMatrix * aPosition;",
+                  "  vTexCoords = aTexCoords;",
+                  "}"
+          };
   private static final String[] FRAGMENT_SHADER_CODE =
-      new String[] {
-        // This is required since the texture data is GL_TEXTURE_EXTERNAL_OES.
-        "#extension GL_OES_EGL_image_external : require",
-        "precision mediump float;",
+          new String[] {
+                  //This is required since the texture data is GL_TEXTURE_EXTERNAL_OES.
+                  "#extension GL_OES_EGL_image_external : require",
+                  "precision mediump float;",
 
-        // Standard texture rendering shader.
-        "uniform samplerExternalOES uTexture;",
-        "varying vec2 vTexCoords;",
-        "uniform float brightnessMod;",
-        "uniform float contrastMod;",
+                  // Standard texture rendering shader.
+                  "uniform samplerExternalOES uTexture;",
+                  "varying vec2 vTexCoords;",
+                  "uniform float brightnessMod;",
+                  "uniform float contrastMod;",
 
-        "void brightnessCorrect(inout vec4 colour){",
-            "for(int i=0; i<3; i++){",
-              "colour[i] *= brightnessMod;",
-              "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
-            "}",
-        "}",
+                  //"void brightnessCorrect(inout vec4 colour){",
+                  //"for(int i=0; i<3; i++){",
+                  //"colour[i] *= brightnessMod;",
+                  //"colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
+                  //"}",
+                  //"}",
 
-        "void contrastCorrect(inout vec4 colour){",
-              "for(int i=0; i<3; i++){",
-            "float dist = colour[i] - 128.0f;",
-              "colour[i] = (dist * contrastMod) + 128.0f;",
-              "colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
-              "}",
-        "}",
+                  //"void contrastCorrect(inout vec4 colour){",
+                  //"for(int i=0; i<3; i++){",
+                  //"float dist = colour[i] - 128.0f;",
+                  //"colour[i] = (dist * contrastMod) + 128.0f;",
+                  //"colour[i] = ((colour[i] < 0.0f) ? 0.0f : (255.0f < colour[i]) ? 255.0f : colour[i]);",
+                  //"}",
+                  //"}",
 
-        "void main() {",
-            "vec4 t = texture2D(uTexture, vTexCoords);",
-              "brightnessCorrect(t);",
-              "contrastCorrect(t);",
-            "gl_FragColor = t;",
-        "}"
-      };
+                  "void main() {",
+                  "vec4 t = texture2D(uTexture, vTexCoords);",
+                  //"brightnessCorrect(t);",
+                  //"contrastCorrect(t);",
+                  "gl_FragColor = t;",
+                  "}"
+          };
 
   // Constants related to vertex data.
   private static final int POSITION_COORDS_PER_VERTEX = 3; // X, Y, Z.
@@ -136,16 +136,16 @@ public final class Mesh {
    * @return Unintialized Mesh.
    */
   public static Mesh createUvSphere(
-      float radius,
-      int latitudes,
-      int longitudes,
-      float verticalFovDegrees,
-      float horizontalFovDegrees,
-      int mediaFormat) {
+          float radius,
+          int latitudes,
+          int longitudes,
+          float verticalFovDegrees,
+          float horizontalFovDegrees,
+          int mediaFormat) {
     if (radius <= 0
-        || latitudes < 1 || longitudes < 1
-        || verticalFovDegrees <= 0 || verticalFovDegrees > 180
-        || horizontalFovDegrees <= 0 || horizontalFovDegrees > 360) {
+            || latitudes < 1 || longitudes < 1
+            || verticalFovDegrees <= 0 || verticalFovDegrees > 180
+            || horizontalFovDegrees <= 0 || horizontalFovDegrees > 360) {
       throw new IllegalArgumentException("Invalid parameters for sphere.");
     }
 
@@ -271,25 +271,25 @@ public final class Mesh {
     // Load position data.
     vertexBuffer.position(0);
     GLES20.glVertexAttribPointer(
-        positionHandle,
-        POSITION_COORDS_PER_VERTEX,
-        GLES20.GL_FLOAT,
-        false,
-        VERTEX_STRIDE_BYTES,
-        vertexBuffer);
+            positionHandle,
+            POSITION_COORDS_PER_VERTEX,
+            GLES20.GL_FLOAT,
+            false,
+            VERTEX_STRIDE_BYTES,
+            vertexBuffer);
     checkGlError();
 
     // Load texture data. Eye.Type.RIGHT uses the left eye's data.
     int textureOffset =
-        (eyeType == Eye.Type.RIGHT) ? POSITION_COORDS_PER_VERTEX + 2 : POSITION_COORDS_PER_VERTEX;
+            (eyeType == Eye.Type.RIGHT) ? POSITION_COORDS_PER_VERTEX + 2 : POSITION_COORDS_PER_VERTEX;
     vertexBuffer.position(textureOffset);
     GLES20.glVertexAttribPointer(
-        texCoordsHandle,
-        TEXTURE_COORDS_PER_VERTEX,
-        GLES20.GL_FLOAT,
-        false,
-        VERTEX_STRIDE_BYTES,
-        vertexBuffer);
+            texCoordsHandle,
+            TEXTURE_COORDS_PER_VERTEX,
+            GLES20.GL_FLOAT,
+            false,
+            VERTEX_STRIDE_BYTES,
+            vertexBuffer);
     checkGlError();
 
     // Render.

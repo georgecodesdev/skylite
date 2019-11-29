@@ -1,3 +1,9 @@
+/*
+
+    Kelsey Osos
+This is the interface contract for JSON services.
+
+ */
 package com.example.skylite.Services;
 
 import android.content.Context;

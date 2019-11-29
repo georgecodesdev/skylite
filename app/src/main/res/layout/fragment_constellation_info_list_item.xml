@@ -1,72 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.skylite.Fragments.FragmentConstellationInfoListItem">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/cardview_dark_background">
 
-    <RelativeLayout
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/border"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="3dp">
-        <LinearLayout
-            android:orientation="horizontal"
+        android:layout_height="match_parent"
+        tools:context="com.example.skylite.Fragments.FragmentConstellationInfoListItem">
+
+        <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:paddingTop="10dp"
-                android:layout_width="300dp"
-                android:layout_height="fill_parent"
-                android:id="@+id/constellationImage"
-                android:layout_gravity="left"
-                android:layout_weight="0.6"
-                android:src="@drawable/constellation_icon"/>
+            android:layout_height="100dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/border">
+
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:layout_gravity="right"
-                android:orientation="vertical"
-                android:layout_centerInParent="true"
-                android:layout_weight="0.5">
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/constellationTitle"
-                    android:layout_width="fill_parent"
-                    android:layout_height="20dp"
-                    android:gravity="center"
-                    android:layout_marginTop="30dp"
-                    android:textColor="@color/whiteText"
-                    android:text="Title Text goes here"/>
+                <ImageView
+                    android:id="@+id/constellationImage"
+                    android:layout_width="300dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.6"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/trophy" />
 
-                <TextView
-                    android:id="@+id/constellationDescription"
-                    android:layout_width="fill_parent"
-                    android:layout_height="20dp"
-                    android:gravity="center"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
                     android:layout_centerInParent="true"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/whiteText"
-                    android:text="Description Text goes here"/>
+                    android:layout_gravity="right"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/constellationTitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="Title Text goes here"
+                        android:textColor="@color/whiteText"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/constellationDescription"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Description Text goes here"
+                        android:textColor="@color/whiteText"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/moreInfoButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/round_circle"
+                    android:gravity="center"
+                    android:src="@drawable/info_white" />
             </LinearLayout>
-
-            <ImageView
-                android:id="@+id/moreInfoButton"
-                android:background="@drawable/round_circle"
-                android:src="@drawable/info_white"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:layout_marginRight="5dp"
-                />
-
-        </LinearLayout>
-    </RelativeLayout>
-
-
-</FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

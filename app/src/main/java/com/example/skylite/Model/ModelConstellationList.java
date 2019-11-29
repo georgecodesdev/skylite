@@ -5,6 +5,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModelConstellationList implements Serializable {
+    private String imageName;
+    private String title;
+    private String descriptionShort;
+
+
+    public ModelConstellationList(String imageName, String title, String descriptionShort){
+        this.imageName = imageName;
+        this.title = title;
+        this.descriptionShort = descriptionShort;
+
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescriptionShort() {
+        return descriptionShort;
+    }
+
 
     private ArrayList<ModelConstellationInfo> constellationInfo;
 
