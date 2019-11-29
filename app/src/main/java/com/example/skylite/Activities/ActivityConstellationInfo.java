@@ -58,6 +58,7 @@ public class ActivityConstellationInfo extends AbstractActivityTopBar {
         Bundle args = intent.getBundleExtra("BUNDLE");
         modelConstellationList = (ArrayList<ModelConstellationInfo>) args.getSerializable("ARRAYLIST");
 
+
         setContentView(R.layout.data_main_layout);
 
         info = (ModelConstellationList) getIntent().getExtras().get("ModelList");
