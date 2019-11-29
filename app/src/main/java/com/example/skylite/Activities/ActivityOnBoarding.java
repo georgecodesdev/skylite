@@ -84,6 +84,7 @@ public class ActivityOnBoarding extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 switchToMainActivity();
+                finish();
             }
         });
 
