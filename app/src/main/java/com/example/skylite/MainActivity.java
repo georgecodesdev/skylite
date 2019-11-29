@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(v.getId() == R.id.wikiButton){
             switchToConstellationListActivity();
-            //TODO
         }
         else if(v.getId() == R.id.calendarButton){
             switchToCalendarActivity();

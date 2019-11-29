@@ -40,11 +40,10 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
 
         public ConstellationListViewHolder(View view) {
             super(view);
-            cv = (CardView) itemView.findViewById(R.id.card_view);
-            name = (TextView) view.findViewById(R.id.constellationTitle);
-            description = (TextView) view.findViewById(R.id.constellationDescription);
-            //longdesc = (TextView) view.findViewById(R.id.constellationDescriptionlong);
-            imageView = (ImageView) view.findViewById(R.id.constellationImage);
+            cv = itemView.findViewById(R.id.card_view);
+            name = view.findViewById(R.id.constellationTitle);
+            description = view.findViewById(R.id.constellationDescription);
+            imageView = view.findViewById(R.id.constellationImage);
 
         }
     }
@@ -74,8 +73,6 @@ public class ConstellationListAdapter extends RecyclerView.Adapter<Constellation
 
         int resID = holder.imageView.getResources().getIdentifier(constellation.getImageName(), "drawable", context.getPackageName());
         Picasso.get().load(resID).fit().into(holder.imageView);
-        //Picasso.get().load(resID).into(holder.imageView);
-        //Log.d("myTag", "This is my message="+constellation.getImageName());
         holder.cv.setOnClickListener(v -> { //lambda
 
             Intent intent = new Intent(v.getContext(), ConstellationInDepthView.class);
