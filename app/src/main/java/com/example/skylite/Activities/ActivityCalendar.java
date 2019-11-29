@@ -10,7 +10,6 @@ import com.example.skylite.Fragments.FragmentCalendarEventInformationListItem;
 import com.example.skylite.Services.ServiceBase;
 import com.example.skylite.Data.Event;
 import com.example.skylite.Fragments.FragmentCalendarEventInformation;
-import com.example.skylite.Fragments.FragmentNoEventsAvailable;
 import com.example.skylite.R;
 
 import java.text.SimpleDateFormat;
@@ -37,7 +36,6 @@ public class ActivityCalendar extends AbstractActivityTopBar {
 
     private ArrayList<FragmentCalendarEventInformationListItem> listItems;
     private FragmentCalendarEventInformation eventInformation;
-    private FragmentNoEventsAvailable noEventsAvailable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +43,6 @@ public class ActivityCalendar extends AbstractActivityTopBar {
         Logger.getLogger("com.google.api.client").setLevel(LOGGING_LEVEL);
 
         dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        noEventsAvailable = new FragmentNoEventsAvailable();
         listItems = new ArrayList<>();
 
 
@@ -67,32 +64,26 @@ public class ActivityCalendar extends AbstractActivityTopBar {
 
     public void populateFragmentBasedOnDateSelected(String dateSelected){
         List<Event> events = ServiceBase.eventsService().getEventsByDate(dateSelected);
+        removeCurrentFragment();
         if(events.size() != 0){
-            removeCurrentFragment();
             makeNotificationToast(events.size());
             switchToEventList(events);
         }
         else if (eventDescriptionDisplaying){
-            removeCurrentFragment();
-            switchToNoEventFragment();
-        }
-        else if (!noEventsAvailable.isVisible()) {
-            removeCurrentFragment();
             switchToNoEventFragment();
         }
     }
 
     private void makeNotificationToast(int numEvents){
         String notificationMessage;
-        if (numEvents  ==  1)  notificationMessage = " event is occurring";
-        else notificationMessage = " events are occurring";
-        Toast.makeText(getApplicationContext(), numEvents + notificationMessage, Toast.LENGTH_SHORT).show();
+        if (numEvents  ==  1)  notificationMessage = "Event predicted";
+        else notificationMessage = "Events predicted, scroll down to discover more";
+        Toast.makeText(getApplicationContext(), notificationMessage, Toast.LENGTH_SHORT).show();
     }
 
     private void removeCurrentFragment(){
         if (eventDescriptionDisplaying) removeEventFragment();
         else if (eventListDisplaying) removeEventList();
-        else removeNoEventFragment();
     }
 
     public void switchToEventDetailFragment(Event requestedEvent){
@@ -127,15 +118,6 @@ public class ActivityCalendar extends AbstractActivityTopBar {
     private void switchToNoEventFragment(){
         eventDescriptionDisplaying = false;
         eventListDisplaying = false;
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(constellationEventDescriptionLayout.getId(), noEventsAvailable , NO_EVENT_FRAGMENT_IDENTIFIER);
-        fragmentTransaction.commit();
-    }
-
-    private void removeNoEventFragment(){
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.remove(noEventsAvailable);
-        fragmentTransaction.commit();
     }
 
     private void removeEventFragment(){
