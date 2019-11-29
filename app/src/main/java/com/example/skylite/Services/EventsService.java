@@ -133,7 +133,7 @@ public class EventsService implements IEventsService {
     @Override
     public List<Event> getEventsByDate(String date){
         return this._events.stream()
-                .filter(d -> d.getDate() ==  date)
+                .filter(d -> d.getDate().equals(date))
                 .collect(Collectors.toList());
     }
 
@@ -141,6 +141,4 @@ public class EventsService implements IEventsService {
     public SimpleDateFormat getDateFormat(){
         return this.format;
     }
-
-
 }
