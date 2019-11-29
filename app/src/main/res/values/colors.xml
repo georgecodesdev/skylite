@@ -10,6 +10,12 @@
     <color name="black">#000000</color>
     <color name="screenBackground">#2E313B</color>2E313B
 
+
+    <color name="selected_dot">#2D9CDB</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
+
     <!-- TODO: Sandbox -->
     <color name="buttonLabel">#d3d3d3</color>
 </resources>

@@ -15,6 +15,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.ActivityTrophy"
             android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activities.ActivityOnBoarding"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityConstellation"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".Activities.ActivityConstellationInfo"

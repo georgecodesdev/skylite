@@ -5,15 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import com.example.skylite.Activities.ActivityCalendar;
-import com.example.skylite.Activities.ActivityConstellation;
 import com.example.skylite.Activities.ActivityConstellationInfo;
+import com.example.skylite.Activities.ActivityOnBoarding;
 import com.example.skylite.Activities.ActivityTrophy;
 import com.example.skylite.Data.Constellation;
 import com.example.skylite.Services.ServiceBase;
 import com.example.skylite.Model.ModelConstellationInfo;
-import com.example.skylite.Model.ModelConstellationList;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import java.io.Serializable;
@@ -44,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(v.getId() == R.id.calendarButton){
             switchToCalendarActivity();
+        }
+        else if(v.getId() == R.id.settingsButton){
+            switchToOnBoardingActivity();
         }
     }
 
@@ -80,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void switchToCalendarActivity(){
         Intent intent = new Intent(this, ActivityCalendar.class);
+        startActivity(intent);
+    }
+
+    private void switchToOnBoardingActivity(){
+        Intent intent = new Intent(this, ActivityOnBoarding.class);
         startActivity(intent);
     }
 }

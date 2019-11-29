@@ -32,9 +32,9 @@ public final class R {
     public static final class dimen {
         private dimen() {}
 
-        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f060097;
-        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f060098;
-        public static final int item_touch_helper_swipe_escape_velocity = 0x7f060099;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f06009a;
+        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f06009b;
+        public static final int item_touch_helper_swipe_escape_velocity = 0x7f06009c;
     }
     public static final class drawable {
         private drawable() {}
@@ -46,10 +46,10 @@ public final class R {
         private id() {}
 
         public static final int anchored = 0x7f080046;
-        public static final int collapsed = 0x7f080066;
-        public static final int expanded = 0x7f080090;
-        public static final int hidden = 0x7f0800a4;
-        public static final int item_touch_helper_previous_elevation = 0x7f0800b0;
+        public static final int collapsed = 0x7f080067;
+        public static final int expanded = 0x7f080091;
+        public static final int hidden = 0x7f0800a5;
+        public static final int item_touch_helper_previous_elevation = 0x7f0800b1;
     }
     public static final class styleable {
         private styleable() {}

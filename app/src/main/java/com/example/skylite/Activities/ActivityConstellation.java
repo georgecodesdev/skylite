@@ -6,8 +6,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-
-import com.example.skylite.Data.ConstellationListAdapter;
 import com.example.skylite.Data.ConstellationViewModel;
 import com.example.skylite.R;
 

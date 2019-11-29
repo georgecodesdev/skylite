@@ -13,49 +13,49 @@ public final class R {
         private color() {}
 
         public static final int alignment_marker_color = 0x7f05001a;
-        public static final int white_transparent = 0x7f0500da;
+        public static final int white_transparent = 0x7f0500de;
     }
     public static final class dimen {
         private dimen() {}
 
-        public static final int alignment_marker_height = 0x7f06004f;
-        public static final int alignment_marker_thickness = 0x7f060050;
-        public static final int transition_bottom_bar_height = 0x7f06015f;
+        public static final int alignment_marker_height = 0x7f060051;
+        public static final int alignment_marker_thickness = 0x7f060052;
+        public static final int transition_bottom_bar_height = 0x7f06016a;
     }
     public static final class drawable {
         private drawable() {}
 
-        public static final int quantum_ic_close_white_24 = 0x7f07010b;
-        public static final int quantum_ic_settings_white_24 = 0x7f07010c;
-        public static final int rippleable = 0x7f07010e;
-        public static final int transition = 0x7f070122;
+        public static final int quantum_ic_close_white_24 = 0x7f07010f;
+        public static final int quantum_ic_settings_white_24 = 0x7f070110;
+        public static final int rippleable = 0x7f070112;
+        public static final int transition = 0x7f070127;
     }
     public static final class id {
         private id() {}
 
         public static final int back_button = 0x7f08004a;
-        public static final int divider = 0x7f080086;
-        public static final int transition_bottom_frame = 0x7f080157;
-        public static final int transition_frame = 0x7f080159;
-        public static final int transition_icon = 0x7f08015a;
-        public static final int transition_question_text = 0x7f08015d;
-        public static final int transition_switch_action = 0x7f08015f;
-        public static final int transition_text = 0x7f080160;
-        public static final int transition_top_frame = 0x7f080161;
-        public static final int ui_alignment_marker = 0x7f080167;
-        public static final int ui_back_button = 0x7f080168;
-        public static final int ui_back_button_holder = 0x7f080169;
-        public static final int ui_settings_button = 0x7f08016a;
-        public static final int ui_settings_button_holder = 0x7f08016b;
+        public static final int divider = 0x7f080087;
+        public static final int transition_bottom_frame = 0x7f08015b;
+        public static final int transition_frame = 0x7f08015d;
+        public static final int transition_icon = 0x7f08015e;
+        public static final int transition_question_text = 0x7f080161;
+        public static final int transition_switch_action = 0x7f080163;
+        public static final int transition_text = 0x7f080164;
+        public static final int transition_top_frame = 0x7f080165;
+        public static final int ui_alignment_marker = 0x7f08016d;
+        public static final int ui_back_button = 0x7f08016e;
+        public static final int ui_back_button_holder = 0x7f08016f;
+        public static final int ui_settings_button = 0x7f080170;
+        public static final int ui_settings_button_holder = 0x7f080171;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int back_button = 0x7f0b0021;
-        public static final int settings_button = 0x7f0b0069;
-        public static final int transition_view = 0x7f0b0077;
-        public static final int ui_layer = 0x7f0b0078;
-        public static final int ui_layer_with_portrait_support = 0x7f0b0079;
+        public static final int back_button = 0x7f0b0022;
+        public static final int settings_button = 0x7f0b006b;
+        public static final int transition_view = 0x7f0b0079;
+        public static final int ui_layer = 0x7f0b007a;
+        public static final int ui_layer_with_portrait_support = 0x7f0b007b;
     }
     public static final class string {
         private string() {}
@@ -77,12 +77,12 @@ public final class R {
         public static final int go_to_vr_listeners_settings_button = 0x7f0e005e;
         public static final int gvr_vr_mode_component = 0x7f0e005f;
         public static final int no_browser_text = 0x7f0e0085;
-        public static final int place_your_phone_into_cardboard = 0x7f0e008d;
-        public static final int place_your_viewer_into_viewer_format = 0x7f0e008e;
-        public static final int settings_button_content_description = 0x7f0e0093;
-        public static final int setup_button = 0x7f0e0094;
-        public static final int switch_viewer_action = 0x7f0e00a6;
-        public static final int switch_viewer_prompt = 0x7f0e00a7;
+        public static final int place_your_phone_into_cardboard = 0x7f0e0094;
+        public static final int place_your_viewer_into_viewer_format = 0x7f0e0095;
+        public static final int settings_button_content_description = 0x7f0e009a;
+        public static final int setup_button = 0x7f0e009b;
+        public static final int switch_viewer_action = 0x7f0e00ad;
+        public static final int switch_viewer_prompt = 0x7f0e00ae;
     }
     public static final class style {
         private style() {}
